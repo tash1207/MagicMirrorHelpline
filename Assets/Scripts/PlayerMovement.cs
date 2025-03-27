@@ -12,7 +12,6 @@ public class PlayerMovement : MonoBehaviour
     
     Rigidbody2D rb2d;
     Vector2 moveInput;
-    Vector2 lookDirection = new Vector2(0, -1);
 
     void Awake()
     {
@@ -35,12 +34,18 @@ public class PlayerMovement : MonoBehaviour
 
         if (moveInput.x != 0f || moveInput.y != 0f)
         {
-            lookDirection.Set(moveInput.x, moveInput.y);
-        }
+            playerAnimator.SetFloat("LookX", moveInput.x);
+            playerAnimator.SetFloat("LookY", moveInput.y);
+            playerAnimator.SetBool("IsWalking", true);
 
-        playerAnimator.SetFloat("LookX", lookDirection.x);
-        playerAnimator.SetFloat("LookY", lookDirection.y);
-        reversePlayerAnimator.SetFloat("LookX", lookDirection.x);
-        reversePlayerAnimator.SetFloat("LookY", -lookDirection.y);
+            reversePlayerAnimator.SetFloat("LookX", moveInput.x);
+            reversePlayerAnimator.SetFloat("LookY", -moveInput.y);
+            reversePlayerAnimator.SetBool("IsWalking", true);
+        }
+        else
+        {
+            playerAnimator.SetBool("IsWalking", false);
+            reversePlayerAnimator.SetBool("IsWalking", false);
+        }
     }
 }
