@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4927438905376569200}
   - component: {fileID: 3780032829987746399}
-  m_Layer: 0
+  - component: {fileID: 8124116155015805948}
+  m_Layer: 7
   m_Name: PlayerSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87,6 +88,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &8124116155015805948
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 602183499454383890}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: afaa610ccc3749144be02306ac8e8e4b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6229603620366982819
 GameObject:
   m_ObjectHideFlags: 0
@@ -136,6 +159,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5d4d66d966b4574ca738aae0f2a0dc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerAnimator: {fileID: 8124116155015805948}
+  reversePlayerAnimator: {fileID: 1246070049731737232}
   moveSpeed: 4.5
 --- !u!114 &2902837551277435514
 MonoBehaviour:
@@ -250,6 +275,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3399300702620639468}
   - component: {fileID: 669303371658391373}
+  - component: {fileID: 1246070049731737232}
   m_Layer: 6
   m_Name: ReversePlayerSprite
   m_TagString: Untagged
@@ -327,3 +353,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1246070049731737232
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8308382347648843946}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: afaa610ccc3749144be02306ac8e8e4b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

@@ -167,6 +167,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3457831478476732431, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 119
+      objectReference: {fileID: 0}
     - target: {fileID: 5070204760256054102, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: m_Name
       value: Mirror
@@ -286,7 +290,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 55
+    m_Bits: 183
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -411,11 +415,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2284383343476082012, guid: 4cd7050fcbc54954ba4bb3c00dbef152, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.298
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 2284383343476082012, guid: 4cd7050fcbc54954ba4bb3c00dbef152, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.134
+      value: -2.5
       objectReference: {fileID: 0}
     - target: {fileID: 2284383343476082012, guid: 4cd7050fcbc54954ba4bb3c00dbef152, type: 3}
       propertyPath: m_LocalPosition.z
