@@ -422,7 +422,7 @@ GameObject:
   - component: {fileID: 8055401031724518818}
   - component: {fileID: 508761371260812612}
   m_Layer: 6
-  m_Name: mirror_hidden
+  m_Name: mirror_hiddenbg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
