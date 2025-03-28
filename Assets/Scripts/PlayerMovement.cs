@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     
     Rigidbody2D rb2d;
     Vector2 moveInput;
+    Vector2 lookDirection;
 
     void Awake()
     {
@@ -34,18 +35,41 @@ public class PlayerMovement : MonoBehaviour
 
         if (moveInput.x != 0f || moveInput.y != 0f)
         {
-            playerAnimator.SetFloat("LookX", moveInput.x);
-            playerAnimator.SetFloat("LookY", moveInput.y);
+            lookDirection.Set(moveInput.x, moveInput.y);
+            lookDirection.Normalize();
+
+            playerAnimator.SetFloat("LookX", lookDirection.x);
+            playerAnimator.SetFloat("LookY", lookDirection.y);
             playerAnimator.SetBool("IsWalking", true);
 
-            reversePlayerAnimator.SetFloat("LookX", moveInput.x);
-            reversePlayerAnimator.SetFloat("LookY", -moveInput.y);
+            reversePlayerAnimator.SetFloat("LookX", lookDirection.x);
+            reversePlayerAnimator.SetFloat("LookY", -lookDirection.y);
             reversePlayerAnimator.SetBool("IsWalking", true);
         }
         else
         {
             playerAnimator.SetBool("IsWalking", false);
             reversePlayerAnimator.SetBool("IsWalking", false);
+        }
+    }
+
+    void OnInteract(InputValue value)
+    {
+        if (value.isPressed)
+        {
+            Debug.Log("Interact pressed");
+
+            Vector2 raycastOrigin = new Vector2(rb2d.position.x, rb2d.position.y);
+            RaycastHit2D hit = Physics2D.Raycast(
+                raycastOrigin, lookDirection, 2f, LayerMask.GetMask("Interactable"));
+
+            if (hit.collider != null)
+            {
+                if (hit.collider.gameObject.TryGetComponent<Interactable>(out Interactable interactable))
+                {
+                    interactable.Interact();
+                }
+            }
         }
     }
 }
