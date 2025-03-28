@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1136554042365684697}
   - component: {fileID: 9184998328646438570}
   - component: {fileID: 8083063763069681941}
+  - component: {fileID: 7742917564385684393}
   m_Layer: 0
   m_Name: Desk1
   m_TagString: Untagged
@@ -134,3 +135,15 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.90625, y: 1.1049135}
   m_EdgeRadius: 0
+--- !u!210 &7742917564385684393
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5584799882767103200}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortAtRoot: 0

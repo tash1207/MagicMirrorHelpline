@@ -19,11 +19,6 @@ public class PlayerMovement : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
     }
 
-    void Update()
-    {
-        
-    }
-
     void FixedUpdate()
     {
         rb2d.linearVelocity = moveInput * moveSpeed;
@@ -58,18 +53,43 @@ public class PlayerMovement : MonoBehaviour
         if (value.isPressed)
         {
             Debug.Log("Interact pressed");
+            Interactable interactable = GetCollidedInteractable();
 
-            Vector2 raycastOrigin = new Vector2(rb2d.position.x, rb2d.position.y);
-            RaycastHit2D hit = Physics2D.Raycast(
-                raycastOrigin, lookDirection, 2f, LayerMask.GetMask("Interactable"));
-
-            if (hit.collider != null)
+            if (interactable != null)
             {
-                if (hit.collider.gameObject.TryGetComponent<Interactable>(out Interactable interactable))
-                {
-                    interactable.Interact();
-                }
+                interactable.Interact();
             }
         }
+    }
+
+    void OnPickUp(InputValue value)
+    {
+        if (value.isPressed)
+        {
+            Debug.Log("PickUp pressed");
+            Interactable interactable = GetCollidedInteractable();
+
+            if (interactable != null)
+            {
+                interactable.PickUp();
+            }
+        }
+    }
+
+    Interactable GetCollidedInteractable()
+    {
+        Vector2 raycastOrigin = new Vector2(rb2d.position.x, rb2d.position.y);
+        RaycastHit2D hit = Physics2D.Raycast(
+            raycastOrigin, lookDirection, 2f, LayerMask.GetMask("Interactable"));
+
+        if (hit.collider != null)
+        {
+            if (hit.collider.gameObject.TryGetComponent<Interactable>(out Interactable interactable))
+            {
+                return interactable;
+            }
+        }
+
+        return null;
     }
 }
