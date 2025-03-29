@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Paper : Interactable
+public class Recipe : Interactable
 {
     void Awake()
     {
