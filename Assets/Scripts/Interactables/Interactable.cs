@@ -16,7 +16,7 @@ public class Interactable : MonoBehaviour
     {
         if (!canPickUp)
         {
-            Debug.Log("I can't pick that up!");
+            Debug.Log("Why would I want to pick that up?");
         }
         else if (!hasInteracted)
         {
