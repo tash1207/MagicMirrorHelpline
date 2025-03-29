@@ -76,6 +76,15 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    void OnInventory(InputValue value)
+    {
+        if (value.isPressed)
+        {
+            Debug.Log("Current Inventory:");
+            Debug.Log(Inventory.Instance.GetListOfObjects());
+        }
+    }
+
     Interactable GetCollidedInteractable()
     {
         Vector2 raycastOrigin = new Vector2(rb2d.position.x, rb2d.position.y);

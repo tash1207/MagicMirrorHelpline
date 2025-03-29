@@ -17,5 +17,6 @@ public class Paper : Interactable
     override public void PickUp()
     {
         base.PickUp();
+        Inventory.Instance.AddObject(Inventory.InventoryObject.Recipe, this);
     }
 }

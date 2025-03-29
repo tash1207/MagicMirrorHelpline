@@ -14,23 +14,30 @@ public class Pot : Interactable
     override public void Interact()
     {
         base.Interact();
-        Debug.Log("I could use this, if I had any ingredients.");
 
-        if (animationTest == 0)
+        if (Inventory.Instance.HasObject(Inventory.InventoryObject.Recipe))
         {
-            animator.SetBool("isFull", true);
-            animationTest = 1;
+            if (animationTest == 0)
+            {
+                animator.SetBool("isFull", true);
+                animationTest = 1;
+            }
+            else if (animationTest == 1)
+            {
+                animator.SetBool("isSteaming", true);
+                animationTest = 2;
+                Debug.Log("Now we're cooking!");
+            }
+            else if (animationTest == 2)
+            {
+                animator.SetBool("isFull", false);
+                animator.SetBool("isSteaming", false);
+                animationTest = 0;
+            }
         }
-        else if (animationTest == 1)
+        else
         {
-            animator.SetBool("isSteaming", true);
-            animationTest = 2;
-        }
-        else if (animationTest == 2)
-        {
-            animator.SetBool("isFull", false);
-            animator.SetBool("isSteaming", false);
-            animationTest = 0;
+            Debug.Log("I could use this, if I had any ingredients.");
         }
     }
 
