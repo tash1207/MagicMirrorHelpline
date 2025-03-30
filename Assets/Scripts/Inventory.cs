@@ -7,6 +7,7 @@ public class Inventory : MonoBehaviour
     public enum InventoryObject
     {
         Recipe,
+        Slippers,
     }
 
     public static Inventory Instance { get; private set; }
