@@ -78,8 +78,7 @@ public class Player : MonoBehaviour
     {
         if (value.isPressed)
         {
-            Debug.Log("Current Inventory:");
-            Debug.Log(Inventory.Instance.GetListOfObjects());
+            GetComponent<Inventory>().ToggleInventory();
         }
     }
 

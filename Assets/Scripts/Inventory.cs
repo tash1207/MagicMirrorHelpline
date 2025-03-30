@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class Inventory : MonoBehaviour
@@ -10,7 +11,10 @@ public class Inventory : MonoBehaviour
 
     public static Inventory Instance { get; private set; }
 
-    List<Interactable> interactables;
+    [SerializeField] GameObject inventoryCanvas;
+    [SerializeField] TMP_Text inventoryText;
+
+    List<string> objectNames;
     List<InventoryObject> inventoryObjects;
 
     void Awake()
@@ -22,13 +26,19 @@ public class Inventory : MonoBehaviour
         }
 
         Instance = this;
-        interactables = new List<Interactable>();
+        objectNames = new List<string>();
         inventoryObjects = new List<InventoryObject>();
     }
 
     public void AddObject(InventoryObject invObj, Interactable interactable)
     {
-        interactables.Add(interactable);
+        objectNames.Add(interactable.GetName());
+        inventoryObjects.Add(invObj);
+    }
+
+    public void AddObject(InventoryObject invObj, string objectName)
+    {
+        objectNames.Add(objectName);
         inventoryObjects.Add(invObj);
     }
 
@@ -37,12 +47,35 @@ public class Inventory : MonoBehaviour
         return inventoryObjects.Contains(invObj);
     }
 
-    public string GetListOfObjects()
+    public void ToggleInventory()
+    {
+        if (inventoryCanvas.activeSelf)
+        {
+            HideInventory();
+        }
+        else
+        {
+            ShowInventory();
+        }
+    }
+
+    public void ShowInventory()
+    {
+        inventoryText.text = GetListOfObjects();
+        inventoryCanvas.SetActive(true);
+    }
+
+    public void HideInventory()
+    {
+        inventoryCanvas.SetActive(false);
+    }
+
+    string GetListOfObjects()
     {
         string objectListString = "";
-        foreach (Interactable item in interactables)
+        foreach (string item in objectNames)
         {
-            objectListString += item.GetName() + "\n";
+            objectListString += "- " + item + "\n";
         }
 
         return objectListString;
