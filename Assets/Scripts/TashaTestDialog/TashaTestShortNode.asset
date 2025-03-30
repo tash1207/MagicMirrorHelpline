@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33f741ea10ebcf842a91c9b871dd032a, type: 3}
+  m_Name: TashaTestShortNode
+  m_EditorClassIdentifier: 
+  NodesList:
+  - {fileID: 11400000, guid: 1fd1181c877476e4381a6bbae985b008, type: 2}
+  - {fileID: 6872879094083619906, guid: 178422bc2c3eb2647aa52ef024461434, type: 2}
+  - {fileID: 1999212694319423441, guid: 178422bc2c3eb2647aa52ef024461434, type: 2}
+  - {fileID: -7712510421898774992, guid: 178422bc2c3eb2647aa52ef024461434, type: 2}
+  - {fileID: -1907298069554053094, guid: 178422bc2c3eb2647aa52ef024461434, type: 2}
+  - {fileID: -5788642404197219419, guid: 178422bc2c3eb2647aa52ef024461434, type: 2}
+  - {fileID: -6314465996884924772, guid: 178422bc2c3eb2647aa52ef024461434, type: 2}
+  - {fileID: -4065097273865712500, guid: 178422bc2c3eb2647aa52ef024461434, type: 2}
+  - {fileID: -5651805402822805952, guid: 178422bc2c3eb2647aa52ef024461434, type: 2}
+  NodeToDrawLineFrom: {fileID: 0}
+  LinePosition: {x: 0, y: 0}

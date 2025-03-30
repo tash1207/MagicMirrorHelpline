@@ -8,6 +8,8 @@ public class Inventory : MonoBehaviour
     {
         Recipe,
         Slippers,
+        True,
+        Wine,
     }
 
     public static Inventory Instance { get; private set; }
@@ -43,9 +45,18 @@ public class Inventory : MonoBehaviour
         inventoryObjects.Add(invObj);
     }
 
+    public void RemoveObject(InventoryObject invObj)
+    {
+        int index = inventoryObjects.IndexOf(invObj);
+        objectNames.RemoveAt(index);
+        inventoryObjects.RemoveAt(index);
+    }
+
     public bool HasObject(InventoryObject invObj)
     {
-        return inventoryObjects.Contains(invObj);
+        bool hasObj = invObj == InventoryObject.True || inventoryObjects.Contains(invObj);
+        Debug.Log("Inventory has " + invObj + ": " + hasObj);
+        return hasObj;
     }
 
     public void ToggleInventory()

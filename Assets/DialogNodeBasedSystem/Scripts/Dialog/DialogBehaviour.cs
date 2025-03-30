@@ -33,12 +33,13 @@ namespace cherrydev
         public event Action OnSentenceNodeActive;
         public event Action<string, string, Sprite> OnSentenceNodeActiveWithParameter;
         public event Action OnAnswerNodeActive;
-        public event Action<int, AnswerNode> OnAnswerButtonSetUp;
+        public event Action<int, int, AnswerNode> OnAnswerButtonSetUp;
         public event Action<int> OnMaxAmountOfAnswerButtonsCalculated;
         public event Action<int> OnAnswerNodeActiveWithParameter;
         public event Action<int, string> OnAnswerNodeSetUp;
         public event Action OnDialogTextCharWrote;
         public event Action<string> OnDialogTextSkipped;
+        public event Action<Mirror.MirrorScene> OnEndOfMirrorScene;
 
         public DialogExternalFunctionsHandler ExternalFunctionsHandler { get; private set; }
 
@@ -153,14 +154,30 @@ namespace cherrydev
 
             OnAnswerNodeActive?.Invoke();
 
+            int uiIndex = 0;
             for (int i = 0; i < answerNode.ChildSentenceNodes.Count; i++)
             {
                 if (answerNode.ChildSentenceNodes[i])
                 {
-                    OnAnswerNodeSetUp?.Invoke(i, answerNode.Answers[i]);
-                    OnAnswerButtonSetUp?.Invoke(i, answerNode);
+                    // If answer node has required objects, check for them.
+                    if (answerNode.RequiredObjects.Count > 0)
+                    {
+                        if (Inventory.Instance.HasObject(answerNode.RequiredObjects[i]))
+                        {
+                            OnAnswerNodeSetUp?.Invoke(uiIndex, answerNode.Answers[i]);
+                            OnAnswerButtonSetUp?.Invoke(uiIndex, i, answerNode);
 
-                    amountOfActiveButtons++;
+                            amountOfActiveButtons++;
+                            uiIndex++;
+                        }
+                    } 
+                    else
+                    {
+                        OnAnswerNodeSetUp?.Invoke(i, answerNode.Answers[i]);
+                        OnAnswerButtonSetUp?.Invoke(i, i, answerNode);
+
+                        amountOfActiveButtons++;
+                    }
                 }
                 else
                     break;
@@ -256,6 +273,11 @@ namespace cherrydev
                 }
                 else
                 {
+                    if (sentenceNode.endOfMirrorScene)
+                    {
+                        OnEndOfMirrorScene?.Invoke(sentenceNode.mirrorScene);
+                    }
+
                     _isDialogStarted = false;
 
                     _onDialogFinished?.Invoke();

@@ -10,6 +10,7 @@ namespace cherrydev
         private int _amountOfAnswers = 1;
 
         public List<string> Answers = new();
+        public List<Inventory.InventoryObject> RequiredObjects = new();
 
         public SentenceNode ParentSentenceNode;
         public List<SentenceNode> ChildSentenceNodes = new();

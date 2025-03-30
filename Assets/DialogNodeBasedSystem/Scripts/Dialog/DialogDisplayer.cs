@@ -115,12 +115,12 @@ namespace cherrydev
         /// </summary>
         /// <param name="index"></param>
         /// <param name="answerNode"></param>
-        public void SetUpAnswerButtonsClickEvent(int index, AnswerNode answerNode)
+        public void SetUpAnswerButtonsClickEvent(int uiIndex, int childNodeIndex, AnswerNode answerNode)
         {
-            _dialogAnswerPanel.GetButtonByIndex(index).onClick.RemoveAllListeners();
-            _dialogAnswerPanel.AddButtonOnClickListener(index, () =>
+            _dialogAnswerPanel.GetButtonByIndex(uiIndex).onClick.RemoveAllListeners();
+            _dialogAnswerPanel.AddButtonOnClickListener(uiIndex, () =>
             {
-                _dialogBehaviour.SetCurrentNodeAndHandleDialogGraph(answerNode.ChildSentenceNodes[index]);
+                _dialogBehaviour.SetCurrentNodeAndHandleDialogGraph(answerNode.ChildSentenceNodes[childNodeIndex]);
             });
         }
 

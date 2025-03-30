@@ -16,6 +16,9 @@ namespace cherrydev
         [SerializeField] private bool _isExternalFunc;
         [SerializeField] private string _externalFunctionName;
 
+        [SerializeField] public bool endOfMirrorScene;
+        [SerializeField] public Mirror.MirrorScene mirrorScene;
+
         private string _externalButtonLabel;
 
         private const float LabelFieldSpace = 47f;
