@@ -12,21 +12,29 @@ public class Interactable : MonoBehaviour
         hasInteracted = true;
     }
 
-    public virtual void PickUp()
+    public virtual bool PickUp()
     {
         if (!canPickUp)
         {
-            Debug.Log("Why would I want to pick that up?");
+            Think("Why would I want to pick that up?");
+            return false;
         }
         else if (!hasInteracted)
         {
-            Debug.Log("I haven't even seen what it is yet!");
+            Think("I haven't even seen what it is yet!");
+            return false;
         }
         else
         {
-            Debug.Log("Picked up " + objectName);
+            Think("Picked up " + objectName);
             Destroy(gameObject);
+            return true;
         }
+    }
+
+    protected void Think(string text)
+    {
+        InternalDialogManager.Instance.ShowDialog(text);
     }
 
     public string GetName()

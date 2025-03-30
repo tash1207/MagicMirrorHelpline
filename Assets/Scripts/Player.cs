@@ -52,7 +52,6 @@ public class Player : MonoBehaviour
     {
         if (value.isPressed)
         {
-            Debug.Log("Interact pressed");
             Interactable interactable = GetCollidedInteractable();
 
             if (interactable != null)
@@ -66,7 +65,6 @@ public class Player : MonoBehaviour
     {
         if (value.isPressed)
         {
-            Debug.Log("PickUp pressed");
             Interactable interactable = GetCollidedInteractable();
 
             if (interactable != null)
@@ -82,6 +80,14 @@ public class Player : MonoBehaviour
         {
             Debug.Log("Current Inventory:");
             Debug.Log(Inventory.Instance.GetListOfObjects());
+        }
+    }
+
+    void OnExitDialog(InputValue value)
+    {
+        if (value.isPressed)
+        {
+            InternalDialogManager.Instance.HideDialog();
         }
     }
 

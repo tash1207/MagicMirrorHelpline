@@ -11,12 +11,16 @@ public class Recipe : Interactable
     override public void Interact()
     {
         base.Interact();
-        Debug.Log("Tom's famous french onion soup recipe.");
+        Think("Tom's famous french onion soup recipe.");
     }
 
-    override public void PickUp()
+    override public bool PickUp()
     {
-        base.PickUp();
-        Inventory.Instance.AddObject(Inventory.InventoryObject.Recipe, this);
+        if (base.PickUp())
+        {
+            Inventory.Instance.AddObject(Inventory.InventoryObject.Recipe, this);
+            return true;
+        }
+        return false;
     }
 }

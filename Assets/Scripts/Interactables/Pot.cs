@@ -26,23 +26,19 @@ public class Pot : Interactable
             {
                 animator.SetBool("isSteaming", true);
                 animationTest = 2;
-                Debug.Log("Now we're cooking!");
+                Think("Now we're cooking!");
             }
             else if (animationTest == 2)
             {
                 animator.SetBool("isFull", false);
                 animator.SetBool("isSteaming", false);
                 animationTest = 0;
+                Think("Yummm!");
             }
         }
         else
         {
-            Debug.Log("I could use this, if I had any ingredients.");
+            Think("I could use this, if I had any ingredients.");
         }
-    }
-
-    override public void PickUp()
-    {
-        base.PickUp();
     }
 }

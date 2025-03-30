@@ -5,11 +5,6 @@ public class Mirror : Interactable
     override public void Interact()
     {
         base.Interact();
-        Debug.Log("Mirror mirror...");
-    }
-
-    override public void PickUp()
-    {
-        base.PickUp();
+        Think("I'm sure someone will call the Magic Mirror Helpline while I'm stuck here.");
     }
 }
