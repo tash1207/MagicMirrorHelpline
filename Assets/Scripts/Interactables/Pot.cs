@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class Pot : Interactable
@@ -5,6 +6,7 @@ public class Pot : Interactable
     Animator animator;
 
     int animationTest = 0;
+    bool disableInteraction = false;
 
     void Awake()
     {
@@ -13,7 +15,10 @@ public class Pot : Interactable
 
     override public void Interact()
     {
+        if (disableInteraction) { return; }
+
         base.Interact();
+        StartCoroutine(EnableFirstMirror());
 
         if (Inventory.Instance.HasObject(Inventory.InventoryObject.Recipe))
         {
@@ -40,5 +45,14 @@ public class Pot : Interactable
         {
             Think("I could use this, if I had any ingredients.");
         }
+    }
+
+    IEnumerator EnableFirstMirror()
+    {
+        disableInteraction = true;
+        yield return new WaitForSeconds(2.5f);
+        MirrorManager.Instance.EnableMirror1();
+        Think("Crap, I guess duty calls. No need to make others suffer just because I'm hungry.");
+        disableInteraction = false;
     }
 }
