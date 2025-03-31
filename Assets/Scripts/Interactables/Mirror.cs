@@ -40,6 +40,7 @@ public class Mirror : Interactable
         dialogBehaviour.OnEndOfMirrorScene += EndMirrorScene;
         dialogBehaviour.BindExternalFunction("UsedPencil", UsedPencil);
         dialogBehaviour.BindExternalFunction("UsedSlippers", UsedSlippers);
+        dialogBehaviour.BindExternalFunction("UsedCrystalBall", UsedCrystalBall);
         dialogBehaviour.BindExternalFunction("UsedAxe", UsedAxe);
         dialogBehaviour.BindExternalFunction("UsedMusicBox", UsedMusicBox);
     }
@@ -57,6 +58,14 @@ public class Mirror : Interactable
         if (Inventory.Instance.HasObject(Inventory.InventoryObject.Slippers))
         {
             Inventory.Instance.RemoveObject(Inventory.InventoryObject.Slippers);
+        }
+    }
+
+    void UsedCrystalBall()
+    {
+        if (Inventory.Instance.HasObject(Inventory.InventoryObject.CrystalBall))
+        {
+            Inventory.Instance.RemoveObject(Inventory.InventoryObject.CrystalBall);
         }
     }
 

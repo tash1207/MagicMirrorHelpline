@@ -224,8 +224,8 @@ MonoBehaviour:
     CharacterSprite: {fileID: 0}
   ParentNode: {fileID: 3556981709311693838}
   ChildNode: {fileID: 5723158173550774727}
-  _isExternalFunc: 0
-  _externalFunctionName: 
+  _isExternalFunc: 1
+  _externalFunctionName: UsedCrystalBall
   endOfMirrorScene: 0
   mirrorScene: 0
 --- !u!114 &11400000

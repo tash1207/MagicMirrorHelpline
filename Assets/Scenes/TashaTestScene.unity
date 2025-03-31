@@ -4029,11 +4029,11 @@ PrefabInstance:
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: giveItemDialogNodeGraph
       value: 
-      objectReference: {fileID: 11400000, guid: d77f4740d15ca4f4a8ab5f2b24b6eca6, type: 2}
+      objectReference: {fileID: 11400000, guid: 5f8181311cd5e044db0d1c694f71b28b, type: 2}
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: startingDialogNodeGraph
       value: 
-      objectReference: {fileID: 11400000, guid: 19240a3603a86304b876ce2fb0727ce5, type: 2}
+      objectReference: {fileID: 11400000, guid: 5185f23502b2676498610a139b287f5a, type: 2}
     - target: {fileID: 3457831478476732431, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: m_TargetTexture
       value: 

@@ -551,8 +551,8 @@ MonoBehaviour:
     CharacterSprite: {fileID: 0}
   ParentNode: {fileID: 3425922974490716679}
   ChildNode: {fileID: 5378838742164456461}
-  _isExternalFunc: 0
-  _externalFunctionName: 
+  _isExternalFunc: 1
+  _externalFunctionName: UsedPencil
   endOfMirrorScene: 0
   mirrorScene: 0
 --- !u!114 &1321048313241654485
@@ -617,8 +617,8 @@ MonoBehaviour:
     CharacterSprite: {fileID: 0}
   ParentNode: {fileID: 3425922974490716679}
   ChildNode: {fileID: -7965597854906726716}
-  _isExternalFunc: 0
-  _externalFunctionName: 
+  _isExternalFunc: 1
+  _externalFunctionName: UsedSlippers
   endOfMirrorScene: 0
   mirrorScene: 0
 --- !u!114 &3425922974490716679
