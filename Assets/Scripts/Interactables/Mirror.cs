@@ -38,6 +38,42 @@ public class Mirror : Interactable
     void Start()
     {
         dialogBehaviour.OnEndOfMirrorScene += EndMirrorScene;
+        dialogBehaviour.BindExternalFunction("UsedPencil", UsedPencil);
+        dialogBehaviour.BindExternalFunction("UsedSlippers", UsedSlippers);
+        dialogBehaviour.BindExternalFunction("UsedAxe", UsedAxe);
+        dialogBehaviour.BindExternalFunction("UsedMusicBox", UsedMusicBox);
+    }
+
+    void UsedPencil()
+    {
+        if (Inventory.Instance.HasObject(Inventory.InventoryObject.Pencil))
+        {
+            Inventory.Instance.RemoveObject(Inventory.InventoryObject.Pencil);
+        }
+    }
+
+    void UsedSlippers()
+    {
+        if (Inventory.Instance.HasObject(Inventory.InventoryObject.Slippers))
+        {
+            Inventory.Instance.RemoveObject(Inventory.InventoryObject.Slippers);
+        }
+    }
+
+    void UsedAxe()
+    {
+        if (Inventory.Instance.HasObject(Inventory.InventoryObject.Axe))
+        {
+            Inventory.Instance.RemoveObject(Inventory.InventoryObject.Axe);
+        }
+    }
+
+    void UsedMusicBox()
+    {
+        if (Inventory.Instance.HasObject(Inventory.InventoryObject.MusicBox))
+        {
+            Inventory.Instance.RemoveObject(Inventory.InventoryObject.MusicBox);
+        }
     }
 
     void EndMirrorScene(MirrorScene scene)
@@ -50,12 +86,27 @@ public class Mirror : Interactable
 
             if (mirrorScene == MirrorScene.Cinderella)
             {
-                if (Inventory.Instance.HasObject(Inventory.InventoryObject.Slippers))
-                {
-                    // TODO: check if we used slippers or pencil
-                    Inventory.Instance.RemoveObject(Inventory.InventoryObject.Slippers);
-                    Inventory.Instance.AddObject(Inventory.InventoryObject.Wine, "Bottle of white wine");
-                }
+                Inventory.Instance.AddObject(Inventory.InventoryObject.Wine, "Bottle of white wine");
+            }
+            else if (mirrorScene == MirrorScene.Jack)
+            {
+                Inventory.Instance.AddObject(Inventory.InventoryObject.Cheese, "Giant chunk of cheese");
+            }
+            else if (mirrorScene == MirrorScene.LittleMermaid)
+            {
+                Inventory.Instance.AddObject(Inventory.InventoryObject.CrystalBall, "Crystal ball");
+            }
+            else if (mirrorScene == MirrorScene.RedRiding)
+            {
+                Inventory.Instance.AddObject(Inventory.InventoryObject.Baguette, "Old baguettes");
+            }
+            else if (mirrorScene == MirrorScene.RobinHood)
+            {
+                Inventory.Instance.AddObject(Inventory.InventoryObject.Broth, "Pot of broth");
+            }
+            else if (mirrorScene == MirrorScene.SnowWhite)
+            {
+                Inventory.Instance.AddObject(Inventory.InventoryObject.Onion, "Onion");
             }
         }
     }

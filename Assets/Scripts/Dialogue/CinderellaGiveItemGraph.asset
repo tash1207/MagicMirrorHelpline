@@ -542,17 +542,17 @@ MonoBehaviour:
     x: 1112
     y: 207
     width: 190
-    height: 135
+    height: 155
   IsDragging: 0
-  IsSelected: 0
+  IsSelected: 1
   _sentence:
     CharacterName: Cinderella
     Text: "\u201CI already have shoes.\u201D"
     CharacterSprite: {fileID: 0}
   ParentNode: {fileID: -2267355824951604152}
   ChildNode: {fileID: -6275081522545235145}
-  _isExternalFunc: 0
-  _externalFunctionName: 
+  _isExternalFunc: 1
+  _externalFunctionName: UsedSlippers
   endOfMirrorScene: 0
   mirrorScene: 0
 --- !u!114 &2346929509012460592
@@ -734,17 +734,17 @@ MonoBehaviour:
     x: 787
     y: 197
     width: 190
-    height: 135
+    height: 155
   IsDragging: 0
-  IsSelected: 0
+  IsSelected: 1
   _sentence:
     CharacterName: Cinderella
     Text: "\u201CI don\u2019t think writing out my feelings will help right now.\u201D"
     CharacterSprite: {fileID: 0}
   ParentNode: {fileID: -2267355824951604152}
   ChildNode: {fileID: -8316814241983110529}
-  _isExternalFunc: 0
-  _externalFunctionName: 
+  _isExternalFunc: 1
+  _externalFunctionName: UsedPencil
   endOfMirrorScene: 0
   mirrorScene: 0
 --- !u!114 &6229842761621391971
