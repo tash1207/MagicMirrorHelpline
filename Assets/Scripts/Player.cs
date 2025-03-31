@@ -9,10 +9,12 @@ public class Player : MonoBehaviour
 
     [Header("Settings")]
     [SerializeField] float moveSpeed = 4.5f;
+    [SerializeField] float sprintMoveSpeed = 6.5f;
     
     Rigidbody2D rb2d;
     Vector2 moveInput;
     Vector2 lookDirection;
+    bool isSprinting;
 
     public bool pausePlayerMovement = false;
 
@@ -29,7 +31,7 @@ public class Player : MonoBehaviour
     void FixedUpdate()
     {
         if (pausePlayerMovement) { return; }
-        rb2d.linearVelocity = moveInput * moveSpeed;
+        rb2d.linearVelocity = moveInput * (isSprinting ? sprintMoveSpeed : moveSpeed);
     }
 
     void OnMove(InputValue value)
@@ -55,6 +57,11 @@ public class Player : MonoBehaviour
             playerAnimator.SetBool("IsWalking", false);
             reversePlayerAnimator.SetBool("IsWalking", false);
         }
+    }
+
+    void OnSprint(InputValue value)
+    {
+        isSprinting = value.isPressed;
     }
 
     void OnInteract(InputValue value)

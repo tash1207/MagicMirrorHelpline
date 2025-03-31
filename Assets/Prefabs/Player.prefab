@@ -163,6 +163,8 @@ MonoBehaviour:
   playerAnimator: {fileID: 8124116155015805948}
   reversePlayerAnimator: {fileID: 1246070049731737232}
   moveSpeed: 4.5
+  sprintMoveSpeed: 6.5
+  pausePlayerMovement: 0
 --- !u!114 &2902837551277435514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -278,6 +280,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d19c92654a354ad478d03e9e4450d60e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventoryCanvas: {fileID: 0}
+  inventoryText: {fileID: 0}
+  inventoryEnabled: 0
 --- !u!1 &8308382347648843946
 GameObject:
   m_ObjectHideFlags: 0
