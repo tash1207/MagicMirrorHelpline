@@ -7,6 +7,10 @@ public class Mirror : Interactable
     {
         Cinderella,
         Jack,
+        LittleMermaid,
+        RedRiding,
+        RobinHood,
+        SnowWhite,
     }
 
     [Header("UI")]
@@ -42,6 +46,7 @@ public class Mirror : Interactable
             {
                 if (Inventory.Instance.HasObject(Inventory.InventoryObject.Slippers))
                 {
+                    // TODO: check if we used slippers or pencil
                     Inventory.Instance.RemoveObject(Inventory.InventoryObject.Slippers);
                     Inventory.Instance.AddObject(Inventory.InventoryObject.Wine, "Bottle of white wine");
                 }
