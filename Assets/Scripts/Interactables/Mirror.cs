@@ -150,7 +150,11 @@ public class Mirror : Interactable
         }
         else
         {
-            Think("I'm sure someone will call the Magic Mirror helpline while I'm stuck here.");
+            string[] thoughts = new string[] {
+                "I'm sure someone will call for help while I'm stuck here.",
+                "These magic mirrors sure are handy. If only I could use them to call for delivery.",
+            };
+            Think(thoughts);
         }
     }
 

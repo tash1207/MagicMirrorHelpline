@@ -248,7 +248,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.07681996, y: 0.061737478}
+  m_Offset: {x: 0.07681996, y: -0.5}
   m_Size: {x: 1.4171025, y: 1.678986}
   m_Direction: 0
 --- !u!114 &2277710448466081798
@@ -263,10 +263,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f55048a02922f1419756f1f3032fc0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultThought: 
   bgSpriteRenderer: {fileID: 508761371260812612}
   bgActiveImage: {fileID: 0}
   bgDefaultImage: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   shimmer: {fileID: 3991865557264479457}
+  mirrorScene: 0
+  dialogBackground: {fileID: 0}
+  dialogBackgroundImage: {fileID: 0}
+  dialogBehaviour: {fileID: 0}
+  startingDialogNodeGraph: {fileID: 0}
+  giveItemDialogNodeGraph: {fileID: 0}
+  finalDialogNodeGraph: {fileID: 0}
+  finishedMirrorThought: 
 --- !u!1 &5345556069243971318
 GameObject:
   m_ObjectHideFlags: 0

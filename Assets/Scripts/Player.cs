@@ -98,7 +98,7 @@ public class Player : MonoBehaviour
     {
         Vector2 raycastOrigin = new Vector2(rb2d.position.x, rb2d.position.y);
         RaycastHit2D hit = Physics2D.Raycast(
-            raycastOrigin, lookDirection, 2f, LayerMask.GetMask("Interactable"));
+            raycastOrigin, lookDirection, 1.7f, LayerMask.GetMask("Interactable"));
 
         if (hit.collider != null)
         {
