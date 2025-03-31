@@ -3841,7 +3841,7 @@ PrefabInstance:
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: bgActiveImage
       value: 
-      objectReference: {fileID: -391340670, guid: 712ca4ff7b27e15408ee26e5b575413f, type: 3}
+      objectReference: {fileID: -21357841802768676, guid: fee7949c473913049ad2c3e5d3b84bc0, type: 3}
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: dialogBehaviour
       value: 
@@ -3932,7 +3932,7 @@ PrefabInstance:
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: bgActiveImage
       value: 
-      objectReference: {fileID: -2062624561, guid: 712ca4ff7b27e15408ee26e5b575413f, type: 3}
+      objectReference: {fileID: -6151239481870066906, guid: 295ba3d475317314aac874827d2c75b1, type: 3}
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: dialogBehaviour
       value: 
@@ -4037,7 +4037,7 @@ PrefabInstance:
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: bgActiveImage
       value: 
-      objectReference: {fileID: -2062624561, guid: 712ca4ff7b27e15408ee26e5b575413f, type: 3}
+      objectReference: {fileID: 1897125653861629237, guid: 80f669dc507d5cd4a91c57cd1955624e, type: 3}
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: dialogBehaviour
       value: 
@@ -11896,7 +11896,7 @@ PrefabInstance:
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: bgActiveImage
       value: 
-      objectReference: {fileID: 2039983424, guid: 2139c6f014783aa45b12f8af2d87a4af, type: 3}
+      objectReference: {fileID: -21357841802768676, guid: fee7949c473913049ad2c3e5d3b84bc0, type: 3}
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: dialogBehaviour
       value: 
@@ -12368,7 +12368,7 @@ PrefabInstance:
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: bgActiveImage
       value: 
-      objectReference: {fileID: -1222616122, guid: b3294b47b0f50414d85481bdea9a0a47, type: 3}
+      objectReference: {fileID: 4834215280439063166, guid: 00fee5c7b9296484b8cf0428962783eb, type: 3}
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: dialogBehaviour
       value: 
@@ -12954,7 +12954,7 @@ PrefabInstance:
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: bgActiveImage
       value: 
-      objectReference: {fileID: 727250982, guid: 712ca4ff7b27e15408ee26e5b575413f, type: 3}
+      objectReference: {fileID: -21357841802768676, guid: fee7949c473913049ad2c3e5d3b84bc0, type: 3}
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: dialogBehaviour
       value: 

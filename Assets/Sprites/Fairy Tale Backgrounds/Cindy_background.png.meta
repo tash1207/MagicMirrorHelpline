@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Cindy_background_0: -6151239481870066906
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

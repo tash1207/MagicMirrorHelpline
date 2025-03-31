@@ -264,7 +264,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultThought: 
-  bgSpriteRenderer: {fileID: 508761371260812612}
+  thinkDefaultThought1: 1
+  bgSpriteRenderer: {fileID: 6154493696638832407}
   bgActiveImage: {fileID: 0}
   bgDefaultImage: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   shimmer: {fileID: 3991865557264479457}

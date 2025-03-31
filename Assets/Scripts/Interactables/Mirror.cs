@@ -21,7 +21,7 @@ public class Mirror : Interactable
     [SerializeField] bool thinkDefaultThought1 = true;
 
     [Header("UI")]
-    [SerializeField] SpriteRenderer bgSpriteRenderer;
+    [SerializeField] GameObject bgSpriteRenderer;
     [SerializeField] Sprite bgActiveImage;
     [SerializeField] Sprite bgDefaultImage;
     [SerializeField] ParticleSystem shimmer;
@@ -39,6 +39,9 @@ public class Mirror : Interactable
     bool isRinging = false;
     bool hasStartedDialog = false;
     bool finishedMirrorTask = false;
+
+    float activeBgSize = 0.18f;
+    float defaultBgSize = 2.2f;
 
     void Start()
     {
@@ -168,14 +171,16 @@ public class Mirror : Interactable
     public void StartRinging()
     {
         isRinging = true;
-        bgSpriteRenderer.sprite = bgActiveImage;
+        bgSpriteRenderer.GetComponent<SpriteRenderer>().sprite = bgActiveImage;
+        bgSpriteRenderer.transform.localScale = new Vector3(activeBgSize, activeBgSize, 1);
         shimmer.Play();
     }
 
     public void SetToDefault()
     {
         isRinging = false;
-        bgSpriteRenderer.sprite = bgDefaultImage;
+        bgSpriteRenderer.GetComponent<SpriteRenderer>().sprite = bgDefaultImage;
+        bgSpriteRenderer.transform.localScale = new Vector3(defaultBgSize, defaultBgSize, 1f);
         shimmer.Stop();
     }
 

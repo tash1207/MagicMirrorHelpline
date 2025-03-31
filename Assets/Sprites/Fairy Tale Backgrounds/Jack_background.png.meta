@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Jack_background_0: 4834215280439063166
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
