@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8979270280174557373
+--- !u!114 &-8157763454986306010
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -16,193 +16,23 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: -101
-    y: 167
-    width: 190
-    height: 135
-  IsDragging: 0
-  IsSelected: 0
-  _sentence:
-    CharacterName: Robin Hood
-    Text: "\u201CI fail to see how chopping down the Good King\u2019s forest will
-      help.\u201D"
-    CharacterSprite: {fileID: 0}
-  ParentNode: {fileID: -4900798374889349988}
-  ChildNode: {fileID: -4900798374889349988}
-  _isExternalFunc: 0
-  _externalFunctionName: 
-  endOfMirrorScene: 0
-  mirrorScene: 0
---- !u!114 &-8384820966948069356
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1717f3c6dba9fa40844ddacac301510, type: 3}
-  m_Name: Answer Node
-  m_EditorClassIdentifier: 
-  ConnectedNodesList: []
-  NodeGraph: {fileID: 11400000}
-  Rect:
-    serializedVersion: 2
-    x: 183
-    y: -1183
-    width: 190
-    height: 155
-  IsDragging: 0
-  IsSelected: 0
-  Answers:
-  - "\u201CIsn\u2019t that something you should report to the police?\u201D"
-  - "\u201CSo you aren\u2019t single?\u201D"
-  - "\u201CWhen did this happen?\u201D"
-  RequiredObjects: 020000000200000002000000
-  ParentSentenceNode: {fileID: 2491408741645920933}
-  ChildSentenceNodes:
-  - {fileID: -4429073397460728704}
-  - {fileID: 4864059586887732953}
-  - {fileID: -6935027312615157730}
---- !u!114 &-6935027312615157730
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: Sentence Node
-  m_EditorClassIdentifier: 
-  ConnectedNodesList: []
-  NodeGraph: {fileID: 11400000}
-  Rect:
-    serializedVersion: 2
-    x: 442
-    y: -959
-    width: 190
-    height: 135
-  IsDragging: 0
-  IsSelected: 0
-  _sentence:
-    CharacterName: Robin Hood
-    Text: "\u201CYesterday! I just received word from my most reliable of informants.\u201D"
-    CharacterSprite: {fileID: 0}
-  ParentNode: {fileID: -8384820966948069356}
-  ChildNode: {fileID: 1490420860523550123}
-  _isExternalFunc: 0
-  _externalFunctionName: 
-  endOfMirrorScene: 0
-  mirrorScene: 0
---- !u!114 &-6167259159519996813
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: Sentence Node
-  m_EditorClassIdentifier: 
-  ConnectedNodesList: []
-  NodeGraph: {fileID: 11400000}
-  Rect:
-    serializedVersion: 2
-    x: 447
-    y: 258
-    width: 190
-    height: 135
-  IsDragging: 0
-  IsSelected: 0
-  _sentence:
-    CharacterName: Robin Hood
-    Text: "\u201CAh ha! Witchcraft will be used to defeat that monster! Friar Tuck,
-      please forgive me!\u201D"
-    CharacterSprite: {fileID: 0}
-  ParentNode: {fileID: -4900798374889349988}
-  ChildNode: {fileID: -4278639286677592358}
-  _isExternalFunc: 0
-  _externalFunctionName: 
-  endOfMirrorScene: 0
-  mirrorScene: 0
---- !u!114 &-5257673909488276103
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: Sentence Node
-  m_EditorClassIdentifier: 
-  ConnectedNodesList: []
-  NodeGraph: {fileID: 11400000}
-  Rect:
-    serializedVersion: 2
-    x: 176
-    y: -337
+    x: 1092
+    y: -209
     width: 190
     height: 135
   IsDragging: 0
   IsSelected: 0
   _sentence:
     CharacterName: 
-    Text: "\u201CEh, so unfortunately we aren\u2019t actually all-knowing here at
-      the Magic Mirror Helpline. I know, the \u2018Magic\u2019 part gives people
-      that impression sometimes.\u201D"
+    Text: "\u201CEh, learn sign language or something.\u201D"
     CharacterSprite: {fileID: 0}
-  ParentNode: {fileID: -4857636952317398239}
-  ChildNode: {fileID: -1147512036096222067}
+  ParentNode: {fileID: -6064406255901767532}
+  ChildNode: {fileID: -1793184906023739279}
   _isExternalFunc: 0
   _externalFunctionName: 
   endOfMirrorScene: 0
   mirrorScene: 0
---- !u!114 &-4900798374889349988
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1717f3c6dba9fa40844ddacac301510, type: 3}
-  m_Name: Answer Node
-  m_EditorClassIdentifier: 
-  ConnectedNodesList: []
-  NodeGraph: {fileID: 11400000}
-  Rect:
-    serializedVersion: 2
-    x: 189
-    y: 50
-    width: 190
-    height: 215
-  IsDragging: 0
-  IsSelected: 0
-  Answers:
-  - Give glass slippers
-  - Give fireman's axe
-  - Give music box
-  - Give pencil
-  - Give crystal ball
-  - Come back later
-  RequiredObjects: 010000000400000006000000050000000700000002000000
-  ParentSentenceNode: {fileID: 2835067597941622650}
-  ChildSentenceNodes:
-  - {fileID: 3529053094130339704}
-  - {fileID: -8979270280174557373}
-  - {fileID: 2835067597941622650}
-  - {fileID: -3247012380720493963}
-  - {fileID: -6167259159519996813}
-  - {fileID: 7529885352614029351}
---- !u!114 &-4857636952317398239
+--- !u!114 &-7965597854906726716
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -218,88 +48,24 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 180
-    y: -543
-    width: 190
-    height: 135
-  IsDragging: 0
-  IsSelected: 0
-  _sentence:
-    CharacterName: Robin Hood
-    Text: "\u201CWhere has that horrid, detestable man taken her?\u201D"
-    CharacterSprite: {fileID: 0}
-  ParentNode: {fileID: 1490420860523550123}
-  ChildNode: {fileID: -5257673909488276103}
-  _isExternalFunc: 0
-  _externalFunctionName: 
-  endOfMirrorScene: 0
-  mirrorScene: 0
---- !u!114 &-4429073397460728704
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: Sentence Node
-  m_EditorClassIdentifier: 
-  ConnectedNodesList: []
-  NodeGraph: {fileID: 11400000}
-  Rect:
-    serializedVersion: 2
-    x: -101
-    y: -972
-    width: 190
-    height: 135
-  IsDragging: 0
-  IsSelected: 0
-  _sentence:
-    CharacterName: Robin Hood
-    Text: "\u201CThat horrendous Sheriff of Nottingham is the one who helped the
-      Prince!\u201D"
-    CharacterSprite: {fileID: 0}
-  ParentNode: {fileID: -8384820966948069356}
-  ChildNode: {fileID: 1490420860523550123}
-  _isExternalFunc: 0
-  _externalFunctionName: 
-  endOfMirrorScene: 0
-  mirrorScene: 0
---- !u!114 &-4278639286677592358
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: Sentence Node
-  m_EditorClassIdentifier: 
-  ConnectedNodesList: []
-  NodeGraph: {fileID: 11400000}
-  Rect:
-    serializedVersion: 2
-    x: 782
-    y: 253
+    x: 798
+    y: -431
     width: 190
     height: 135
   IsDragging: 0
   IsSelected: 0
   _sentence:
     CharacterName: 
-    Text: "\u201CWait, before you run off-\u201D"
+    Text: "\u201CThey are enchanted. It\u2019ll help you walk, and dance, and do
+      all that human stuff.\u201D"
     CharacterSprite: {fileID: 0}
-  ParentNode: {fileID: -6167259159519996813}
-  ChildNode: {fileID: -1700516025051925669}
+  ParentNode: {fileID: 3265381372081038795}
+  ChildNode: {fileID: -6064406255901767532}
   _isExternalFunc: 0
   _externalFunctionName: 
   endOfMirrorScene: 0
   mirrorScene: 0
---- !u!114 &-3810445986155144298
+--- !u!114 &-7476849939595126779
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -315,23 +81,23 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 777
-    y: 449
+    x: 1055
+    y: -718
     width: 190
     height: 135
   IsDragging: 0
   IsSelected: 0
   _sentence:
-    CharacterName: Robin Hood
-    Text: "\u201CWhy would a mirror need broth?\u201D"
+    CharacterName: Little Mermaid
+    Text: "\u201CI don\u2019t think this will work.\u201D"
     CharacterSprite: {fileID: 0}
-  ParentNode: {fileID: 8675829747797301264}
-  ChildNode: {fileID: 483669504298620203}
+  ParentNode: {fileID: 3425922974490716679}
+  ChildNode: {fileID: 3425922974490716679}
   _isExternalFunc: 0
   _externalFunctionName: 
   endOfMirrorScene: 0
   mirrorScene: 0
---- !u!114 &-3247012380720493963
+--- !u!114 &-6626008821202016577
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -347,24 +113,23 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 187
-    y: 346
+    x: 492
+    y: 53
     width: 190
     height: 135
   IsDragging: 0
   IsSelected: 0
   _sentence:
-    CharacterName: Robin Hood
-    Text: "\u201CI already have writing instruments, I pen many a love letter to
-      my fair Maiden!\u201D"
+    CharacterName: Little Mermaid
+    Text: "\u201CNo, I want them!\u201D"
     CharacterSprite: {fileID: 0}
-  ParentNode: {fileID: -4900798374889349988}
-  ChildNode: {fileID: -4900798374889349988}
+  ParentNode: {fileID: -1517811771037466325}
+  ChildNode: {fileID: 8095086327422422553}
   _isExternalFunc: 0
   _externalFunctionName: 
   endOfMirrorScene: 0
   mirrorScene: 0
---- !u!114 &-1700516025051925669
+--- !u!114 &-6064406255901767532
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -380,23 +145,23 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 1140
-    y: 268
+    x: 1073
+    y: -419
     width: 190
     height: 135
   IsDragging: 0
   IsSelected: 0
   _sentence:
-    CharacterName: Robin Hood
-    Text: "\u201COn my gallant rescue?\u201D"
+    CharacterName: Little Mermaid
+    Text: "\u201CExcept talk.\u201D"
     CharacterSprite: {fileID: 0}
-  ParentNode: {fileID: -4278639286677592358}
-  ChildNode: {fileID: 8675829747797301264}
+  ParentNode: {fileID: -7965597854906726716}
+  ChildNode: {fileID: -8157763454986306010}
   _isExternalFunc: 0
   _externalFunctionName: 
   endOfMirrorScene: 0
   mirrorScene: 0
---- !u!114 &-1147512036096222067
+--- !u!114 &-5103060205808412455
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -412,18 +177,274 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 180
-    y: -139
+    x: 549
+    y: 844
     width: 190
     height: 135
   IsDragging: 0
   IsSelected: 0
   _sentence:
-    CharacterName: Robin Hood
-    Text: "\u201CThere must be something you can do! Any items of assistance?\u201D"
+    CharacterName: Little Mermaid
+    Text: "\u201CHere, it\u2019s a crystal ball I use to watch humans humaning!\u201D"
     CharacterSprite: {fileID: 0}
-  ParentNode: {fileID: -5257673909488276103}
-  ChildNode: {fileID: -4900798374889349988}
+  ParentNode: {fileID: -48938150366173906}
+  ChildNode: {fileID: 4290674838425538820}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 0
+  mirrorScene: 0
+--- !u!114 &-4092569600701639734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 1044
+    y: -884
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Little Mermaid
+    Text: "\u201CI don\u2019t think this will work.\u201D"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 3425922974490716679}
+  ChildNode: {fileID: 3425922974490716679}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 0
+  mirrorScene: 0
+--- !u!114 &-4043136052256944757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 271
+    y: -681
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: 
+    Text: "\u201CI\u2019ll be back once I have a solution for you.\u201D"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 3425922974490716679}
+  ChildNode: {fileID: 0}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 0
+  mirrorScene: 0
+--- !u!114 &-3785915058044283593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 480
+    y: -154
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Little Mermaid
+    Text: "\u201CNo, it\u2019s great! I\u2019m great at learning Human stuff!\u201D"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 5378838742164456461}
+  ChildNode: {fileID: 8095086327422422553}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 0
+  mirrorScene: 0
+--- !u!114 &-3741671186392166790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 138
+    y: 423
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Little Mermaid
+    Text: "\u201CSomething from my human collection? Hmmmm\u2026.\u201D"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 8852620898620130649}
+  ChildNode: {fileID: 126127089919344316}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 0
+  mirrorScene: 0
+--- !u!114 &-2569496226865984788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 833
+    y: 1038
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: 
+    Text: "\u201CHappy to help.\u201D"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 4290674838425538820}
+  ChildNode: {fileID: 0}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 1
+  mirrorScene: 2
+--- !u!114 &-1793184906023739279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 796
+    y: -221
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Little Mermaid
+    Text: "\u201CHmmmm.\u201D"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -8157763454986306010}
+  ChildNode: {fileID: -1517811771037466325}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 0
+  mirrorScene: 0
+--- !u!114 &-1517811771037466325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 789
+    y: -22
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: 
+    Text: "\u201CIf you don\u2019t want them-\u201D"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -1793184906023739279}
+  ChildNode: {fileID: -6626008821202016577}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 0
+  mirrorScene: 0
+--- !u!114 &-48938150366173906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 258
+    y: 830
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Little Mermaid
+    Text: "\u201CDo I ever!\u201D"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 126127089919344316}
+  ChildNode: {fileID: -5103060205808412455}
   _isExternalFunc: 0
   _externalFunctionName: 
   endOfMirrorScene: 0
@@ -438,35 +459,38 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 33f741ea10ebcf842a91c9b871dd032a, type: 3}
-  m_Name: RobinHoodNodeGraph
+  m_Name: LittleMermaidComeBackGraph
   m_EditorClassIdentifier: 
   NodesList:
-  - {fileID: 7578143019513134948}
-  - {fileID: -8384820966948069356}
-  - {fileID: 2491408741645920933}
-  - {fileID: -4429073397460728704}
-  - {fileID: 4864059586887732953}
-  - {fileID: -6935027312615157730}
-  - {fileID: 1490420860523550123}
-  - {fileID: -4857636952317398239}
-  - {fileID: -5257673909488276103}
-  - {fileID: -1147512036096222067}
-  - {fileID: -4900798374889349988}
-  - {fileID: 3529053094130339704}
-  - {fileID: -8979270280174557373}
-  - {fileID: 2835067597941622650}
-  - {fileID: -3247012380720493963}
-  - {fileID: -6167259159519996813}
-  - {fileID: 7529885352614029351}
-  - {fileID: -4278639286677592358}
-  - {fileID: -1700516025051925669}
-  - {fileID: 8675829747797301264}
-  - {fileID: -3810445986155144298}
-  - {fileID: 483669504298620203}
-  - {fileID: 2062225125681064978}
+  - {fileID: 6617393560325697553}
+  - {fileID: 3425922974490716679}
+  - {fileID: -4092569600701639734}
+  - {fileID: -7476849939595126779}
+  - {fileID: 3265381372081038795}
+  - {fileID: 311380528672680219}
+  - {fileID: -4043136052256944757}
+  - {fileID: -7965597854906726716}
+  - {fileID: -6064406255901767532}
+  - {fileID: -8157763454986306010}
+  - {fileID: -1793184906023739279}
+  - {fileID: -1517811771037466325}
+  - {fileID: -6626008821202016577}
+  - {fileID: 5378838742164456461}
+  - {fileID: -3785915058044283593}
+  - {fileID: 8095086327422422553}
+  - {fileID: 8852620898620130649}
+  - {fileID: 8990648761628732952}
+  - {fileID: -3741671186392166790}
+  - {fileID: 6099566825019009668}
+  - {fileID: 1321048313241654485}
+  - {fileID: 126127089919344316}
+  - {fileID: -48938150366173906}
+  - {fileID: -5103060205808412455}
+  - {fileID: 4290674838425538820}
+  - {fileID: -2569496226865984788}
   NodeToDrawLineFrom: {fileID: 0}
   LinePosition: {x: 0, y: 0}
---- !u!114 &483669504298620203
+--- !u!114 &126127089919344316
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -482,24 +506,24 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 495
-    y: 453
+    x: 258
+    y: 633
     width: 190
     height: 135
   IsDragging: 0
   IsSelected: 0
   _sentence:
     CharacterName: 
-    Text: "\u201CI\u2019m a person and I\u2019m hungry! Come on, I just majorly helped
-      you out.\u201D"
+    Text: "\u201CGot anything you won\u2019t need when you\u2019re up in the human
+      realm?\u201D"
     CharacterSprite: {fileID: 0}
-  ParentNode: {fileID: -3810445986155144298}
-  ChildNode: {fileID: 2062225125681064978}
+  ParentNode: {fileID: 1321048313241654485}
+  ChildNode: {fileID: -48938150366173906}
   _isExternalFunc: 0
   _externalFunctionName: 
   endOfMirrorScene: 0
   mirrorScene: 0
---- !u!114 &1490420860523550123
+--- !u!114 &311380528672680219
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -515,23 +539,190 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 179
-    y: -738
+    x: 505
+    y: -621
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Little Mermaid
+    Text: "\u201COh good! Now I just need to learn how to write in Human!\u201D"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 3425922974490716679}
+  ChildNode: {fileID: 5378838742164456461}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 0
+  mirrorScene: 0
+--- !u!114 &1321048313241654485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 518
+    y: 482
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Little Mermaid
+    Text: "\u201CI don\u2019t really have human food either. It goes bad too quickly
+      underwater.\u201D"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 6099566825019009668}
+  ChildNode: {fileID: 126127089919344316}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 0
+  mirrorScene: 0
+--- !u!114 &3265381372081038795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 773
+    y: -618
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Little Mermaid
+    Text: "\u201CYou just have to rub it in that I don\u2019t have legs yet, don\u2019t
+      you?\u201D"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 3425922974490716679}
+  ChildNode: {fileID: -7965597854906726716}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 0
+  mirrorScene: 0
+--- !u!114 &3425922974490716679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1717f3c6dba9fa40844ddacac301510, type: 3}
+  m_Name: Answer Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 660
+    y: -871
+    width: 190
+    height: 195
+  IsDragging: 0
+  IsSelected: 0
+  Answers:
+  - Give music box
+  - Give fireman's axe
+  - Give glass slippers
+  - Give pencil
+  - Come back later
+  RequiredObjects: 0600000004000000010000000500000002000000
+  ParentSentenceNode: {fileID: -7476849939595126779}
+  ChildSentenceNodes:
+  - {fileID: -4092569600701639734}
+  - {fileID: -7476849939595126779}
+  - {fileID: 3265381372081038795}
+  - {fileID: 311380528672680219}
+  - {fileID: -4043136052256944757}
+--- !u!114 &4290674838425538820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 832
+    y: 843
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Little Mermaid
+    Text: "\u201CThank you so much, I\u2019ll tell all my new human friends about
+      you!\u201D"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -5103060205808412455}
+  ChildNode: {fileID: -2569496226865984788}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 0
+  mirrorScene: 0
+--- !u!114 &5378838742164456461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 482
+    y: -406
     width: 190
     height: 135
   IsDragging: 0
   IsSelected: 0
   _sentence:
     CharacterName: 
-    Text: "\u201COk, so how can the Magic Mirror Helpline help you?\u201D"
+    Text: "\u201CWait, maybe this isn\u2019t the best idea then\u2026\u201D"
     CharacterSprite: {fileID: 0}
-  ParentNode: {fileID: -6935027312615157730}
-  ChildNode: {fileID: -4857636952317398239}
+  ParentNode: {fileID: 311380528672680219}
+  ChildNode: {fileID: -3785915058044283593}
   _isExternalFunc: 0
   _externalFunctionName: 
   endOfMirrorScene: 0
   mirrorScene: 0
---- !u!114 &2062225125681064978
+--- !u!114 &6099566825019009668
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -547,186 +738,23 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 487
-    y: 694
-    width: 190
-    height: 135
-  IsDragging: 0
-  IsSelected: 0
-  _sentence:
-    CharacterName: Robin Hood
-    Text: "\u201CVery well, the finest of a bandit camp\u2019s broth for your help.
-      I must away!\u201D"
-    CharacterSprite: {fileID: 0}
-  ParentNode: {fileID: 483669504298620203}
-  ChildNode: {fileID: 0}
-  _isExternalFunc: 0
-  _externalFunctionName: 
-  endOfMirrorScene: 1
-  mirrorScene: 4
---- !u!114 &2491408741645920933
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: Sentence Node
-  m_EditorClassIdentifier: 
-  ConnectedNodesList: []
-  NodeGraph: {fileID: 11400000}
-  Rect:
-    serializedVersion: 2
-    x: -105
-    y: -1191
-    width: 190
-    height: 135
-  IsDragging: 0
-  IsSelected: 0
-  _sentence:
-    CharacterName: Robin Hood
-    Text: "\u201CThe love of my life, the beauty of the world, the wonderful Maid
-      Marian has been kidnapped by the vile, despicable Prince John!\u201D"
-    CharacterSprite: {fileID: 0}
-  ParentNode: {fileID: 7578143019513134948}
-  ChildNode: {fileID: -8384820966948069356}
-  _isExternalFunc: 0
-  _externalFunctionName: 
-  endOfMirrorScene: 0
-  mirrorScene: 0
---- !u!114 &2835067597941622650
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: Sentence Node
-  m_EditorClassIdentifier: 
-  ConnectedNodesList: []
-  NodeGraph: {fileID: 11400000}
-  Rect:
-    serializedVersion: 2
-    x: -28
-    y: 317
-    width: 190
-    height: 135
-  IsDragging: 0
-  IsSelected: 0
-  _sentence:
-    CharacterName: Robin Hood
-    Text: "\u201CI have no need for stimulants, my passion for justice keeps me awake!\u201D"
-    CharacterSprite: {fileID: 0}
-  ParentNode: {fileID: -4900798374889349988}
-  ChildNode: {fileID: -4900798374889349988}
-  _isExternalFunc: 0
-  _externalFunctionName: 
-  endOfMirrorScene: 0
-  mirrorScene: 0
---- !u!114 &3529053094130339704
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: Sentence Node
-  m_EditorClassIdentifier: 
-  ConnectedNodesList: []
-  NodeGraph: {fileID: 11400000}
-  Rect:
-    serializedVersion: 2
-    x: -71
-    y: 2
-    width: 190
-    height: 135
-  IsDragging: 0
-  IsSelected: 0
-  _sentence:
-    CharacterName: Robin Hood
-    Text: "\u201CAs much as my beloved Maid Marian would appreciate a gift upon her
-      rescue, this isn\u2019t really her style.\u201D"
-    CharacterSprite: {fileID: 0}
-  ParentNode: {fileID: -4900798374889349988}
-  ChildNode: {fileID: -4900798374889349988}
-  _isExternalFunc: 0
-  _externalFunctionName: 
-  endOfMirrorScene: 0
-  mirrorScene: 0
---- !u!114 &4864059586887732953
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: Sentence Node
-  m_EditorClassIdentifier: 
-  ConnectedNodesList: []
-  NodeGraph: {fileID: 11400000}
-  Rect:
-    serializedVersion: 2
-    x: 180
-    y: -964
-    width: 190
-    height: 135
-  IsDragging: 0
-  IsSelected: 0
-  _sentence:
-    CharacterName: Robin Hood
-    Text: "\u201CMy heart will always beat only for her!\u201D"
-    CharacterSprite: {fileID: 0}
-  ParentNode: {fileID: -8384820966948069356}
-  ChildNode: {fileID: 1490420860523550123}
-  _isExternalFunc: 0
-  _externalFunctionName: 
-  endOfMirrorScene: 0
-  mirrorScene: 0
---- !u!114 &7529885352614029351
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: Sentence Node
-  m_EditorClassIdentifier: 
-  ConnectedNodesList: []
-  NodeGraph: {fileID: 11400000}
-  Rect:
-    serializedVersion: 2
-    x: 473
-    y: 87
+    x: 761
+    y: 304
     width: 190
     height: 135
   IsDragging: 0
   IsSelected: 0
   _sentence:
     CharacterName: 
-    Text: "\u201CI\u2019ll be back once I have a solution for you.\u201D"
+    Text: "\u201CI\u2019m not a mirror, I\u2019m a person.\u201D"
     CharacterSprite: {fileID: 0}
-  ParentNode: {fileID: -4900798374889349988}
-  ChildNode: {fileID: 0}
+  ParentNode: {fileID: 8990648761628732952}
+  ChildNode: {fileID: 1321048313241654485}
   _isExternalFunc: 0
   _externalFunctionName: 
   endOfMirrorScene: 0
-  mirrorScene: 4
---- !u!114 &7578143019513134948
+  mirrorScene: 0
+--- !u!114 &6617393560325697553
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -742,23 +770,23 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: -388
-    y: -1206
+    x: 307
+    y: -887
     width: 190
     height: 135
   IsDragging: 0
   IsSelected: 0
   _sentence:
-    CharacterName: 
-    Text: "\u201CHi, this is the Magic Mirror Helpline, what's your emergency?\u201D"
+    CharacterName: Little Mermaid
+    Text: "\u201COh, you\u2019re back!\u201D"
     CharacterSprite: {fileID: 0}
   ParentNode: {fileID: 0}
-  ChildNode: {fileID: 2491408741645920933}
+  ChildNode: {fileID: 3425922974490716679}
   _isExternalFunc: 0
   _externalFunctionName: 
   endOfMirrorScene: 0
   mirrorScene: 0
---- !u!114 &8675829747797301264
+--- !u!114 &8095086327422422553
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -774,19 +802,81 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 1154
-    y: 475
+    x: 170
+    y: -31
     width: 190
     height: 135
   IsDragging: 0
   IsSelected: 0
   _sentence:
-    CharacterName: 
-    Text: "\u201CThat, yeah. You\u2019re at camp, right? Got any leftover broth to
-      spare?\u201D"
+    CharacterName: Little Mermaid
+    Text: "\u201CSo what do you want in exchange? That\u2019s how witches work, right?\u201D"
     CharacterSprite: {fileID: 0}
-  ParentNode: {fileID: -1700516025051925669}
-  ChildNode: {fileID: -3810445986155144298}
+  ParentNode: {fileID: -6626008821202016577}
+  ChildNode: {fileID: 8852620898620130649}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 0
+  mirrorScene: 0
+--- !u!114 &8852620898620130649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1717f3c6dba9fa40844ddacac301510, type: 3}
+  m_Name: Answer Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 150
+    y: 225
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  Answers:
+  - Ask for food
+  - Ask for something from her collection
+  RequiredObjects: 0200000002000000
+  ParentSentenceNode: {fileID: 8095086327422422553}
+  ChildSentenceNodes:
+  - {fileID: 8990648761628732952}
+  - {fileID: -3741671186392166790}
+--- !u!114 &8990648761628732952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 477
+    y: 256
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Little Mermaid
+    Text: "\u201CYou want something to eat? I don\u2019t have anything that mirrors
+      can eat in my collection\u2026\u201D"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 8852620898620130649}
+  ChildNode: {fileID: 6099566825019009668}
   _isExternalFunc: 0
   _externalFunctionName: 
   endOfMirrorScene: 0
