@@ -94,6 +94,15 @@ public class Player : MonoBehaviour
         }
     }
 
+    void OnMute(InputValue value)
+    {
+        if (value.isPressed)
+        {
+            AudioSource audioSource = AudioManager.Instance.GetComponent<AudioSource>();
+            audioSource.mute = !audioSource.mute;
+        }
+    }
+
     Interactable GetCollidedInteractable()
     {
         Vector2 raycastOrigin = new Vector2(rb2d.position.x, rb2d.position.y);
