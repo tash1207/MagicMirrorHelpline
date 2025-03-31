@@ -1,5 +1,198 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8316814241983110529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 616
+    y: 183
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: 
+    Text: "\u201COf course it will! Write out everything that scares you and then
+      toss it in the trash! Burn the paper! Throw your fears away!\u201D"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 5359719956656335104}
+  ChildNode: {fileID: 4980115793370425616}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 0
+  mirrorScene: 0
+--- !u!114 &-7476371141982062891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 505
+    y: 1252
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Cinderella
+    Text: "\u201CNo thank you.\u201D"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -1485071414344236121}
+  ChildNode: {fileID: 7186899938966690562}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 0
+  mirrorScene: 0
+--- !u!114 &-7040619831828205371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 611
+    y: -168
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Cinderella
+    Text: "\u201CI'll be thrown in the dungeons, for sure!\u201D"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -2267355824951604152}
+  ChildNode: {fileID: 0}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 0
+  mirrorScene: 0
+--- !u!114 &-6275081522545235145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 936
+    y: 224
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: 
+    Text: "\u201CYes, but these are magical.\u201D"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 1116861937340218333}
+  ChildNode: {fileID: 5072692329867664201}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 0
+  mirrorScene: 0
+--- !u!114 &-6125095219406483677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 49
+    y: 863
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Cinderella
+    Text: "\u201CAm I supposed to drink it? For courage?\u201D"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -1462955548354947595}
+  ChildNode: {fileID: 4764899054507274005}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 0
+  mirrorScene: 0
+--- !u!114 &-5908701388956077266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 861
+    y: 1229
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Cinderella
+    Text: "\u201CI suppose that makes sense, coming from a Fairy Godmother.\u201D"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -1485071414344236121}
+  ChildNode: {fileID: 2346929509012460592}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 0
+  mirrorScene: 0
 --- !u!114 &-2267355824951604152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16,19 +209,184 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 193
-    y: 222
+    x: 306
+    y: -202
+    width: 190
+    height: 195
+  IsDragging: 0
+  IsSelected: 0
+  Answers:
+  - Give music box
+  - Give fireman's axe
+  - Give pencil
+  - Give glass slippers
+  - Come back later
+  RequiredObjects: 0000000000000000000000000000000002000000
+  ParentSentenceNode: {fileID: 104204982993887232}
+  ChildSentenceNodes:
+  - {fileID: 6229842761621391971}
+  - {fileID: -7040619831828205371}
+  - {fileID: 5359719956656335104}
+  - {fileID: 1116861937340218333}
+  - {fileID: -1135547911077801253}
+--- !u!114 &-2126630664524125410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 918
+    y: 601
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: 
+    Text: "\u201C...yes?\u201D"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 5072692329867664201}
+  ChildNode: {fileID: 1036619761908725653}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 0
+  mirrorScene: 0
+--- !u!114 &-1485071414344236121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1717f3c6dba9fa40844ddacac301510, type: 3}
+  m_Name: Answer Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 609
+    y: 1054
     width: 190
     height: 135
   IsDragging: 0
   IsSelected: 0
   Answers:
-  - Give music box
-  - Give sword
-  ParentSentenceNode: {fileID: 0}
+  - "\u201CThink happy thoughts\u201D"
+  - "\u201CPicture everyone else in their underwear.\u201D"
+  RequiredObjects: 0200000002000000
+  ParentSentenceNode: {fileID: 1082704593000673508}
   ChildSentenceNodes:
-  - {fileID: 6929263359615271429}
-  - {fileID: 1304456720665606195}
+  - {fileID: -5908701388956077266}
+  - {fileID: -7476371141982062891}
+--- !u!114 &-1462955548354947595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 56
+    y: 630
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: 
+    Text: "\u201CHere, grab a bottle of wine from one of the servants.\u201D"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 4660710488662415285}
+  ChildNode: {fileID: -6125095219406483677}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 0
+  mirrorScene: 0
+--- !u!114 &-1274571795128835961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 845
+    y: 1620
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Cinderella
+    Text: "\u201CThank you, Fairy Godmother! I\u2019ll be off!\u201D"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 2346929509012460592}
+  ChildNode: {fileID: 0}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 1
+  mirrorScene: 0
+--- !u!114 &-1135547911077801253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 256
+    y: 37
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: 
+    Text: "\u201CI\u2019ll be back once I have a solution for you.\u201D"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -2267355824951604152}
+  ChildNode: {fileID: 0}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 1
+  mirrorScene: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43,11 +401,257 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodesList:
   - {fileID: -2267355824951604152}
-  - {fileID: 6929263359615271429}
-  - {fileID: 1304456720665606195}
+  - {fileID: 104204982993887232}
+  - {fileID: 6229842761621391971}
+  - {fileID: -7040619831828205371}
+  - {fileID: 5359719956656335104}
+  - {fileID: 1116861937340218333}
+  - {fileID: -1135547911077801253}
+  - {fileID: -8316814241983110529}
+  - {fileID: 4980115793370425616}
+  - {fileID: -6275081522545235145}
+  - {fileID: 5072692329867664201}
+  - {fileID: -2126630664524125410}
+  - {fileID: 1036619761908725653}
+  - {fileID: 4660710488662415285}
+  - {fileID: -1462955548354947595}
+  - {fileID: -6125095219406483677}
+  - {fileID: 4764899054507274005}
+  - {fileID: 1082704593000673508}
+  - {fileID: -1485071414344236121}
+  - {fileID: -5908701388956077266}
+  - {fileID: 2346929509012460592}
+  - {fileID: -1274571795128835961}
+  - {fileID: -7476371141982062891}
+  - {fileID: 7186899938966690562}
+  - {fileID: 6652963143595583423}
   NodeToDrawLineFrom: {fileID: 0}
   LinePosition: {x: 0, y: 0}
---- !u!114 &1304456720665606195
+--- !u!114 &104204982993887232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 69
+    y: -192
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Cinderella
+    Text: '"Oh! You''re back!"'
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 0}
+  ChildNode: {fileID: -2267355824951604152}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 0
+  mirrorScene: 0
+--- !u!114 &1036619761908725653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 607
+    y: 634
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Cinderella
+    Text: "\u201CThank you, thank you! Oh, I hope I get to dance with the Prince!\u201D"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -2126630664524125410}
+  ChildNode: {fileID: 4660710488662415285}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 0
+  mirrorScene: 0
+--- !u!114 &1082704593000673508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 616
+    y: 868
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Cinderella
+    Text: "\u201CWell then what do I do?\u201D"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 4764899054507274005}
+  ChildNode: {fileID: -1485071414344236121}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 0
+  mirrorScene: 0
+--- !u!114 &1116861937340218333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 940
+    y: 14
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Cinderella
+    Text: "\u201CI already have shoes.\u201D"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -2267355824951604152}
+  ChildNode: {fileID: -6275081522545235145}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 0
+  mirrorScene: 0
+--- !u!114 &2346929509012460592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 845
+    y: 1449
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: 
+    Text: "\u201CI\u2019m not-\u201D"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -5908701388956077266}
+  ChildNode: {fileID: -1274571795128835961}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 0
+  mirrorScene: 0
+--- !u!114 &4660710488662415285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 326
+    y: 637
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: 
+    Text: "\u201CHold on!\u201D"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 1036619761908725653}
+  ChildNode: {fileID: -1462955548354947595}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 0
+  mirrorScene: 0
+--- !u!114 &4764899054507274005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 314
+    y: 861
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: 
+    Text: "\u201CWhat? No! That'd be highly irresponsible of me! I need it. For cooking.\u201D "
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -6125095219406483677}
+  ChildNode: {fileID: 1082704593000673508}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 0
+  mirrorScene: 0
+--- !u!114 &4980115793370425616
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -64,20 +668,22 @@ MonoBehaviour:
   Rect:
     serializedVersion: 2
     x: 598
-    y: 365
+    y: 386
     width: 190
     height: 135
   IsDragging: 0
-  IsSelected: 1
+  IsSelected: 0
   _sentence:
     CharacterName: Cinderella
-    Text: '"That thing looks heavy."'
+    Text: "\u201CI guess that could work\u2026\u201D"
     CharacterSprite: {fileID: 0}
-  ParentNode: {fileID: -2267355824951604152}
-  ChildNode: {fileID: 0}
+  ParentNode: {fileID: -8316814241983110529}
+  ChildNode: {fileID: 1036619761908725653}
   _isExternalFunc: 0
   _externalFunctionName: 
---- !u!114 &6929263359615271429
+  endOfMirrorScene: 0
+  mirrorScene: 0
+--- !u!114 &5072692329867664201
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -93,8 +699,72 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 608
-    y: 216
+    x: 924
+    y: 423
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Cinderella
+    Text: "\u201CWill they make me more confident?\u201D"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -6275081522545235145}
+  ChildNode: {fileID: -2126630664524125410}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 0
+  mirrorScene: 0
+--- !u!114 &5359719956656335104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 615
+    y: 4
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Cinderella
+    Text: "\u201CI don\u2019t think writing out my feelings will help right now.\u201D"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -2267355824951604152}
+  ChildNode: {fileID: -8316814241983110529}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 0
+  mirrorScene: 0
+--- !u!114 &6229842761621391971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 612
+    y: -345
     width: 190
     height: 135
   IsDragging: 0
@@ -107,3 +777,69 @@ MonoBehaviour:
   ChildNode: {fileID: 0}
   _isExternalFunc: 0
   _externalFunctionName: 
+  endOfMirrorScene: 0
+  mirrorScene: 0
+--- !u!114 &6652963143595583423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 517
+    y: 1644
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Cinderella
+    Text: "\u201CI guess I\u2019ll have to go in sometime. Thank you for your help!\u201D"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 7186899938966690562}
+  ChildNode: {fileID: 0}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 1
+  mirrorScene: 0
+--- !u!114 &7186899938966690562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 517
+    y: 1448
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: 
+    Text: "\u201CFine, it works for some people, you know.\u201D"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -7476371141982062891}
+  ChildNode: {fileID: 6652963143595583423}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 0
+  mirrorScene: 0
