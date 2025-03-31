@@ -442,7 +442,7 @@ MonoBehaviour:
   - Give pencil
   - Give glass slippers
   - Come back later
-  RequiredObjects: 0000000000000000000000000000000002000000
+  RequiredObjects: 0000000000000000000000000100000002000000
   ParentSentenceNode: {fileID: 244232206319788523}
   ChildSentenceNodes:
   - {fileID: 244232206319788523}
@@ -980,7 +980,7 @@ MonoBehaviour:
   ChildNode: {fileID: 0}
   _isExternalFunc: 0
   _externalFunctionName: 
-  endOfMirrorScene: 1
+  endOfMirrorScene: 0
   mirrorScene: 0
 --- !u!114 &2699515729467947720
 MonoBehaviour:

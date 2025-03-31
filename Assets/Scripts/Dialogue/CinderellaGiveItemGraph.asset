@@ -221,7 +221,7 @@ MonoBehaviour:
   - Give pencil
   - Give glass slippers
   - Come back later
-  RequiredObjects: 0000000000000000000000000000000002000000
+  RequiredObjects: 0000000000000000000000000100000002000000
   ParentSentenceNode: {fileID: 104204982993887232}
   ChildSentenceNodes:
   - {fileID: 6229842761621391971}
@@ -385,7 +385,7 @@ MonoBehaviour:
   ChildNode: {fileID: 0}
   _isExternalFunc: 0
   _externalFunctionName: 
-  endOfMirrorScene: 1
+  endOfMirrorScene: 0
   mirrorScene: 0
 --- !u!114 &11400000
 MonoBehaviour:
@@ -453,7 +453,7 @@ MonoBehaviour:
     CharacterName: Cinderella
     Text: '"Oh! You''re back!"'
     CharacterSprite: {fileID: 0}
-  ParentNode: {fileID: 11400000, guid: 1fd1181c877476e4381a6bbae985b008, type: 2}
+  ParentNode: {fileID: 0}
   ChildNode: {fileID: -2267355824951604152}
   _isExternalFunc: 0
   _externalFunctionName: 
