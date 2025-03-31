@@ -3095,9 +3095,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 158
+        y: 146
         width: 32
-        height: 29
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3117,9 +3117,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 158
+        y: 146
         width: 32
-        height: 29
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3361,7 +3361,7 @@ TextureImporter:
         x: 0
         y: 129
         width: 32
-        height: 29
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3383,7 +3383,7 @@ TextureImporter:
         x: 32
         y: 129
         width: 32
-        height: 29
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3405,7 +3405,7 @@ TextureImporter:
         x: 64
         y: 129
         width: 32
-        height: 29
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3416,28 +3416,6 @@ TextureImporter:
       bones: []
       spriteID: 6a874b0375b179b4ca02def6f850ac21
       internalID: -742104006
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: InteriorTilesLITE_154
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 129
-        width: 32
-        height: 29
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 85e8bed5f42db7648a2a1ca4b3774233
-      internalID: 179683388
       vertices: []
       indices: 
       edges: []
@@ -3601,9 +3579,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 100
+        y: 97
         width: 32
-        height: 29
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3623,9 +3601,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 100
+        y: 97
         width: 32
-        height: 29
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3645,9 +3623,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 100
+        y: 97
         width: 32
-        height: 29
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3799,9 +3777,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 42
+        y: 43
         width: 32
-        height: 29
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3823,7 +3801,7 @@ TextureImporter:
         x: 32
         y: 42
         width: 32
-        height: 29
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

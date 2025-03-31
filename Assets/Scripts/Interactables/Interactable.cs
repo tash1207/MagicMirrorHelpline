@@ -11,7 +11,7 @@ public class Interactable : MonoBehaviour
 
     public virtual void Interact()
     {
-        if (defaultThought != null)
+        if (defaultThought != null && defaultThought != "")
         {
             Think(defaultThought);
         }
