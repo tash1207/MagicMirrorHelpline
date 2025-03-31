@@ -221,7 +221,7 @@ MonoBehaviour:
   - Give pencil
   - Give glass slippers
   - Come back later
-  RequiredObjects: 0000000000000000000000000100000002000000
+  RequiredObjects: 0600000004000000050000000100000002000000
   ParentSentenceNode: {fileID: 104204982993887232}
   ChildSentenceNodes:
   - {fileID: 6229842761621391971}

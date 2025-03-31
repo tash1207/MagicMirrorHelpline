@@ -10,6 +10,15 @@ public class Inventory : MonoBehaviour
         Slippers,
         True,
         Wine,
+        Axe,
+        Pencil,
+        MusicBox,
+        CrystalBall,
+        Onion,
+        Baguette,
+        Cheese,
+        Spices,
+        Broth,
     }
 
     public static Inventory Instance { get; private set; }
