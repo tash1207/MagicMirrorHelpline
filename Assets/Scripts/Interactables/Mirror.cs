@@ -184,13 +184,13 @@ public class Mirror : Interactable
         FindAnyObjectByType<Player>().PausePlayerMovement();
         dialogBackgroundImage.sprite = bgActiveImage;
         dialogBackground.SetActive(true);
-        AudioManager.Instance.PlayMagicAudio();
+        MusicManager.Instance.PlayMagicAudio();
     }
 
     void EndDialogScene()
     {
         FindAnyObjectByType<Player>().pausePlayerMovement = false;
         dialogBackground.SetActive(false);
-        AudioManager.Instance.PlayOfficeAudio();
+        MusicManager.Instance.PlayOfficeAudio();
     }
 }

@@ -3,6 +3,8 @@ using UnityEngine;
 public class Axe : Interactable
 {
     [SerializeField] GameObject brokenCase;
+    [SerializeField] AudioClip brokenGlassSound;
+
     void Awake()
     {
         objectName = "Axe";
@@ -31,6 +33,7 @@ public class Axe : Interactable
     {
         if (base.PickUp())
         {
+            SoundFXManager.Instance.PlaySoundFXClip(brokenGlassSound, 1f);
             brokenCase.SetActive(true);
             Inventory.Instance.AddObject(Inventory.InventoryObject.Axe, this);
             return true;

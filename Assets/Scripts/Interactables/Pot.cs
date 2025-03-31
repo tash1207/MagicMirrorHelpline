@@ -39,12 +39,18 @@ public class Pot : Interactable
         }
         else
         {
-            MirrorManager.Instance.EnableMirror1();
             string[] thoughts = new string[] {
                 "I could use this, if I had any ingredients.",
-                "Crap, I guess duty calls. No need to make others suffer just because I'm hungry."
             };
             Think(thoughts);
+            performFollowUpAction = true;
         }
+    }
+
+    override public void FollowUpAction()
+    {
+        MirrorManager.Instance.EnableMirror1();
+        Think("Crap, I guess duty calls. No need to make others suffer just because I'm hungry.");
+        performFollowUpAction = false;
     }
 }

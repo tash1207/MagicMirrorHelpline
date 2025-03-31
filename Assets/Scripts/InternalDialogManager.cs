@@ -70,9 +70,13 @@ public class InternalDialogManager : MonoBehaviour
         dialogCanvas.SetActive(false);
         FindAnyObjectByType<Player>().pausePlayerMovement = false;
 
-        if (currentInteractable != null && Inventory.Instance.inventoryEnabled)
+        if (currentInteractable != null)
         {
-            currentInteractable.PickUp();
+            currentInteractable.FollowUpAction();
+            if (Inventory.Instance.inventoryEnabled)
+            {
+                currentInteractable.PickUp();
+            }
             currentInteractable = null;
         }
     }

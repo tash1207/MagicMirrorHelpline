@@ -3558,8 +3558,9 @@ GameObject:
   - component: {fileID: 334455308}
   - component: {fileID: 334455307}
   - component: {fileID: 334455306}
+  - component: {fileID: 334455309}
   m_Layer: 0
-  m_Name: AudioManager
+  m_Name: AudioManagers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3692,6 +3693,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &334455309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 334455305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee23bbe98bb4be74ca112830202639d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundFXObject: {fileID: 7942092870959789010, guid: 20ce63f3a38d4b2478e30d819c7378e7, type: 3}
 --- !u!1001 &385831736
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11233,7 +11247,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b792f140086217649a8c6495a015b47e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultThought: I still don't get why our boss is the only one with a computer.
+  defaultThought: I still don't get why our boss is the only one with a computer...
+    and a chair.
 --- !u!61 &1540248281
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12784,6 +12799,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultThought: 
   brokenCase: {fileID: 2090884646}
+  brokenGlassSound: {fileID: 8300000, guid: 36a8b7193377acf44a5c6ba0dbae1779, type: 3}
 --- !u!1 &1935192518 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5070204760256054102, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
@@ -13809,6 +13825,7 @@ MonoBehaviour:
   - {fileID: 267389939}
   - {fileID: 1939132608}
   - {fileID: 413665155}
+  firstMirrorRingingSound: {fileID: 8300000, guid: 37ac6c8afb144cc4fa4608c3ab51ecb3, type: 3}
 --- !u!1001 &724124945658107887
 PrefabInstance:
   m_ObjectHideFlags: 0

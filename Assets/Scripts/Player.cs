@@ -98,7 +98,7 @@ public class Player : MonoBehaviour
     {
         if (value.isPressed)
         {
-            AudioSource audioSource = AudioManager.Instance.GetComponent<AudioSource>();
+            AudioSource audioSource = MusicManager.Instance.GetComponent<AudioSource>();
             audioSource.mute = !audioSource.mute;
         }
     }

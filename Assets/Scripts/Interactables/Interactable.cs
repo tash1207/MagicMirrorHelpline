@@ -8,6 +8,7 @@ public class Interactable : MonoBehaviour
     protected bool canPickUp = false;
 
     protected bool hasInteracted = false;
+    protected bool performFollowUpAction = false;
 
     public virtual void Interact()
     {
@@ -28,6 +29,8 @@ public class Interactable : MonoBehaviour
         }
         return false;
     }
+
+    public virtual void FollowUpAction() { }
 
     protected void Think(string text)
     {

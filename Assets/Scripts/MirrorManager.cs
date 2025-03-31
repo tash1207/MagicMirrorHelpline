@@ -5,6 +5,7 @@ public class MirrorManager : MonoBehaviour
     public static MirrorManager Instance { get; private set; }
 
     [SerializeField] GameObject[] mirrors;
+    [SerializeField] AudioClip firstMirrorRingingSound;
 
     void Awake()
     {
@@ -55,6 +56,7 @@ public class MirrorManager : MonoBehaviour
     // Cinderella
     public void EnableMirror1()
     {
+        SoundFXManager.Instance.PlaySoundFXClip(firstMirrorRingingSound, 1f);
         mirrors[0].GetComponent<Mirror>().StartRinging();
     }
 
