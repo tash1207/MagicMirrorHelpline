@@ -18,6 +18,8 @@ public class Mirror : Interactable
     public Action<MirrorScene> OnSceneStarted;
     public Action<MirrorScene> OnSceneFinished;
 
+    [SerializeField] bool thinkDefaultThought1 = true;
+
     [Header("UI")]
     [SerializeField] SpriteRenderer bgSpriteRenderer;
     [SerializeField] Sprite bgActiveImage;
@@ -150,11 +152,16 @@ public class Mirror : Interactable
         }
         else
         {
-            string[] thoughts = new string[] {
-                "I'm sure someone will call for help while I'm stuck here.",
-                "These magic mirrors sure are handy. If only I could use them to call for delivery.",
-            };
-            Think(thoughts);
+            if (thinkDefaultThought1)
+            {
+                Think("I'm sure someone will call for help while I'm stuck here.");
+                thinkDefaultThought1 = false;
+            }
+            else
+            {
+                Think("These magic mirrors sure are handy. If only I could use them to call for delivery.");
+                thinkDefaultThought1 = true;
+            }
         }
     }
 

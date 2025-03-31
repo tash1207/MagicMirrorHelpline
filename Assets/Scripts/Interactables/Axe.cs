@@ -12,10 +12,19 @@ public class Axe : Interactable
     override public void Interact()
     {
         base.Interact();
-        string[] thoughts = new string[] {
-            "Does hunger count as enough of an emergency?",
-        };
-        Think(thoughts);
+        string thought = "Does hunger count as enough of an emergency?";
+        if (Inventory.Instance.inventoryEnabled)
+        {
+            string[] thoughts = new string[] {
+                thought,
+                "I certainly think so."
+            };
+            Think(thoughts);
+        }
+        else
+        {
+            Think(thought);
+        }
     }
 
     override public bool PickUp()
