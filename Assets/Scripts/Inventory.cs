@@ -101,4 +101,13 @@ public class Inventory : MonoBehaviour
 
         return objectListString;
     }
+
+    public bool HasAllIngredientsExceptLast()
+    {
+        return HasObject(InventoryObject.Wine) &&
+                HasObject(InventoryObject.Cheese) &&
+                HasObject(InventoryObject.Baguette) &&
+                HasObject(InventoryObject.Broth) &&
+                HasObject(InventoryObject.Onion);
+    }
 }

@@ -1,3 +1,4 @@
+using System;
 using cherrydev;
 using UnityEngine;
 
@@ -13,6 +14,9 @@ public class Mirror : Interactable
         SnowWhite,
     }
 
+    public Action<MirrorScene> OnSceneStarted;
+    public Action<MirrorScene> OnSceneFinished;
+
     [Header("UI")]
     [SerializeField] SpriteRenderer bgSpriteRenderer;
     [SerializeField] Sprite bgActiveImage;
@@ -23,7 +27,8 @@ public class Mirror : Interactable
     [SerializeField] MirrorScene mirrorScene;
     [SerializeField] DialogBehaviour dialogBehaviour;
     [SerializeField] DialogNodeGraph startingDialogNodeGraph;
-    [SerializeField] DialogNodeGraph returningDialogNodeGraph;
+    [SerializeField] DialogNodeGraph giveItemDialogNodeGraph;
+    [SerializeField] DialogNodeGraph finalDialogNodeGraph;
     [SerializeField] string finishedMirrorThought;
 
     bool isRinging = false;
@@ -41,6 +46,7 @@ public class Mirror : Interactable
         {
             finishedMirrorTask = true;
             SetToDefault();
+            OnSceneFinished?.Invoke(mirrorScene);
 
             if (mirrorScene == MirrorScene.Cinderella)
             {
@@ -61,10 +67,15 @@ public class Mirror : Interactable
         {
             dialogBehaviour.StartDialog(startingDialogNodeGraph);
             hasStartedDialog = true;
+            OnSceneStarted?.Invoke(mirrorScene);
         }
         else if (isRinging && hasStartedDialog)
         {
-            dialogBehaviour.StartDialog(returningDialogNodeGraph);
+            dialogBehaviour.StartDialog(giveItemDialogNodeGraph);
+        }
+        else if (isRinging && finishedMirrorTask && finalDialogNodeGraph != null)
+        {
+            dialogBehaviour.StartDialog(finalDialogNodeGraph);
         }
         else if (finishedMirrorTask)
         {
