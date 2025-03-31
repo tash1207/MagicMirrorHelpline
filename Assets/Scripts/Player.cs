@@ -14,18 +14,27 @@ public class Player : MonoBehaviour
     Vector2 moveInput;
     Vector2 lookDirection;
 
+    public bool pausePlayerMovement = false;
+
     void Awake()
     {
         rb2d = GetComponent<Rigidbody2D>();
     }
 
+    void Start()
+    {
+        ShowOpeningInternalDialog();
+    }
+
     void FixedUpdate()
     {
+        if (pausePlayerMovement) { return; }
         rb2d.linearVelocity = moveInput * moveSpeed;
     }
 
     void OnMove(InputValue value)
     {
+        if (pausePlayerMovement) { return; }
         moveInput = value.Get<Vector2>();
 
         if (moveInput.x != 0f || moveInput.y != 0f)
@@ -50,6 +59,7 @@ public class Player : MonoBehaviour
 
     void OnInteract(InputValue value)
     {
+        if (pausePlayerMovement) { return; }
         if (value.isPressed)
         {
             Interactable interactable = GetCollidedInteractable();
@@ -63,6 +73,7 @@ public class Player : MonoBehaviour
 
     void OnPickUp(InputValue value)
     {
+        if (pausePlayerMovement) { return; }
         if (value.isPressed)
         {
             Interactable interactable = GetCollidedInteractable();
@@ -82,11 +93,11 @@ public class Player : MonoBehaviour
         }
     }
 
-    void OnExitDialog(InputValue value)
+    void OnNextDialog(InputValue value)
     {
         if (value.isPressed)
         {
-            InternalDialogManager.Instance.HideDialog();
+            InternalDialogManager.Instance.NextDialog();
         }
     }
 
@@ -105,5 +116,28 @@ public class Player : MonoBehaviour
         }
 
         return null;
+    }
+
+    public void PausePlayerMovement()
+    {
+        pausePlayerMovement = true;
+        rb2d.linearVelocity = new Vector2(0, 0);
+        playerAnimator.SetBool("IsWalking", false);
+        reversePlayerAnimator.SetBool("IsWalking", false);
+    }
+
+    void ShowOpeningInternalDialog()
+    {
+        PausePlayerMovement();
+        string[] openingThoughts = new string[] {
+            "Ugh, I can't believe they locked me in the office for the weekend. Again",
+            "If I had a nickel for every time this happened…",
+            "I'd have two nickels. Which is still //way// too many",
+            "I'm not going to starve this time, at least. I'll find food if it's the last thing I do.",
+            "...",
+            "Which it won't be. Because I won't starve."
+        };
+
+        InternalDialogManager.Instance.ShowDialog(openingThoughts);
     }
 }

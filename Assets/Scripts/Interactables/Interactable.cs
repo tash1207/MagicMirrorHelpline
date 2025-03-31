@@ -37,6 +37,11 @@ public class Interactable : MonoBehaviour
         InternalDialogManager.Instance.ShowDialog(text);
     }
 
+    protected void Think(string[] thoughts)
+    {
+        InternalDialogManager.Instance.ShowDialog(thoughts);
+    }
+
     public string GetName()
     {
         return objectName;

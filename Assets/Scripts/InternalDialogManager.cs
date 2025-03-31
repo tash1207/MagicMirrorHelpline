@@ -8,6 +8,9 @@ public class InternalDialogManager : MonoBehaviour
     [SerializeField] GameObject dialogCanvas;
     [SerializeField] TMP_Text dialogText;
 
+    int currentIndex = 0;
+    string[] dialogTexts = new string[0];
+
     void Awake()
     {
         if (Instance != null)
@@ -21,12 +24,35 @@ public class InternalDialogManager : MonoBehaviour
 
     public void ShowDialog(string text)
     {
+        FindAnyObjectByType<Player>().PausePlayerMovement();
         dialogText.text = text;
         dialogCanvas.SetActive(true);
     }
 
+    public void ShowDialog(string[] texts)
+    {
+        dialogTexts = texts;
+        ShowDialog(texts[0]);
+    }
+
+    public void NextDialog()
+    {
+        if (dialogTexts.Length == 0 || currentIndex == dialogTexts.Length - 1)
+        {
+            HideDialog();
+        }
+        else
+        {
+            currentIndex++;
+            ShowDialog(dialogTexts[currentIndex]);
+        }
+    }
+
     public void HideDialog()
     {
+        currentIndex = 0;
+        dialogTexts = new string[0];
         dialogCanvas.SetActive(false);
+        FindAnyObjectByType<Player>().pausePlayerMovement = false;
     }
 }

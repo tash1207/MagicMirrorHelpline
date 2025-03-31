@@ -11,7 +11,11 @@ public class Slippers : Interactable
     override public void Interact()
     {
         base.Interact();
-        Think("Why Samantha keeps enchanted glass slippers on her desk, I have no idea. I could always try them on, they're supposed to fit anyone...");
+        string[] thoughts = new string[] {
+            "Why Samantha keeps enchanted glass slippers on her desk, I have no idea.",
+            "I could always try them on, they're supposed to fit anyone..."
+        };
+        Think(thoughts);
     }
 
     override public bool PickUp()

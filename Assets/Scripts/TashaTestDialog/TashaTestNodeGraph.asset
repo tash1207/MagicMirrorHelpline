@@ -184,7 +184,7 @@ MonoBehaviour:
   IsSelected: 0
   _sentence:
     CharacterName: 
-    Text: ya
+    Text: ya, here's some wine!
     CharacterSprite: {fileID: 0}
   ParentNode: {fileID: 6872879094083619906}
   ChildNode: {fileID: 0}
