@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class Interactable : MonoBehaviour
 {
+    [SerializeField] string defaultThought;
+
     protected string objectName = "object";
     protected bool canPickUp = false;
 
@@ -9,6 +11,10 @@ public class Interactable : MonoBehaviour
 
     public virtual void Interact()
     {
+        if (defaultThought != null)
+        {
+            Think(defaultThought);
+        }
         hasInteracted = true;
     }
 
