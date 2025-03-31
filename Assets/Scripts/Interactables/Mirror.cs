@@ -1,6 +1,7 @@
 using System;
 using cherrydev;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Mirror : Interactable
 {
@@ -25,6 +26,8 @@ public class Mirror : Interactable
 
     [Header("Dialog")]
     [SerializeField] MirrorScene mirrorScene;
+    [SerializeField] GameObject dialogBackground;
+    [SerializeField] Image dialogBackgroundImage;
     [SerializeField] DialogBehaviour dialogBehaviour;
     [SerializeField] DialogNodeGraph startingDialogNodeGraph;
     [SerializeField] DialogNodeGraph giveItemDialogNodeGraph;
@@ -38,6 +41,7 @@ public class Mirror : Interactable
     void Start()
     {
         dialogBehaviour.OnEndOfMirrorScene += EndMirrorScene;
+        dialogBehaviour.AddListenerToDialogFinishedEvent(EndDialogScene);
         dialogBehaviour.BindExternalFunction("UsedPencil", UsedPencil);
         dialogBehaviour.BindExternalFunction("UsedSlippers", UsedSlippers);
         dialogBehaviour.BindExternalFunction("UsedCrystalBall", UsedCrystalBall);
@@ -125,16 +129,19 @@ public class Mirror : Interactable
         base.Interact();
         if (isRinging && !hasStartedDialog)
         {
+            StartDialogScene();
             dialogBehaviour.StartDialog(startingDialogNodeGraph);
             hasStartedDialog = true;
             OnSceneStarted?.Invoke(mirrorScene);
         }
         else if (isRinging && hasStartedDialog)
         {
+            StartDialogScene();
             dialogBehaviour.StartDialog(giveItemDialogNodeGraph);
         }
         else if (isRinging && finishedMirrorTask && finalDialogNodeGraph != null)
         {
+            StartDialogScene();
             dialogBehaviour.StartDialog(finalDialogNodeGraph);
         }
         else if (finishedMirrorTask)
@@ -159,5 +166,18 @@ public class Mirror : Interactable
         isRinging = false;
         bgSpriteRenderer.sprite = bgDefaultImage;
         shimmer.Stop();
+    }
+
+    void StartDialogScene()
+    {
+        FindAnyObjectByType<Player>().PausePlayerMovement();
+        dialogBackgroundImage.sprite = bgActiveImage;
+        dialogBackground.SetActive(true);
+    }
+
+    void EndDialogScene()
+    {
+        FindAnyObjectByType<Player>().pausePlayerMovement = false;
+        dialogBackground.SetActive(false);
     }
 }
