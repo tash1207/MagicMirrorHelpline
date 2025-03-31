@@ -2,25 +2,15 @@ using UnityEngine;
 
 public class Recipe : Interactable
 {
-    void Awake()
-    {
-        objectName = "Tom's soup recipe";
-        canPickUp = true;
-    }
-
     override public void Interact()
     {
         base.Interact();
-        Think("Tom's famous french onion soup recipe.");
-    }
-
-    override public bool PickUp()
-    {
-        if (base.PickUp())
-        {
-            Inventory.Instance.AddObject(Inventory.InventoryObject.Recipe, this);
-            return true;
-        }
-        return false;
+        string[] thoughts = new string[] {
+            "Tom's famous french onion soup recipe:",
+            "- Homemade broth from the countryside\n- The fruit of the onion",
+            "- White wine fit for a royal ball\n- Spices from the bay",
+            "- Dried forest bread\n- Enough cheese to satisfy a giant",
+        };
+        Think(thoughts);
     }
 }
