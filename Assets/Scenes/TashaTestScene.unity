@@ -3578,8 +3578,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 334455307}
-  officeAudio: {fileID: 8300000, guid: 9c1158fe4da20c6428fd4f2f702dd662, type: 3}
-  magicAudio: {fileID: 8300000, guid: 7f7ca5145e8eb9b4b85077d159efdf41, type: 3}
+  officeAudio: {fileID: 8300000, guid: 16b498dcaed1e9c41a6c79e6d5e4a40c, type: 3}
+  magicAudio: {fileID: 8300000, guid: 08fb6bd6efdd8c84aa6a322cd2474ee5, type: 3}
 --- !u!82 &334455307
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3590,10 +3590,10 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 16b498dcaed1e9c41a6c79e6d5e4a40c, type: 3}
+  m_Resource: {fileID: 8300000, guid: 16b498dcaed1e9c41a6c79e6d5e4a40c, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
