@@ -71,20 +71,6 @@ public class Player : MonoBehaviour
         }
     }
 
-    void OnPickUp(InputValue value)
-    {
-        if (pausePlayerMovement) { return; }
-        if (value.isPressed)
-        {
-            Interactable interactable = GetCollidedInteractable();
-
-            if (interactable != null)
-            {
-                interactable.PickUp();
-            }
-        }
-    }
-
     void OnInventory(InputValue value)
     {
         if (value.isPressed)

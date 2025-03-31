@@ -29,6 +29,8 @@ public class Inventory : MonoBehaviour
     List<string> objectNames;
     List<InventoryObject> inventoryObjects;
 
+    public bool inventoryEnabled = false;
+
     void Awake()
     {
         if (Instance != null)
@@ -68,8 +70,15 @@ public class Inventory : MonoBehaviour
         return hasObj;
     }
 
+    public void EnableInventory()
+    {
+        inventoryEnabled = true;
+    }
+
     public void ToggleInventory()
     {
+        if (!inventoryEnabled) { return; }
+
         if (inventoryCanvas.activeSelf)
         {
             HideInventory();

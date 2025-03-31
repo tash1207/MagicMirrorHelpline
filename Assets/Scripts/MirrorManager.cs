@@ -29,6 +29,7 @@ public class MirrorManager : MonoBehaviour
         {
             EnableMirror3();
             EnableMirror5();
+            Inventory.Instance.EnableInventory();
         }
         else if (scene == Mirror.MirrorScene.Jack)
         {

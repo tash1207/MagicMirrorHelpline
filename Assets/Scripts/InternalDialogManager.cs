@@ -10,6 +10,7 @@ public class InternalDialogManager : MonoBehaviour
 
     int currentIndex = 0;
     string[] dialogTexts = new string[0];
+    Interactable currentInteractable;
 
     void Awake()
     {
@@ -35,6 +36,20 @@ public class InternalDialogManager : MonoBehaviour
         ShowDialog(texts[0]);
     }
 
+    public void ShowDialog(string text, Interactable interactable)
+    {
+        FindAnyObjectByType<Player>().PausePlayerMovement();
+        dialogText.text = text;
+        dialogCanvas.SetActive(true);
+        currentInteractable = interactable;
+    }
+
+    public void ShowDialog(string[] texts, Interactable interactable)
+    {
+        dialogTexts = texts;
+        ShowDialog(texts[0], interactable);
+    }
+
     public void NextDialog()
     {
         if (dialogTexts.Length == 0 || currentIndex == dialogTexts.Length - 1)
@@ -54,5 +69,11 @@ public class InternalDialogManager : MonoBehaviour
         dialogTexts = new string[0];
         dialogCanvas.SetActive(false);
         FindAnyObjectByType<Player>().pausePlayerMovement = false;
+
+        if (currentInteractable != null && Inventory.Instance.inventoryEnabled)
+        {
+            currentInteractable.PickUp();
+            currentInteractable = null;
+        }
     }
 }

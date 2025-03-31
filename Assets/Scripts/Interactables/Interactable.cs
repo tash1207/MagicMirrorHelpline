@@ -20,32 +20,23 @@ public class Interactable : MonoBehaviour
 
     public virtual bool PickUp()
     {
-        if (!canPickUp)
-        {
-            Think("Why would I want to pick that up?");
-            return false;
-        }
-        else if (!hasInteracted)
-        {
-            Think("I haven't even seen what it is yet!");
-            return false;
-        }
-        else
+        if (canPickUp)
         {
             Think("Picked up " + objectName);
             Destroy(gameObject);
             return true;
         }
+        return false;
     }
 
     protected void Think(string text)
     {
-        InternalDialogManager.Instance.ShowDialog(text);
+        InternalDialogManager.Instance.ShowDialog(text, this);
     }
 
     protected void Think(string[] thoughts)
     {
-        InternalDialogManager.Instance.ShowDialog(thoughts);
+        InternalDialogManager.Instance.ShowDialog(thoughts, this);
     }
 
     public string GetName()
