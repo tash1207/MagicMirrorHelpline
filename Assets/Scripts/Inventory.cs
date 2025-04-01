@@ -19,6 +19,7 @@ public class Inventory : MonoBehaviour
         Cheese,
         Spices,
         Broth,
+        SnowWhiteReward,
     }
 
     public static Inventory Instance { get; private set; }
@@ -132,5 +133,10 @@ public class Inventory : MonoBehaviour
                 HasObject(InventoryObject.Baguette) &&
                 HasObject(InventoryObject.Broth) &&
                 HasObject(InventoryObject.Onion);
+    }
+
+    public bool HasAllIngredients()
+    {
+        return HasAllIngredientsExceptLast() && HasObject(InventoryObject.Spices);
     }
 }

@@ -16,12 +16,14 @@ public class Pot : Interactable
     {
         base.Interact();
 
-        if (Inventory.Instance.HasObject(Inventory.InventoryObject.Recipe))
+        if (Inventory.Instance.HasAllIngredients())
         {
+            performFollowUpAction = false;
             if (animationTest == 0)
             {
                 animator.SetBool("isFull", true);
                 animationTest = 1;
+                Think("The ingredients are in, but I still need to turn on the stove");
             }
             else if (animationTest == 1)
             {
@@ -33,8 +35,8 @@ public class Pot : Interactable
             {
                 animator.SetBool("isFull", false);
                 animator.SetBool("isSteaming", false);
-                animationTest = 0;
-                Think("Yummm!");
+                Think("Yummm! I won!");
+                // Potential game over behavior
             }
         }
         else

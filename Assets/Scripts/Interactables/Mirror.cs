@@ -54,6 +54,7 @@ public class Mirror : Interactable
         dialogBehaviour.BindExternalFunction("UsedSlippers", UsedSlippers);
         dialogBehaviour.BindExternalFunction("UsedAxe", UsedAxe);
         dialogBehaviour.BindExternalFunction("UsedMusicBox", UsedMusicBox);
+        dialogBehaviour.BindExternalFunction("GetSpices", GetSpices);
     }
 
     void UsedPencil()
@@ -85,6 +86,14 @@ public class Mirror : Interactable
         if (Inventory.Instance.HasObject(Inventory.InventoryObject.MusicBox))
         {
             Inventory.Instance.RemoveObject(Inventory.InventoryObject.MusicBox);
+        }
+    }
+
+    void GetSpices()
+    {
+        if (!Inventory.Instance.HasObject(Inventory.InventoryObject.Spices))
+        {
+            Inventory.Instance.AddObject(Inventory.InventoryObject.Spices, "Bay spices");
         }
     }
 
@@ -154,8 +163,9 @@ public class Mirror : Interactable
         {
             if (!hasReceivedReward)
             {
+                Inventory.Instance.AddObject(Inventory.InventoryObject.SnowWhiteReward, "Reward from Snow White");
                 Inventory.Instance.AddObject(Inventory.InventoryObject.Onion, "Onion");
-                InternalDialogManager.Instance.ShowDialogAfterSeconds("Received Onion", rewardDialogDelay);
+                InternalDialogManager.Instance.ShowDialogAfterSeconds("Received amazing reward from Snow White... and Onion", rewardDialogDelay);
                 hasReceivedReward = true;
             }
         }
@@ -171,11 +181,6 @@ public class Mirror : Interactable
             hasStartedDialog = true;
             OnSceneStarted?.Invoke(mirrorScene);
         }
-        else if (isRinging && hasStartedDialog)
-        {
-            StartDialogScene();
-            dialogBehaviour.StartDialog(giveItemDialogNodeGraph);
-        }
         else if (isRinging && finishedMirrorTask && finalDialogNodeGraph != null)
         {
             StartDialogScene();
@@ -184,6 +189,11 @@ public class Mirror : Interactable
         else if (finishedMirrorTask)
         {
             Think(finishedMirrorThought);
+        }
+        else if (isRinging && hasStartedDialog)
+        {
+            StartDialogScene();
+            dialogBehaviour.StartDialog(giveItemDialogNodeGraph);
         }
         else
         {

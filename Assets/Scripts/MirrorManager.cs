@@ -5,9 +5,11 @@ public class MirrorManager : MonoBehaviour
     public static MirrorManager Instance { get; private set; }
 
     [SerializeField] GameObject[] mirrors;
-    [SerializeField] AudioClip firstMirrorRingingSound;
+    [SerializeField] AudioClip mirrorRingingSound;
 
     bool hasEnabledFirstMirror = false;
+    bool hasEnabled4and6 = false;
+    bool hasEnabledLastMirror = false;
 
     void Awake()
     {
@@ -37,10 +39,11 @@ public class MirrorManager : MonoBehaviour
             EnableMirror5();
             Inventory.Instance.EnableInventory();
         }
-        else if (scene == Mirror.MirrorScene.Jack)
+        else if (scene == Mirror.MirrorScene.Jack && !hasEnabled4and6)
         {
             EnableMirror4();
             EnableMirror6();
+            hasEnabled4and6 = true;
         }
     }
 
@@ -52,7 +55,8 @@ public class MirrorManager : MonoBehaviour
         {
             if (mirrors[0].GetComponent<Mirror>().finishedMirrorTask &&
                 mirrors[2].GetComponent<Mirror>().finishedMirrorTask &&
-                mirrors[4].GetComponent<Mirror>().finishedMirrorTask)
+                mirrors[4].GetComponent<Mirror>().finishedMirrorTask &&
+                !hasEnabledLastMirror)
                 {
                     EnableMirror2();
                     EnableMirror4();
@@ -63,11 +67,12 @@ public class MirrorManager : MonoBehaviour
             scene == Mirror.MirrorScene.RedRiding ||
             scene == Mirror.MirrorScene.SnowWhite)
         {
-            // Check if we have all ingredients then enable Little Mermaid final scene
-            if (Inventory.Instance.HasAllIngredientsExceptLast())
-            {
-                EnableMirror3();
-            }
+            // Check if we have all ingredients then enable Little Mermaid final scene.
+            // Moved to recipe interaction for now.
+            // if (Inventory.Instance.HasAllIngredientsExceptLast())
+            // {
+            //     EnableMirror3();
+            // }
         }
     }
 
@@ -76,10 +81,15 @@ public class MirrorManager : MonoBehaviour
         return hasEnabledFirstMirror;
     }
 
+    public bool HasEnabledLastMirror()
+    {
+        return hasEnabledLastMirror;
+    }
+
     // Cinderella
     public void EnableMirror1()
     {
-        SoundFXManager.Instance.PlaySoundFXClip(firstMirrorRingingSound, 1f);
+        SoundFXManager.Instance.PlaySoundFXClip(mirrorRingingSound, 1f);
         mirrors[0].GetComponent<Mirror>().StartRinging();
         hasEnabledFirstMirror = true;
     }
@@ -112,5 +122,12 @@ public class MirrorManager : MonoBehaviour
     public void EnableMirror6()
     {
         mirrors[5].GetComponent<Mirror>().StartRinging();
+    }
+
+    public void EnableLastMirror()
+    {
+        SoundFXManager.Instance.PlaySoundFXClip(mirrorRingingSound, 1f);
+        EnableMirror3();
+        hasEnabledLastMirror = true;
     }
 }
