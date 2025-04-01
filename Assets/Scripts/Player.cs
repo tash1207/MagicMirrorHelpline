@@ -132,12 +132,13 @@ public class Player : MonoBehaviour
     {
         PausePlayerMovement();
         string[] openingThoughts = new string[] {
-            "Ugh, I can't believe they locked me in the office for the weekend. Again",
+            "Ugh, I can't believe they locked me in the office for the weekend. Again.",
             "If I had a nickel for every time this happened…",
-            "I'd have two nickels. Which is still //way// too many",
+            "I'd have two nickels. Which is still //way// too many.",
             "I'm not going to starve this time, at least. I'll find food if it's the last thing I do.",
             "...",
-            "Which it won't be. Because I won't starve."
+            "Which it won't be. Because I won't starve.",
+            "But I am already hungry. I should check the kitchen for food."
         };
 
         InternalDialogManager.Instance.ShowDialog(openingThoughts);

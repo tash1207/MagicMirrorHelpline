@@ -24,7 +24,7 @@ MonoBehaviour:
   IsSelected: 0
   _sentence:
     CharacterName: 
-    Text: Let me look around
+    Text: Let me look around.
     CharacterSprite: {fileID: 0}
   ParentNode: {fileID: -8349380679468875089}
   ChildNode: {fileID: 0}
@@ -55,8 +55,8 @@ MonoBehaviour:
   IsDragging: 0
   IsSelected: 1
   Answers:
-  - Use axe
-  - Use music box
+  - Give axe
+  - Give music box
   - Check for items
   RequiredObjects: 040000000600000002000000
   ParentSentenceNode: {fileID: -6672612459402048860}
@@ -85,10 +85,10 @@ MonoBehaviour:
     width: 190
     height: 135
   IsDragging: 0
-  IsSelected: 1
+  IsSelected: 0
   _sentence:
     CharacterName: Jack
-    Text: I'm Jack
+    Text: I need help getting away from an angry giant!
     CharacterSprite: {fileID: 0}
   ParentNode: {fileID: 0}
   ChildNode: {fileID: -8349380679468875089}
@@ -120,7 +120,7 @@ MonoBehaviour:
   IsSelected: 0
   _sentence:
     CharacterName: 
-    Text: Used axe
+    Text: Chop down the beanstalk after you leave so he can't follow you.
     CharacterSprite: {fileID: 0}
   ParentNode: {fileID: -8349380679468875089}
   ChildNode: {fileID: 3458850105604375077}
@@ -170,10 +170,10 @@ MonoBehaviour:
     width: 190
     height: 135
   IsDragging: 0
-  IsSelected: 0
+  IsSelected: 1
   _sentence:
     CharacterName: Jack
-    Text: Here's some cheese
+    Text: Thanks! Here's some giant cheese.
     CharacterSprite: {fileID: 0}
   ParentNode: {fileID: 7671181019449015384}
   ChildNode: {fileID: 0}
@@ -204,8 +204,8 @@ MonoBehaviour:
   IsDragging: 0
   IsSelected: 0
   _sentence:
-    CharacterName: Used music box
-    Text: 
+    CharacterName: 
+    Text: Put the giant to sleep with this.
     CharacterSprite: {fileID: 0}
   ParentNode: {fileID: -8349380679468875089}
   ChildNode: {fileID: 3458850105604375077}

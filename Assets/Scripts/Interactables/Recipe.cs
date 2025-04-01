@@ -11,6 +11,7 @@ public class Recipe : Interactable
         if (Inventory.Instance.HasAllIngredients())
         {
             thoughts = new string[] {
+                "Tom's famous french onion soup recipe...",
                 "Omg omg I have all the ingredients!",
                 "Time to make some soup!",
             };
@@ -18,6 +19,7 @@ public class Recipe : Interactable
         else if (Inventory.Instance.HasAllIngredientsExceptLast())
         {
             thoughts = new string[] {
+                "Tom's famous french onion soup recipe...",
                 "Looks like I have everything except the spices!",
             };
             performFollowUpAction = !MirrorManager.Instance.HasEnabledLastMirror();

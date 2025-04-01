@@ -57,6 +57,8 @@ public class Mirror : Interactable
         dialogBehaviour.BindExternalFunction("UsedSlippers", UsedSlippers);
         dialogBehaviour.BindExternalFunction("UsedAxe", UsedAxe);
         dialogBehaviour.BindExternalFunction("UsedMusicBox", UsedMusicBox);
+        dialogBehaviour.BindExternalFunction("UsedRedReward", UsedRedReward);
+        dialogBehaviour.BindExternalFunction("UsedWhiteReward", UsedWhiteReward);
         dialogBehaviour.BindExternalFunction("GetSpices", GetSpices);
     }
 
@@ -89,6 +91,22 @@ public class Mirror : Interactable
         if (Inventory.Instance.HasObject(Inventory.InventoryObject.MusicBox))
         {
             Inventory.Instance.RemoveObject(Inventory.InventoryObject.MusicBox);
+        }
+    }
+
+    void UsedRedReward()
+    {
+        if (Inventory.Instance.HasObject(Inventory.InventoryObject.RedRidingHoodReward))
+        {
+            Inventory.Instance.RemoveObject(Inventory.InventoryObject.RedRidingHoodReward);
+        }
+    }
+
+    void UsedWhiteReward()
+    {
+        if (Inventory.Instance.HasObject(Inventory.InventoryObject.SnowWhiteReward))
+        {
+            Inventory.Instance.RemoveObject(Inventory.InventoryObject.SnowWhiteReward);
         }
     }
 
@@ -148,8 +166,9 @@ public class Mirror : Interactable
         {
             if (!hasReceivedReward)
             {
+                Inventory.Instance.AddObject(Inventory.InventoryObject.RedRidingHoodReward, "Red's Reward");
                 Inventory.Instance.AddObject(Inventory.InventoryObject.Baguette, "Old baguettes");
-                InternalDialogManager.Instance.ShowDialogAfterSeconds("Received Old baguettes", rewardDialogDelay);
+                InternalDialogManager.Instance.ShowDialogAfterSeconds("Received mystery reward from Red... and Old baguettes", rewardDialogDelay);
                 hasReceivedReward = true;
             }
         }
@@ -171,9 +190,9 @@ public class Mirror : Interactable
         {
             if (!hasReceivedReward)
             {
-                Inventory.Instance.AddObject(Inventory.InventoryObject.SnowWhiteReward, "Reward from Snow White");
+                Inventory.Instance.AddObject(Inventory.InventoryObject.SnowWhiteReward, "Snow White's Reward");
                 Inventory.Instance.AddObject(Inventory.InventoryObject.Onion, "Onion");
-                InternalDialogManager.Instance.ShowDialogAfterSeconds("Received amazing reward from Snow White... and Onion", rewardDialogDelay);
+                InternalDialogManager.Instance.ShowDialogAfterSeconds("Received mystery reward from Snow White... and Onion", rewardDialogDelay);
                 hasReceivedReward = true;
             }
         }

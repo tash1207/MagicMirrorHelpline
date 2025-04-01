@@ -20,6 +20,7 @@ public class Inventory : MonoBehaviour
         Spices,
         Broth,
         SnowWhiteReward,
+        RedRidingHoodReward,
     }
 
     public static Inventory Instance { get; private set; }

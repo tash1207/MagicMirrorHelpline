@@ -21,10 +21,10 @@ MonoBehaviour:
     width: 190
     height: 135
   IsDragging: 0
-  IsSelected: 0
+  IsSelected: 1
   _sentence:
     CharacterName: Snow White
-    Text: I'm Snow White
+    Text: I need help with something that is still to be determined...
     CharacterSprite: {fileID: 0}
   ParentNode: {fileID: 0}
   ChildNode: {fileID: -4031102450187110234}
@@ -51,17 +51,19 @@ MonoBehaviour:
     x: 481
     y: 235
     width: 190
-    height: 135
+    height: 155
   IsDragging: 0
   IsSelected: 0
   Answers:
   - Give music box
+  - Give Red's reward
   - Lemme see
-  RequiredObjects: 0600000002000000
+  RequiredObjects: 060000000e00000002000000
   ParentSentenceNode: {fileID: -4658730688454441700}
   ChildSentenceNodes:
   - {fileID: -3990435838753999560}
   - {fileID: 246867924167492698}
+  - {fileID: 7199695036951517701}
 --- !u!114 &-3990435838753999560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78,15 +80,15 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 767
-    y: 180
+    x: 750
+    y: 99
     width: 190
     height: 155
   IsDragging: 0
   IsSelected: 0
   _sentence:
     CharacterName: 
-    Text: Gave music box
+    Text: Maybe a music box will help?
     CharacterSprite: {fileID: 0}
   ParentNode: {fileID: -4031102450187110234}
   ChildNode: {fileID: 4734458214795467955}
@@ -112,6 +114,7 @@ MonoBehaviour:
   - {fileID: -3990435838753999560}
   - {fileID: 246867924167492698}
   - {fileID: 4734458214795467955}
+  - {fileID: 7199695036951517701}
   NodeToDrawLineFrom: {fileID: 0}
   LinePosition: {x: 0, y: 0}
 --- !u!114 &246867924167492698
@@ -130,20 +133,20 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 756
-    y: 371
+    x: 751
+    y: 263
     width: 190
-    height: 135
+    height: 155
   IsDragging: 0
   IsSelected: 0
   _sentence:
     CharacterName: 
-    Text: I'll be back
+    Text: Idk what this is but maybe it'll help?
     CharacterSprite: {fileID: 0}
   ParentNode: {fileID: -4031102450187110234}
-  ChildNode: {fileID: 0}
-  _isExternalFunc: 0
-  _externalFunctionName: 
+  ChildNode: {fileID: 4734458214795467955}
+  _isExternalFunc: 1
+  _externalFunctionName: UsedRedReward
   endOfMirrorScene: 0
   mirrorScene: 0
 --- !u!114 &4734458214795467955
@@ -167,14 +170,46 @@ MonoBehaviour:
     width: 190
     height: 135
   IsDragging: 0
-  IsSelected: 0
+  IsSelected: 1
   _sentence:
     CharacterName: Snow White
-    Text: Here's an onion
+    Text: Yep, that'll work! Here's a very special reward... and an onion.
     CharacterSprite: {fileID: 0}
-  ParentNode: {fileID: -3990435838753999560}
+  ParentNode: {fileID: 246867924167492698}
   ChildNode: {fileID: 0}
   _isExternalFunc: 0
   _externalFunctionName: 
   endOfMirrorScene: 1
   mirrorScene: 5
+--- !u!114 &7199695036951517701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 749
+    y: 420
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 1
+  _sentence:
+    CharacterName: 
+    Text: That's quite vague. Lemme look around for something that might be of use.
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -4031102450187110234}
+  ChildNode: {fileID: 0}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 0
+  mirrorScene: 0
