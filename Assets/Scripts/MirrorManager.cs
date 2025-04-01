@@ -20,8 +20,11 @@ public class MirrorManager : MonoBehaviour
 
     void Start()
     {
-        // Iterate through mirrors and hook into their public Action<MirrorType> sceneStarted, sceneFinished
-        mirrors[0].GetComponent<Mirror>().OnSceneStarted += OnSceneStarted;
+        for (int i = 0; i < mirrors.Length; i++)
+        {
+            mirrors[i].GetComponent<Mirror>().OnSceneStarted += OnSceneStarted;
+            mirrors[i].GetComponent<Mirror>().OnSceneFinished += OnSceneFinished;
+        }
     }
 
     void OnSceneStarted(Mirror.MirrorScene scene)
@@ -41,7 +44,20 @@ public class MirrorManager : MonoBehaviour
 
     void OnSceneFinished(Mirror.MirrorScene scene)
     {
-        if (scene == Mirror.MirrorScene.Jack ||
+        if (scene == Mirror.MirrorScene.Cinderella ||
+            scene == Mirror.MirrorScene.LittleMermaid ||
+            scene == Mirror.MirrorScene.RobinHood)
+        {
+            if (mirrors[0].GetComponent<Mirror>().finishedMirrorTask &&
+                mirrors[2].GetComponent<Mirror>().finishedMirrorTask &&
+                mirrors[4].GetComponent<Mirror>().finishedMirrorTask)
+                {
+                    EnableMirror2();
+                    EnableMirror4();
+                    EnableMirror6();
+                }
+        }
+        else if (scene == Mirror.MirrorScene.Jack ||
             scene == Mirror.MirrorScene.RedRiding ||
             scene == Mirror.MirrorScene.SnowWhite)
         {

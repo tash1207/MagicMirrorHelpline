@@ -38,7 +38,7 @@ public class Mirror : Interactable
 
     bool isRinging = false;
     bool hasStartedDialog = false;
-    bool finishedMirrorTask = false;
+    public bool finishedMirrorTask = false;
 
     float activeBgSize = 0.18f;
     float defaultBgSize = 2.2f;

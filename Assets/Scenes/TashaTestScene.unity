@@ -3541,7 +3541,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b792f140086217649a8c6495a015b47e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultThought: Sink
+  defaultThought: It's a sink.
 --- !u!1 &267389939 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5070204760256054102, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
@@ -3854,6 +3854,14 @@ PrefabInstance:
       propertyPath: dialogBackgroundImage
       value: 
       objectReference: {fileID: 1764816330}
+    - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
+      propertyPath: giveItemDialogNodeGraph
+      value: 
+      objectReference: {fileID: 11400000, guid: 49957c33d0285dd4cbf4b9fe70b44d41, type: 2}
+    - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
+      propertyPath: startingDialogNodeGraph
+      value: 
+      objectReference: {fileID: 11400000, guid: 49957c33d0285dd4cbf4b9fe70b44d41, type: 2}
     - target: {fileID: 3457831478476732431, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: m_TargetTexture
       value: 
@@ -3955,7 +3963,7 @@ PrefabInstance:
       objectReference: {fileID: 1764816330}
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: finishedMirrorThought
-      value: I hope she's having a good time at the ball
+      value: I hope she's having a good time at the ball.
       objectReference: {fileID: 0}
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: giveItemDialogNodeGraph
@@ -5171,7 +5179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b792f140086217649a8c6495a015b47e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultThought: Sink
+  defaultThought: It's a sink.
 --- !u!1001 &708489682
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7553,7 +7561,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b792f140086217649a8c6495a015b47e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultThought: I'll probably need this eventually.
+  defaultThought: I'll probably need to use this eventually.
 --- !u!1 &910616709
 GameObject:
   m_ObjectHideFlags: 0
@@ -11283,7 +11291,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.017542854, y: -0.015740901}
+  m_Offset: {x: 0.015561566, y: -0.0725162}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -11293,7 +11301,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.5169265, y: 0.47072572}
+  m_Size: {x: 0.71191216, y: 0.66579986}
   m_EdgeRadius: 0
 --- !u!1 &1602153811
 GameObject:
@@ -11909,6 +11917,14 @@ PrefabInstance:
       propertyPath: dialogBackgroundImage
       value: 
       objectReference: {fileID: 1764816330}
+    - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
+      propertyPath: giveItemDialogNodeGraph
+      value: 
+      objectReference: {fileID: 11400000, guid: 49957c33d0285dd4cbf4b9fe70b44d41, type: 2}
+    - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
+      propertyPath: startingDialogNodeGraph
+      value: 
+      objectReference: {fileID: 11400000, guid: 49957c33d0285dd4cbf4b9fe70b44d41, type: 2}
     - target: {fileID: 3457831478476732431, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: m_TargetTexture
       value: 
@@ -12381,6 +12397,14 @@ PrefabInstance:
       propertyPath: dialogBackgroundImage
       value: 
       objectReference: {fileID: 1764816330}
+    - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
+      propertyPath: giveItemDialogNodeGraph
+      value: 
+      objectReference: {fileID: 11400000, guid: 49957c33d0285dd4cbf4b9fe70b44d41, type: 2}
+    - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
+      propertyPath: startingDialogNodeGraph
+      value: 
+      objectReference: {fileID: 11400000, guid: 49957c33d0285dd4cbf4b9fe70b44d41, type: 2}
     - target: {fileID: 3457831478476732431, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: m_TargetTexture
       value: 
@@ -13097,7 +13121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b792f140086217649a8c6495a015b47e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultThought: I'll probably need this eventually.
+  defaultThought: I'll probably need to use this eventually.
 --- !u!1 &1953655578
 GameObject:
   m_ObjectHideFlags: 0
