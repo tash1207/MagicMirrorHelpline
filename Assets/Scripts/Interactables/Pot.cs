@@ -43,14 +43,16 @@ public class Pot : Interactable
                 "I could use this, if I had any ingredients.",
             };
             Think(thoughts);
-            performFollowUpAction = true;
+            performFollowUpAction = !MirrorManager.Instance.HasEnabledFirstMirror();
         }
     }
 
     override public void FollowUpAction()
     {
-        MirrorManager.Instance.EnableMirror1();
-        Think("Crap, I guess duty calls. No need to make others suffer just because I'm hungry.");
-        performFollowUpAction = false;
+        if (performFollowUpAction)
+        {
+            MirrorManager.Instance.EnableMirror1();
+            Think("Crap, I guess duty calls. No need to make others suffer just because I'm hungry.");
+        }
     }
 }

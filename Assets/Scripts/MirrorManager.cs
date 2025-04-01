@@ -7,6 +7,8 @@ public class MirrorManager : MonoBehaviour
     [SerializeField] GameObject[] mirrors;
     [SerializeField] AudioClip firstMirrorRingingSound;
 
+    bool hasEnabledFirstMirror = false;
+
     void Awake()
     {
         if (Instance != null)
@@ -69,11 +71,17 @@ public class MirrorManager : MonoBehaviour
         }
     }
 
+    public bool HasEnabledFirstMirror()
+    {
+        return hasEnabledFirstMirror;
+    }
+
     // Cinderella
     public void EnableMirror1()
     {
         SoundFXManager.Instance.PlaySoundFXClip(firstMirrorRingingSound, 1f);
         mirrors[0].GetComponent<Mirror>().StartRinging();
+        hasEnabledFirstMirror = true;
     }
 
     // Jack
