@@ -40,6 +40,7 @@ public class Mirror : Interactable
     bool hasStartedDialog = false;
     public bool finishedMirrorTask = false;
     bool hasReceivedReward = false;
+    bool hasReceivedAdditionalItem = false;
     bool isActiveDialogScene = false;
 
     float activeBgSize = 0.18f;
@@ -134,6 +135,11 @@ public class Mirror : Interactable
                 Inventory.Instance.AddObject(Inventory.InventoryObject.CrystalBall, "Crystal ball");
                 InternalDialogManager.Instance.ShowDialogAfterSeconds("Received Crystal ball", rewardDialogDelay);
                 hasReceivedReward = true;
+            }
+            else if (!hasReceivedAdditionalItem)
+            {
+                InternalDialogManager.Instance.ShowDialogAfterSeconds("Received Bay spices", rewardDialogDelay);
+                hasReceivedAdditionalItem = true;
             }
         }
         else if (mirrorScene == MirrorScene.RedRiding)

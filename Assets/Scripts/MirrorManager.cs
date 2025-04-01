@@ -8,7 +8,6 @@ public class MirrorManager : MonoBehaviour
     [SerializeField] AudioClip mirrorRingingSound;
 
     bool hasEnabledFirstMirror = false;
-    bool hasEnabled4and6 = false;
     bool hasEnabledLastMirror = false;
 
     void Awake()
@@ -39,11 +38,10 @@ public class MirrorManager : MonoBehaviour
             EnableMirror5();
             Inventory.Instance.EnableInventory();
         }
-        else if (scene == Mirror.MirrorScene.Jack && !hasEnabled4and6)
+        else if (scene == Mirror.MirrorScene.Jack)
         {
             EnableMirror4();
             EnableMirror6();
-            hasEnabled4and6 = true;
         }
     }
 
@@ -59,8 +57,6 @@ public class MirrorManager : MonoBehaviour
                 !hasEnabledLastMirror)
                 {
                     EnableMirror2();
-                    EnableMirror4();
-                    EnableMirror6();
                 }
         }
         else if (scene == Mirror.MirrorScene.Jack ||

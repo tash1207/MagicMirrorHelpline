@@ -67,6 +67,7 @@ public class Inventory : MonoBehaviour
 
     public bool HasObject(InventoryObject invObj)
     {
+        if (invObj == InventoryObject.True) { return true; }
         bool hasObj = invObj == InventoryObject.True || inventoryObjects.Contains(invObj);
         Debug.Log("Inventory has " + invObj + ": " + hasObj);
         return hasObj;
@@ -82,7 +83,7 @@ public class Inventory : MonoBehaviour
         if (!inventoryTipShown)
         {
             string[] tips = new string[] {
-                "I should see if we have something useful lying around the office.",
+                "I should see if there's anything useful lying around the office.",
                 "Press R to view inventory."
             };
             InternalDialogManager.Instance.ShowDialog(tips);

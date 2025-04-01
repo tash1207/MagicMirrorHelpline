@@ -3768,7 +3768,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7250229689785646963, guid: 0bd08184220c9914a877f3a735221e05, type: 3}
       propertyPath: _dialogCharDelay
-      value: 0.009
+      value: 0.008
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3854,6 +3854,10 @@ PrefabInstance:
       propertyPath: dialogBackgroundImage
       value: 
       objectReference: {fileID: 1764816330}
+    - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
+      propertyPath: finishedMirrorThought
+      value: I helped Snow White
+      objectReference: {fileID: 0}
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: giveItemDialogNodeGraph
       value: 
@@ -4066,6 +4070,10 @@ PrefabInstance:
       propertyPath: dialogBackgroundImage
       value: 
       objectReference: {fileID: 1764816330}
+    - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
+      propertyPath: finishedMirrorThought
+      value: I helped the Little Mermaid
+      objectReference: {fileID: 0}
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: giveItemDialogNodeGraph
       value: 
@@ -12228,6 +12236,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1764816330}
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
+      propertyPath: finishedMirrorThought
+      value: I helped Red Riding Hood
+      objectReference: {fileID: 0}
+    - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: giveItemDialogNodeGraph
       value: 
       objectReference: {fileID: 11400000, guid: eacbffdf736cf1246a1dc6fe45cd6d1d, type: 2}
@@ -12799,6 +12811,10 @@ PrefabInstance:
       propertyPath: dialogBackgroundImage
       value: 
       objectReference: {fileID: 1764816330}
+    - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
+      propertyPath: finishedMirrorThought
+      value: I helped Jack
+      objectReference: {fileID: 0}
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: giveItemDialogNodeGraph
       value: 
@@ -13397,6 +13413,10 @@ PrefabInstance:
       propertyPath: dialogBackgroundImage
       value: 
       objectReference: {fileID: 1764816330}
+    - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
+      propertyPath: finishedMirrorThought
+      value: I hope Robin is successful!
+      objectReference: {fileID: 0}
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: giveItemDialogNodeGraph
       value: 
