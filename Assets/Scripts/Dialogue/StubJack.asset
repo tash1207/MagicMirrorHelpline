@@ -16,8 +16,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 607
-    y: 421
+    x: 925
+    y: 434
     width: 190
     height: 135
   IsDragging: 0
@@ -48,12 +48,12 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 369
-    y: 240
+    x: 687
+    y: 253
     width: 190
     height: 155
   IsDragging: 0
-  IsSelected: 1
+  IsSelected: 0
   Answers:
   - Give axe
   - Give music box
@@ -80,8 +80,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 131
-    y: 258
+    x: 449
+    y: 271
     width: 190
     height: 135
   IsDragging: 0
@@ -90,12 +90,76 @@ MonoBehaviour:
     CharacterName: Jack
     Text: I need help getting away from an angry giant!
     CharacterSprite: {fileID: 0}
-  ParentNode: {fileID: 0}
+  ParentNode: {fileID: -502289166683517853}
   ChildNode: {fileID: -8349380679468875089}
   _isExternalFunc: 0
   _externalFunctionName: 
   endOfMirrorScene: 0
   mirrorScene: 0
+--- !u!114 &-5010665010050005976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 1451
+    y: 134
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: 
+    Text: ... you're welcome?
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 3458850105604375077}
+  ChildNode: {fileID: 1728963353609939065}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 0
+  mirrorScene: 0
+--- !u!114 &-2461860077658050916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 1924
+    y: 246
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: 
+    Text: Yes please!
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 4730850514693688817}
+  ChildNode: {fileID: 0}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 1
+  mirrorScene: 1
 --- !u!114 &-1274200096247679784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -112,20 +176,53 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 625
-    y: 66
+    x: 943
+    y: 79
     width: 190
     height: 155
   IsDragging: 0
   IsSelected: 0
   _sentence:
     CharacterName: 
-    Text: Chop down the beanstalk after you leave so he can't follow you.
+    Text: You can use this axe to chop down the beanstalk after you leave so he can't
+      follow you.
     CharacterSprite: {fileID: 0}
   ParentNode: {fileID: -8349380679468875089}
   ChildNode: {fileID: 3458850105604375077}
   _isExternalFunc: 1
   _externalFunctionName: UsedAxe
+  endOfMirrorScene: 0
+  mirrorScene: 0
+--- !u!114 &-502289166683517853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 376
+    y: 85
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 1
+  _sentence:
+    CharacterName: 
+    Text: Hi, this is the Magic Mirror Helpline, what's your emergency?
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 0}
+  ChildNode: {fileID: -6672612459402048860}
+  _isExternalFunc: 0
+  _externalFunctionName: 
   endOfMirrorScene: 0
   mirrorScene: 0
 --- !u!114 &11400000
@@ -147,8 +244,48 @@ MonoBehaviour:
   - {fileID: 7671181019449015384}
   - {fileID: -9154882048186853354}
   - {fileID: 3458850105604375077}
+  - {fileID: -502289166683517853}
+  - {fileID: -5010665010050005976}
+  - {fileID: 1728963353609939065}
+  - {fileID: -2461860077658050916}
+  - {fileID: 7431293384054090449}
+  - {fileID: 7566775830035333531}
+  - {fileID: 4730850514693688817}
   NodeToDrawLineFrom: {fileID: 0}
   LinePosition: {x: 0, y: 0}
+--- !u!114 &1728963353609939065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 1684
+    y: 125
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Jack
+    Text: I gotta run, but now that I'm holding this axe I can't carry this giant
+      cheese I took before. Do you want it?
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -5010665010050005976}
+  ChildNode: {fileID: -2461860077658050916}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 0
+  mirrorScene: 0
 --- !u!114 &3458850105604375077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,22 +302,119 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 855
-    y: 207
+    x: 1193
+    y: 136
     width: 190
     height: 135
   IsDragging: 0
-  IsSelected: 1
+  IsSelected: 0
   _sentence:
     CharacterName: Jack
-    Text: Thanks! Here's some giant cheese.
+    Text: Wow, thanks! I honestly wasn't expecting this mirror thing to work out.
     CharacterSprite: {fileID: 0}
   ParentNode: {fileID: 7671181019449015384}
-  ChildNode: {fileID: 0}
+  ChildNode: {fileID: -5010665010050005976}
   _isExternalFunc: 0
   _externalFunctionName: 
-  endOfMirrorScene: 1
+  endOfMirrorScene: 0
   mirrorScene: 1
+--- !u!114 &4730850514693688817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 1681
+    y: 336
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: 
+    Text: I gotta run, but now that I'm holding this music box I can't carry this
+      giant cheese I took before. Do you want it?
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 7566775830035333531}
+  ChildNode: {fileID: -2461860077658050916}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 0
+  mirrorScene: 0
+--- !u!114 &7431293384054090449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 1190
+    y: 324
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Jack
+    Text: Wow, thanks! I honestly wasn't expecting this mirror thing to work out.
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 7671181019449015384}
+  ChildNode: {fileID: 7566775830035333531}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 0
+  mirrorScene: 0
+--- !u!114 &7566775830035333531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 1451
+    y: 330
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: 
+    Text: ... you're welcome?
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 7431293384054090449}
+  ChildNode: {fileID: 4730850514693688817}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 0
+  mirrorScene: 0
 --- !u!114 &7671181019449015384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -197,18 +431,18 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 610
-    y: 251
+    x: 928
+    y: 264
     width: 190
     height: 155
   IsDragging: 0
   IsSelected: 0
   _sentence:
     CharacterName: 
-    Text: Put the giant to sleep with this.
+    Text: You could put the giant to sleep with this.
     CharacterSprite: {fileID: 0}
   ParentNode: {fileID: -8349380679468875089}
-  ChildNode: {fileID: 3458850105604375077}
+  ChildNode: {fileID: 7431293384054090449}
   _isExternalFunc: 1
   _externalFunctionName: UsedMusicBox
   endOfMirrorScene: 0

@@ -16,12 +16,12 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 506
-    y: 312
+    x: 332
+    y: 285
     width: 190
     height: 155
   IsDragging: 0
-  IsSelected: 1
+  IsSelected: 0
   Answers:
   - Give axe
   - Give Snow White reward item
@@ -48,18 +48,18 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 234
-    y: 306
+    x: 60
+    y: 279
     width: 190
     height: 135
   IsDragging: 0
-  IsSelected: 1
+  IsSelected: 0
   _sentence:
     CharacterName: Red
     Text: I'm on my way to my grandma's house and a wolf asked where I was going.
       Should I be worried?
     CharacterSprite: {fileID: 0}
-  ParentNode: {fileID: 0}
+  ParentNode: {fileID: 2588446796748727726}
   ChildNode: {fileID: -9149827434153793416}
   _isExternalFunc: 0
   _externalFunctionName: 
@@ -81,12 +81,12 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 755
-    y: 458
+    x: 581
+    y: 431
     width: 190
     height: 135
   IsDragging: 0
-  IsSelected: 1
+  IsSelected: 0
   _sentence:
     CharacterName: 
     Text: Probably, lemme look around for something that might help.
@@ -113,15 +113,15 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 755
-    y: 302
+    x: 581
+    y: 275
     width: 190
     height: 155
   IsDragging: 0
   IsSelected: 0
   _sentence:
     CharacterName: 
-    Text: Idk what this is but maybe it'll help?
+    Text: Idk what this is but I'm pretty sure it'll help.
     CharacterSprite: {fileID: 0}
   ParentNode: {fileID: -9149827434153793416}
   ChildNode: {fileID: 2311065932386011849}
@@ -148,6 +148,7 @@ MonoBehaviour:
   - {fileID: -3807103420096108289}
   - {fileID: 2311065932386011849}
   - {fileID: -4908946255460495278}
+  - {fileID: 2588446796748727726}
   NodeToDrawLineFrom: {fileID: 0}
   LinePosition: {x: 0, y: 0}
 --- !u!114 &2311065932386011849
@@ -166,15 +167,16 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 1033
-    y: 201
+    x: 862
+    y: 175
     width: 190
     height: 135
   IsDragging: 0
   IsSelected: 0
   _sentence:
     CharacterName: Red
-    Text: Thanks, here's some stuff I was going to bring to my grandma.
+    Text: Thanks! I'll put it in my basket. Here, take some of these gifts I was
+      going to bring to my grandma.
     CharacterSprite: {fileID: 0}
   ParentNode: {fileID: -3807103420096108289}
   ChildNode: {fileID: 0}
@@ -182,6 +184,38 @@ MonoBehaviour:
   _externalFunctionName: 
   endOfMirrorScene: 1
   mirrorScene: 3
+--- !u!114 &2588446796748727726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: -9
+    y: 77
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: 
+    Text: Hi, this is the Magic Mirror Helpline, what's your emergency?
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 0}
+  ChildNode: {fileID: -8796346276266317250}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 0
+  mirrorScene: 0
 --- !u!114 &4890904195267898095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -198,12 +232,12 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 765
-    y: 131
+    x: 591
+    y: 104
     width: 190
     height: 155
   IsDragging: 0
-  IsSelected: 1
+  IsSelected: 0
   _sentence:
     CharacterName: 
     Text: Here's an axe... just in case.
