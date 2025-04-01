@@ -1,3 +1,4 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
 
@@ -48,6 +49,17 @@ public class InternalDialogManager : MonoBehaviour
     {
         dialogTexts = texts;
         ShowDialog(texts[0], interactable);
+    }
+
+    public void ShowDialogAfterSeconds(string text, float seconds)
+    {
+        StartCoroutine(DelayDialog(seconds));
+        ShowDialog(text);
+    }
+
+    IEnumerator DelayDialog(float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
     }
 
     public void NextDialog()

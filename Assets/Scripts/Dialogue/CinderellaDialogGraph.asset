@@ -441,7 +441,7 @@ MonoBehaviour:
   - Give fireman's axe
   - Give pencil
   - Give glass slippers
-  - Come back later
+  - Look for items
   RequiredObjects: 0600000004000000050000000100000002000000
   ParentSentenceNode: {fileID: 244232206319788523}
   ChildSentenceNodes:

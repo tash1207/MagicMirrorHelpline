@@ -39,9 +39,12 @@ public class Mirror : Interactable
     bool isRinging = false;
     bool hasStartedDialog = false;
     public bool finishedMirrorTask = false;
+    bool hasReceivedReward = false;
+    bool isActiveDialogScene = false;
 
     float activeBgSize = 0.18f;
     float defaultBgSize = 2.2f;
+    float rewardDialogDelay = 0.5f;
 
     void Start()
     {
@@ -49,7 +52,6 @@ public class Mirror : Interactable
         dialogBehaviour.AddListenerToDialogFinishedEvent(EndDialogScene);
         dialogBehaviour.BindExternalFunction("UsedPencil", UsedPencil);
         dialogBehaviour.BindExternalFunction("UsedSlippers", UsedSlippers);
-        dialogBehaviour.BindExternalFunction("UsedCrystalBall", UsedCrystalBall);
         dialogBehaviour.BindExternalFunction("UsedAxe", UsedAxe);
         dialogBehaviour.BindExternalFunction("UsedMusicBox", UsedMusicBox);
     }
@@ -67,14 +69,6 @@ public class Mirror : Interactable
         if (Inventory.Instance.HasObject(Inventory.InventoryObject.Slippers))
         {
             Inventory.Instance.RemoveObject(Inventory.InventoryObject.Slippers);
-        }
-    }
-
-    void UsedCrystalBall()
-    {
-        if (Inventory.Instance.HasObject(Inventory.InventoryObject.CrystalBall))
-        {
-            Inventory.Instance.RemoveObject(Inventory.InventoryObject.CrystalBall);
         }
     }
 
@@ -101,30 +95,68 @@ public class Mirror : Interactable
             finishedMirrorTask = true;
             SetToDefault();
             OnSceneFinished?.Invoke(mirrorScene);
+        }
+    }
 
-            if (mirrorScene == MirrorScene.Cinderella)
+    void HandleFinishedSceneInventoryChanges(MirrorScene scene)
+    {
+        if (mirrorScene == MirrorScene.Cinderella)
+        {
+            if (!hasReceivedReward)
             {
                 Inventory.Instance.AddObject(Inventory.InventoryObject.Wine, "Bottle of white wine");
+                InternalDialogManager.Instance.ShowDialogAfterSeconds("Received Bottle of white wine", rewardDialogDelay);
+                hasReceivedReward = true;
             }
-            else if (mirrorScene == MirrorScene.Jack)
+        }
+        else if (mirrorScene == MirrorScene.Jack)
+        {
+            if (!hasReceivedReward)
             {
                 Inventory.Instance.AddObject(Inventory.InventoryObject.Cheese, "Giant chunk of cheese");
+                InternalDialogManager.Instance.ShowDialogAfterSeconds("Received Giant chunk of cheese", rewardDialogDelay);
+                hasReceivedReward = true;
             }
-            else if (mirrorScene == MirrorScene.LittleMermaid)
+        }
+        else if (mirrorScene == MirrorScene.LittleMermaid)
+        {
+            if (!hasReceivedReward)
             {
                 Inventory.Instance.AddObject(Inventory.InventoryObject.CrystalBall, "Crystal ball");
+                InternalDialogManager.Instance.ShowDialogAfterSeconds("Received Crystal ball", rewardDialogDelay);
+                hasReceivedReward = true;
             }
-            else if (mirrorScene == MirrorScene.RedRiding)
+        }
+        else if (mirrorScene == MirrorScene.RedRiding)
+        {
+            if (!hasReceivedReward)
             {
                 Inventory.Instance.AddObject(Inventory.InventoryObject.Baguette, "Old baguettes");
+                InternalDialogManager.Instance.ShowDialogAfterSeconds("Received Old baguettes", rewardDialogDelay);
+                hasReceivedReward = true;
             }
-            else if (mirrorScene == MirrorScene.RobinHood)
+        }
+        else if (mirrorScene == MirrorScene.RobinHood)
+        {
+            if (Inventory.Instance.HasObject(Inventory.InventoryObject.CrystalBall))
+            {
+                Inventory.Instance.RemoveObject(Inventory.InventoryObject.CrystalBall);
+            }
+
+            if (!hasReceivedReward)
             {
                 Inventory.Instance.AddObject(Inventory.InventoryObject.Broth, "Pot of broth");
+                InternalDialogManager.Instance.ShowDialogAfterSeconds("Received Pot of broth", rewardDialogDelay);
+                hasReceivedReward = true;
             }
-            else if (mirrorScene == MirrorScene.SnowWhite)
+        }
+        else if (mirrorScene == MirrorScene.SnowWhite)
+        {
+            if (!hasReceivedReward)
             {
                 Inventory.Instance.AddObject(Inventory.InventoryObject.Onion, "Onion");
+                InternalDialogManager.Instance.ShowDialogAfterSeconds("Received Onion", rewardDialogDelay);
+                hasReceivedReward = true;
             }
         }
     }
@@ -190,12 +222,24 @@ public class Mirror : Interactable
         dialogBackgroundImage.sprite = bgActiveImage;
         dialogBackground.SetActive(true);
         MusicManager.Instance.PlayMagicAudio();
+        isActiveDialogScene = true;
     }
 
     void EndDialogScene()
     {
-        FindAnyObjectByType<Player>().pausePlayerMovement = false;
-        dialogBackground.SetActive(false);
-        MusicManager.Instance.PlayOfficeAudio();
+        if (isActiveDialogScene)
+        {
+            FindAnyObjectByType<Player>().pausePlayerMovement = false;
+            dialogBackground.SetActive(false);
+            MusicManager.Instance.PlayOfficeAudio();
+            isActiveDialogScene = false;
+
+            Inventory.Instance.ShowInventoryTip();
+
+            if (finishedMirrorTask)
+            {
+                HandleFinishedSceneInventoryChanges(mirrorScene);
+            }
+        }
     }
 }

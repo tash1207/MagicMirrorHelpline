@@ -30,6 +30,7 @@ public class Inventory : MonoBehaviour
     List<InventoryObject> inventoryObjects;
 
     public bool inventoryEnabled = false;
+    public bool inventoryTipShown = false;
 
     void Awake()
     {
@@ -73,6 +74,19 @@ public class Inventory : MonoBehaviour
     public void EnableInventory()
     {
         inventoryEnabled = true;
+    }
+
+    public void ShowInventoryTip()
+    {
+        if (!inventoryTipShown)
+        {
+            string[] tips = new string[] {
+                "I should see if we have something useful lying around the office.",
+                "Press R to view inventory."
+            };
+            InternalDialogManager.Instance.ShowDialog(tips);
+            inventoryTipShown = true;
+        }
     }
 
     public void ToggleInventory()
