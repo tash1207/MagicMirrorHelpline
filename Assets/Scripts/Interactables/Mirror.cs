@@ -24,12 +24,14 @@ public class Mirror : Interactable
     [SerializeField] GameObject bgSpriteRenderer;
     [SerializeField] Sprite bgActiveImage;
     [SerializeField] Sprite bgDefaultImage;
+    [SerializeField] Sprite charSprite;
     [SerializeField] ParticleSystem shimmer;
 
     [Header("Dialog")]
     [SerializeField] MirrorScene mirrorScene;
     [SerializeField] GameObject dialogBackground;
     [SerializeField] Image dialogBackgroundImage;
+    [SerializeField] Image dialogCharacterImage;
     [SerializeField] DialogBehaviour dialogBehaviour;
     [SerializeField] DialogNodeGraph startingDialogNodeGraph;
     [SerializeField] DialogNodeGraph giveItemDialogNodeGraph;
@@ -236,6 +238,7 @@ public class Mirror : Interactable
     {
         FindAnyObjectByType<Player>().PausePlayerMovement();
         dialogBackgroundImage.sprite = bgActiveImage;
+        dialogCharacterImage.sprite = charSprite;
         dialogBackground.SetActive(true);
         MusicManager.Instance.PlayMagicAudio();
         isActiveDialogScene = true;

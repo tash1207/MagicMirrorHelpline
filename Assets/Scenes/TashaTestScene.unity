@@ -3835,13 +3835,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
+      propertyPath: charSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c33d031933712ec42ba3247bace68ae8, type: 3}
+    - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: mirrorScene
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: bgActiveImage
       value: 
-      objectReference: {fileID: -21357841802768676, guid: fee7949c473913049ad2c3e5d3b84bc0, type: 3}
+      objectReference: {fileID: -8468045915109639830, guid: e4921d6e910b74f46ac7175cce568df3, type: 3}
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: dialogBehaviour
       value: 
@@ -3850,6 +3854,10 @@ PrefabInstance:
       propertyPath: dialogBackground
       value: 
       objectReference: {fileID: 1195606054}
+    - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
+      propertyPath: dialogCharacterImage
+      value: 
+      objectReference: {fileID: 1779935780}
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: dialogBackgroundImage
       value: 
@@ -3942,6 +3950,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
+      propertyPath: charSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6482c44617813b541922df7ff02d066f, type: 3}
+    - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: bgActiveImage
       value: 
       objectReference: {fileID: -6151239481870066906, guid: 295ba3d475317314aac874827d2c75b1, type: 3}
@@ -3957,6 +3969,10 @@ PrefabInstance:
       propertyPath: dialogBackground
       value: 
       objectReference: {fileID: 1195606054}
+    - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
+      propertyPath: dialogCharacterImage
+      value: 
+      objectReference: {fileID: 1779935780}
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: thinkDefaultThought1
       value: 0
@@ -4043,6 +4059,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
+      propertyPath: charSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 57ef18efa595868408e5d8a4c69a8921, type: 3}
+    - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: mirrorScene
       value: 2
       objectReference: {fileID: 0}
@@ -4058,6 +4078,10 @@ PrefabInstance:
       propertyPath: dialogBackground
       value: 
       objectReference: {fileID: 1195606054}
+    - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
+      propertyPath: dialogCharacterImage
+      value: 
+      objectReference: {fileID: 1779935780}
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: finalDialogNodeGraph
       value: 
@@ -8258,6 +8282,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1764816329}
+  - {fileID: 1779935779}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -12216,13 +12241,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
+      propertyPath: charSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a58b8e82101ca0c43bca9b69ca675240, type: 3}
+    - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: mirrorScene
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: bgActiveImage
       value: 
-      objectReference: {fileID: -21357841802768676, guid: fee7949c473913049ad2c3e5d3b84bc0, type: 3}
+      objectReference: {fileID: -8468045915109639830, guid: e4921d6e910b74f46ac7175cce568df3, type: 3}
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: dialogBehaviour
       value: 
@@ -12231,6 +12260,10 @@ PrefabInstance:
       propertyPath: dialogBackground
       value: 
       objectReference: {fileID: 1195606054}
+    - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
+      propertyPath: dialogCharacterImage
+      value: 
+      objectReference: {fileID: 1779935780}
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: dialogBackgroundImage
       value: 
@@ -12703,6 +12736,81 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1779935778
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1779935779}
+  - component: {fileID: 1779935781}
+  - component: {fileID: 1779935780}
+  m_Layer: 5
+  m_Name: CharacterImage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1779935779
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779935778}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1195606058}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 25, y: 75}
+  m_SizeDelta: {x: 510, y: 765}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1779935780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779935778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -4769942518127837728, guid: 6482c44617813b541922df7ff02d066f, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1779935781
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779935778}
+  m_CullTransparentMesh: 1
 --- !u!4 &1788362136 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 22229239433433412, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
@@ -12792,6 +12900,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
+      propertyPath: charSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d696d7dd94786954faca812c72dfd083, type: 3}
+    - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: mirrorScene
       value: 1
       objectReference: {fileID: 0}
@@ -12807,6 +12919,10 @@ PrefabInstance:
       propertyPath: dialogBackground
       value: 
       objectReference: {fileID: 1195606054}
+    - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
+      propertyPath: dialogCharacterImage
+      value: 
+      objectReference: {fileID: 1779935780}
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: dialogBackgroundImage
       value: 
@@ -13390,6 +13506,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
+      propertyPath: charSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a58b8e82101ca0c43bca9b69ca675240, type: 3}
+    - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: mirrorScene
       value: 4
       objectReference: {fileID: 0}
@@ -13405,6 +13525,10 @@ PrefabInstance:
       propertyPath: dialogBackground
       value: 
       objectReference: {fileID: 1195606054}
+    - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
+      propertyPath: dialogCharacterImage
+      value: 
+      objectReference: {fileID: 1779935780}
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: thinkDefaultThought1
       value: 0
