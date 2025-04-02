@@ -49,7 +49,7 @@ public class Player : MonoBehaviour
             playerAnimator.SetBool("IsWalking", true);
 
             reversePlayerAnimator.SetFloat("LookX", lookDirection.x);
-            reversePlayerAnimator.SetFloat("LookY", -lookDirection.y);
+            reversePlayerAnimator.SetFloat("LookY", lookDirection.y);
             reversePlayerAnimator.SetBool("IsWalking", true);
         }
         else

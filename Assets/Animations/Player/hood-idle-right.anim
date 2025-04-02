@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: idle-right
+  m_Name: hood-idle-right
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,9 +21,9 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -1060286283, guid: 4b33aa77f0f6f4047912634de5796d65, type: 3}
+      value: {fileID: -66816668, guid: 03067ac3c13b1184eab20d24fe65d162, type: 3}
     - time: 0.5
-      value: {fileID: -910979381, guid: 4b33aa77f0f6f4047912634de5796d65, type: 3}
+      value: {fileID: 825558101, guid: 03067ac3c13b1184eab20d24fe65d162, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -46,8 +46,8 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: -1060286283, guid: 4b33aa77f0f6f4047912634de5796d65, type: 3}
-    - {fileID: -910979381, guid: 4b33aa77f0f6f4047912634de5796d65, type: 3}
+    - {fileID: -66816668, guid: 03067ac3c13b1184eab20d24fe65d162, type: 3}
+    - {fileID: 825558101, guid: 03067ac3c13b1184eab20d24fe65d162, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

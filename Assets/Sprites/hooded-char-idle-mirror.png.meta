@@ -1,31 +1,19 @@
 fileFormatVersion: 2
-guid: 4b33aa77f0f6f4047912634de5796d65
+guid: 6ee24872b78057f45a1190cd2a9d5724
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1351243094175956957
-    second: char-idle_0
+      213: 5541134018809101331
+    second: hooded-char-idle-mirror_0
   - first:
-      213: 4393316215172687718
-    second: char-idle_1
+      213: -8959179810186101911
+    second: hooded-char-idle-mirror_1
   - first:
-      213: 8528420392293889784
-    second: char-idle_2
+      213: 1946106106294480972
+    second: hooded-char-idle-mirror_2
   - first:
-      213: -6880250295351258666
-    second: char-idle_3
-  - first:
-      213: 3120330437412014829
-    second: char-idle_4
-  - first:
-      213: -1924321231256124916
-    second: char-idle_5
-  - first:
-      213: -6023781328268161431
-    second: char-idle_6
-  - first:
-      213: 185879202498071488
-    second: char-idle_7
+      213: -3003590430694069745
+    second: hooded-char-idle-mirror_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -134,73 +122,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: char-idle_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 512
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dbb134ee1b7d66d4a84cde82dbab4247
-      internalID: -1258500953
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: char-idle_1
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 512
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bb9ed24aa83e540499c180876e490b28
-      internalID: 1147989294
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: char-idle_2
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 512
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d436f69e79e52074fa15e89608953178
-      internalID: -1060286283
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: char-idle_3
+      name: hooded-char-idle-mirror_0
       rect:
         serializedVersion: 2
         x: 0
@@ -215,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb5c91589d3aa1645846ffcbf8afaf28
-      internalID: -910979381
+      spriteID: ed5570e7c7912914f944533ed55a5d76
+      internalID: 1230894932
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char-idle_4
+      name: hooded-char-idle-mirror_1
       rect:
         serializedVersion: 2
         x: 256
@@ -237,36 +159,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28823ee568dbaa84b8779e5b82d3a8da
-      internalID: 662752019
+      spriteID: 6f324d9046d23144380add7fdecfec9f
+      internalID: 1839006192
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char-idle_5
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 256
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 318dd8e0425e0b148a513ce548332eec
-      internalID: 1664164503
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: char-idle_6
+      name: hooded-char-idle-mirror_2
       rect:
         serializedVersion: 2
         x: 0
@@ -281,14 +181,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 672d9dabb5e9d824a99d472d05dee568
-      internalID: 981936111
+      spriteID: 9877334da09dd0843b1ddd109afd406a
+      internalID: -1415014935
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char-idle_7
+      name: hooded-char-idle-mirror_3
       rect:
         serializedVersion: 2
         x: 256
@@ -303,8 +203,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19edd3ff40180f94f83e8773b21eb3f1
-      internalID: -66488663
+      spriteID: 4914f5ee777a1434386b3ea87d2845c7
+      internalID: 1764243347
       vertices: []
       indices: 
       edges: []
@@ -313,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: c71a75be6f25ad04aa959b4fc17949ae
+    spriteID: e55a4a7d50278f049ae882e893b1cee0
     internalID: 0
     vertices: []
     indices: 
@@ -323,14 +223,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      char-idle_0: -1258500953
-      char-idle_1: 1147989294
-      char-idle_2: -1060286283
-      char-idle_3: -910979381
-      char-idle_4: 662752019
-      char-idle_5: 1664164503
-      char-idle_6: 981936111
-      char-idle_7: -66488663
+      hooded-char-idle-mirror_0: 1230894932
+      hooded-char-idle-mirror_1: 1839006192
+      hooded-char-idle-mirror_2: -1415014935
+      hooded-char-idle-mirror_3: 1764243347
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
