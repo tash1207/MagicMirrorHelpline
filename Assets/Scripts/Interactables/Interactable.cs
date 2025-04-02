@@ -9,6 +9,7 @@ public class Interactable : MonoBehaviour
 
     protected bool hasInteracted = false;
     protected bool performFollowUpAction = false;
+    protected bool dontDestroyOnPickup = false;
 
     public virtual void Interact()
     {
@@ -24,7 +25,14 @@ public class Interactable : MonoBehaviour
         if (canPickUp)
         {
             Think("Picked up " + objectName);
-            Destroy(gameObject);
+            if (dontDestroyOnPickup)
+            {
+                gameObject.SetActive(false);
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
             return true;
         }
         return false;

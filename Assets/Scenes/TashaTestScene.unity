@@ -13453,6 +13453,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultThought: 
   brokenCase: {fileID: 2090884646}
+  axeInBrokenCase: {fileID: 14616342, guid: 217a78bd34d7d11448c30b0d44b16dd0, type: 3}
   brokenGlassSound: {fileID: 8300000, guid: 36a8b7193377acf44a5c6ba0dbae1779, type: 3}
 --- !u!1 &1935192518 stripped
 GameObject:
@@ -14264,7 +14265,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2090884647}
   - component: {fileID: 2090884648}
-  m_Layer: 0
+  - component: {fileID: 2090884649}
+  - component: {fileID: 2090884650}
+  m_Layer: 8
   m_Name: case-broken
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14341,6 +14344,66 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2090884649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2090884646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b38d7c2c70c38a41956634c53580600, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultThought: 
+  axe: {fileID: 1930756050}
+--- !u!61 &2090884650
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2090884646}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0.006188512}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.56, y: 1.28}
+    newSize: {x: 2.56, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 2.56, y: 1.267623}
+  m_EdgeRadius: 0
 --- !u!1 &2120148402
 GameObject:
   m_ObjectHideFlags: 0

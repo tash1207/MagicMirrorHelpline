@@ -3,12 +3,16 @@ using UnityEngine;
 public class Axe : Interactable
 {
     [SerializeField] GameObject brokenCase;
+    [SerializeField] Sprite axeInBrokenCase;
     [SerializeField] AudioClip brokenGlassSound;
+
+    bool hasBrokenGlass = false;
 
     void Awake()
     {
         objectName = "Axe";
         canPickUp = true;
+        dontDestroyOnPickup = true;
     }
 
     override public void Interact()
@@ -17,11 +21,18 @@ public class Axe : Interactable
         string thought = "Does hunger count as enough of an emergency?";
         if (Inventory.Instance.inventoryEnabled)
         {
-            string[] thoughts = new string[] {
-                thought,
-                "I certainly think so."
-            };
-            Think(thoughts);
+            if (hasBrokenGlass)
+            {
+                Think("On second thought, maybe I will need this.");
+            }
+            else
+            {
+                string[] thoughts = new string[] {
+                    thought,
+                    "I certainly think so."
+                };
+                Think(thoughts);
+            }
         }
         else
         {
@@ -33,8 +44,13 @@ public class Axe : Interactable
     {
         if (base.PickUp())
         {
-            SoundFXManager.Instance.PlaySoundFXClip(brokenGlassSound, 1f);
-            brokenCase.SetActive(true);
+            if (!hasBrokenGlass)
+            {
+                SoundFXManager.Instance.PlaySoundFXClip(brokenGlassSound, 1f);
+                brokenCase.SetActive(true);
+                hasBrokenGlass = true;
+                GetComponent<SpriteRenderer>().sprite = axeInBrokenCase;
+            }
             Inventory.Instance.AddObject(Inventory.InventoryObject.Axe, this);
             return true;
         }
