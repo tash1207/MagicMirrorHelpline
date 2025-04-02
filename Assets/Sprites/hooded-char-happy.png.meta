@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8f77ea44203bf1348b0e4eb38afd05f6
+guid: af5e8e27b166a7343969ed2ef1cb63c6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1270884668530023143
-    second: hooded-char-happy_0
+      213: -2313770919934967541
+    second: hooded-char-idle-2.png_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f37534ae46567a648ad5d678f6bc6355
-      internalID: 1708632584
+      spriteID: 87f80b1740a3aa248aeb46ce82915cb8
+      internalID: -1897210148
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 36679c6ccaacd2c44a9f484565c07bb9
+    spriteID: 1780d7d5621db3245b55e562912808fe
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      hooded-char-happy_0: 1708632584
+      hooded-char-happy_0: -1897210148
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
