@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Pot : Interactable
 {
@@ -35,8 +36,13 @@ public class Pot : Interactable
             {
                 animator.SetBool("isFull", false);
                 animator.SetBool("isSteaming", false);
-                Think("Yummm! I won!");
-                // Potential game over behavior
+                string[] thoughts = new string[] {
+                    "Yummm! I didn't starve!",
+                    "I hope my coworkers aren't upset I gave their things away."
+                };
+                Think(thoughts);
+                // Game over behavior
+                performFollowUpAction = true;
             }
         }
         else if (Inventory.Instance.HasAllIngredientsExceptLast())
@@ -78,8 +84,15 @@ public class Pot : Interactable
     {
         if (performFollowUpAction)
         {
-            MirrorManager.Instance.EnableMirror1();
-            Think("Crap, I guess duty calls. No need to make others suffer just because I'm hungry.");
+            if (Inventory.Instance.HasAllIngredients())
+            {
+                SceneManager.LoadScene(1);
+            }
+            else
+            {
+                MirrorManager.Instance.EnableMirror1();
+                Think("Crap, I guess duty calls. No need to make others suffer just because I'm hungry.");
+            }
         }
     }
 }
