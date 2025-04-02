@@ -3864,7 +3864,7 @@ PrefabInstance:
       objectReference: {fileID: 1764816330}
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: finishedMirrorThought
-      value: I helped Snow White
+      value: I helped Snow White with... something.
       objectReference: {fileID: 0}
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: giveItemDialogNodeGraph
@@ -4096,7 +4096,7 @@ PrefabInstance:
       objectReference: {fileID: 1764816330}
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: finishedMirrorThought
-      value: I helped the Little Mermaid
+      value: I hope the Little Mermaid is happy as a human.
       objectReference: {fileID: 0}
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: giveItemDialogNodeGraph
@@ -4651,7 +4651,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.0014607906, y: -0.010409206}
+  m_Offset: {x: -0.048244476, y: -0.07254052}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4661,7 +4661,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.0614474, y: 1.1089323}
+  m_Size: {x: 1.4590874, y: 1.407162}
   m_EdgeRadius: 0
 --- !u!1 &581369882
 GameObject:
@@ -8107,7 +8107,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.015756011, y: -0.05232495}
+  m_Offset: {x: 0.058519244, y: -0.084397554}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -8117,7 +8117,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.019398, y: 2.2366247}
+  m_Size: {x: 2.104924, y: 2.3007698}
   m_EdgeRadius: 0
 --- !u!212 &1189566814
 SpriteRenderer:
@@ -11635,7 +11635,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.015561566, y: -0.0725162}
+  m_Offset: {x: 0.019362777, y: -0.10292554}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -11645,7 +11645,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.71191216, y: 0.66579986}
+  m_Size: {x: 0.7347192, y: 0.7266185}
   m_EdgeRadius: 0
 --- !u!1 &1602153811
 GameObject:
@@ -12346,7 +12346,7 @@ PrefabInstance:
       objectReference: {fileID: 1764816330}
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: finishedMirrorThought
-      value: I helped Red Riding Hood
+      value: I helped Red Riding Hood with a wolf.
       objectReference: {fileID: 0}
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: giveItemDialogNodeGraph
@@ -12745,7 +12745,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.0040984154, y: -0.0029722154}
+  m_Offset: {x: -0.07865608, y: 0.004483551}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -12755,7 +12755,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.8214636, y: 0.7781709}
+  m_Size: {x: 1.1047823, y: 0.8527283}
   m_EdgeRadius: 0
 --- !u!212 &1771974084
 SpriteRenderer:
@@ -13005,7 +13005,7 @@ PrefabInstance:
       objectReference: {fileID: 1764816330}
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: finishedMirrorThought
-      value: I helped Jack
+      value: I helped Jack escape a giant.
       objectReference: {fileID: 0}
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: giveItemDialogNodeGraph
@@ -13521,7 +13521,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.15225682, y: -0.06801985}
+  m_Offset: {x: 0.17049849, y: -0.021113336}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -13531,7 +13531,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.143508, y: 1.0170407}
+  m_Size: {x: 1.3467689, y: 1.235937}
   m_EdgeRadius: 0
 --- !u!1001 &1939132606
 PrefabInstance:

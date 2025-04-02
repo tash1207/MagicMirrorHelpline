@@ -15,15 +15,15 @@ public class Pot : Interactable
     override public void Interact()
     {
         base.Interact();
+        performFollowUpAction = false;
 
         if (Inventory.Instance.HasAllIngredients())
         {
-            performFollowUpAction = false;
             if (animationTest == 0)
             {
                 animator.SetBool("isFull", true);
                 animationTest = 1;
-                Think("The ingredients are in, but I still need to turn on the stove");
+                Think("I have all the ingredients for a delicious soup!");
             }
             else if (animationTest == 1)
             {
@@ -38,6 +38,31 @@ public class Pot : Interactable
                 Think("Yummm! I won!");
                 // Potential game over behavior
             }
+        }
+        else if (Inventory.Instance.HasAllIngredientsExceptLast())
+        {
+            Think("I have a bunch of ingredients now! If I followed a recipe maybe I could make something yummy.");
+        }
+        else if (Inventory.Instance.HasASecondaryIngredient())
+        {
+            string[] thoughts = new string[] {
+                "This hypothetical soup is really coming together.",
+                "Just a few more ingredients and I can make something good."
+            };
+            Think(thoughts);
+        }
+        else if (Inventory.Instance.HasObject(Inventory.InventoryObject.Broth))
+        {
+            string[] thoughts = new string[] {
+                "I have broth so maybe I can make a soup?",
+                "I'll definitely need some more ingredients."
+            };
+            Think(thoughts);
+            // TODO: consider changing the interaction to be dropping ingredients into the pot.
+        }
+        else if (Inventory.Instance.HasObject(Inventory.InventoryObject.Wine))
+        {
+            Think("The only 'food' I have is a bottle of wine and heated wine does not sound appetizing.");
         }
         else
         {
