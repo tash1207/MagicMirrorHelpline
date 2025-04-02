@@ -255,7 +255,7 @@ public class Mirror : Interactable
 
     void StartDialogScene()
     {
-        FindAnyObjectByType<Player>().PausePlayerMovement();
+        FindAnyObjectByType<Player>().EnterMirrorScene();
         dialogBackgroundImage.sprite = bgActiveImage;
         dialogCharacterImage.sprite = charSprite;
         dialogBackground.SetActive(true);
@@ -267,7 +267,7 @@ public class Mirror : Interactable
     {
         if (isActiveDialogScene)
         {
-            FindAnyObjectByType<Player>().pausePlayerMovement = false;
+            FindAnyObjectByType<Player>().ExitMirrorScene();
             dialogBackground.SetActive(false);
             MusicManager.Instance.PlayOfficeAudio();
             isActiveDialogScene = false;

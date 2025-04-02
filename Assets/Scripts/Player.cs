@@ -16,6 +16,7 @@ public class Player : MonoBehaviour
     Vector2 lookDirection;
     bool isSprinting;
 
+    bool inMirrorScene = false;
     public bool pausePlayerMovement = false;
 
     void Awake()
@@ -36,7 +37,7 @@ public class Player : MonoBehaviour
 
     void OnMove(InputValue value)
     {
-        if (pausePlayerMovement) { return; }
+        if (pausePlayerMovement || inMirrorScene) { return; }
         moveInput = value.Get<Vector2>();
 
         if (moveInput.x != 0f || moveInput.y != 0f)
@@ -66,7 +67,7 @@ public class Player : MonoBehaviour
 
     void OnInteract(InputValue value)
     {
-        if (pausePlayerMovement) { return; }
+        if (pausePlayerMovement || inMirrorScene) { return; }
         if (value.isPressed)
         {
             Interactable interactable = GetCollidedInteractable();
@@ -88,6 +89,7 @@ public class Player : MonoBehaviour
 
     void OnNextDialog(InputValue value)
     {
+        if (inMirrorScene) { return; }
         if (value.isPressed)
         {
             InternalDialogManager.Instance.NextDialog();
@@ -118,6 +120,18 @@ public class Player : MonoBehaviour
         }
 
         return null;
+    }
+
+    public void EnterMirrorScene()
+    {
+        inMirrorScene = true;
+        PausePlayerMovement();
+    }
+
+    public void ExitMirrorScene()
+    {
+        inMirrorScene = false;
+        pausePlayerMovement = false;
     }
 
     public void PausePlayerMovement()
