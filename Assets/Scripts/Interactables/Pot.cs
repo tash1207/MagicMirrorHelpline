@@ -6,7 +6,7 @@ public class Pot : Interactable
 {
     Animator animator;
 
-    int animationTest = 0;
+    int potAnimationState = 0; // 0: Empty, 1: Full, 2: Steaming
 
     void Awake()
     {
@@ -20,22 +20,24 @@ public class Pot : Interactable
 
         if (Inventory.Instance.HasAllIngredients())
         {
-            if (animationTest == 0)
+            if (potAnimationState == 0)
             {
                 animator.SetBool("isFull", true);
-                animationTest = 1;
+                potAnimationState = 1;
                 Think("I have all the ingredients for a delicious soup!");
+                performFollowUpAction = true;
             }
-            else if (animationTest == 1)
+            else if (potAnimationState == 1)
             {
                 animator.SetBool("isSteaming", true);
-                animationTest = 2;
+                potAnimationState = 2;
                 Think("Now we're cooking!");
             }
-            else if (animationTest == 2)
+            else if (potAnimationState == 2)
             {
                 animator.SetBool("isFull", false);
                 animator.SetBool("isSteaming", false);
+                potAnimationState = 0;
                 string[] thoughts = new string[] {
                     "Yummm! I didn't starve!",
                     "I hope my coworkers aren't upset I gave their things away."
@@ -86,7 +88,14 @@ public class Pot : Interactable
         {
             if (Inventory.Instance.HasAllIngredients())
             {
-                SceneManager.LoadScene(1);
+                if (potAnimationState == 1)
+                {
+                    Interact();
+                }
+                else if (potAnimationState == 0)
+                {
+                    SceneManager.LoadScene(1);
+                }
             }
             else
             {
