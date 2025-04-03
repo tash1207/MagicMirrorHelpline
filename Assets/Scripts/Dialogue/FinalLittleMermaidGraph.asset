@@ -126,8 +126,8 @@ MonoBehaviour:
     CharacterSprite: {fileID: 0}
   ParentNode: {fileID: 6854362973330502621}
   ChildNode: {fileID: 2207267820018962449}
-  _isExternalFunc: 0
-  _externalFunctionName: 
+  _isExternalFunc: 1
+  _externalFunctionName: GetSpices
   endOfMirrorScene: 0
   mirrorScene: 0
 --- !u!114 &-269852157662232949

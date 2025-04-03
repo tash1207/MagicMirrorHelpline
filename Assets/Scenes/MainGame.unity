@@ -3845,7 +3845,7 @@ PrefabInstance:
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: bgActiveImage
       value: 
-      objectReference: {fileID: -8468045915109639830, guid: e4921d6e910b74f46ac7175cce568df3, type: 3}
+      objectReference: {fileID: 982523720659735611, guid: d847b3b4810a6254f80352103f116e54, type: 3}
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: dialogBehaviour
       value: 
@@ -4094,7 +4094,7 @@ PrefabInstance:
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: finalDialogNodeGraph
       value: 
-      objectReference: {fileID: 11400000, guid: 7342ab7d2aa0ecc4691a2123368905cd, type: 2}
+      objectReference: {fileID: 11400000, guid: bebc1eb9f4ae5fe4c82e2bf36b011744, type: 2}
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: thinkDefaultThought1
       value: 0
@@ -12340,7 +12340,7 @@ PrefabInstance:
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: bgActiveImage
       value: 
-      objectReference: {fileID: -8468045915109639830, guid: e4921d6e910b74f46ac7175cce568df3, type: 3}
+      objectReference: {fileID: -3927736164238123687, guid: ed18d753ab184b1469bb49dbc77ca35d, type: 3}
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: dialogBehaviour
       value: 
@@ -12364,11 +12364,11 @@ PrefabInstance:
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: giveItemDialogNodeGraph
       value: 
-      objectReference: {fileID: 11400000, guid: eacbffdf736cf1246a1dc6fe45cd6d1d, type: 2}
+      objectReference: {fileID: 11400000, guid: 00d1a905b76f00b4eae3bc37eae06c2d, type: 2}
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: startingDialogNodeGraph
       value: 
-      objectReference: {fileID: 11400000, guid: eacbffdf736cf1246a1dc6fe45cd6d1d, type: 2}
+      objectReference: {fileID: 11400000, guid: 68a68a472d5dc204d818da24ac89e3a1, type: 2}
     - target: {fileID: 3457831478476732431, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: m_TargetTexture
       value: 

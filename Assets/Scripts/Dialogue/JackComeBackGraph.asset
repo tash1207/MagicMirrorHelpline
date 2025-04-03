@@ -782,8 +782,8 @@ MonoBehaviour:
     CharacterSprite: {fileID: 0}
   ParentNode: {fileID: -8226663121943744967}
   ChildNode: {fileID: -539300676807956132}
-  _isExternalFunc: 0
-  _externalFunctionName: 
+  _isExternalFunc: 1
+  _externalFunctionName: UsedMusicBox
   endOfMirrorScene: 0
   mirrorScene: 0
 --- !u!114 &8709126262442057163
