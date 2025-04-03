@@ -6,16 +6,30 @@ public class RubberDuck : Interactable
     {
         objectName = "Rubber duck";
         canPickUp = true;
+        dontDestroyOnPickup = true;
     }
 
     override public void Interact()
     {
         base.Interact();
-        string[] thoughts = new string[] {
-            "It's my desk.",
-            "And my lucky rubber ducky!"
-        };
-        Think(thoughts);
+
+        string thought = "My lucky rubber ducky!";
+        if (Inventory.Instance.inventoryEnabled)
+        {
+            string[] thoughts = new string[] {
+                thought,
+                "You're coming with me, bud."
+            };
+            Think(thoughts);
+        }
+        else
+        {
+            string[] thoughts = new string[] {
+                thought,
+                "I was wondering where you went."
+            };
+            Think(thoughts);
+        }
     }
 
     override public bool PickUp()
