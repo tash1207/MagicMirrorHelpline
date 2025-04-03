@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d224bf5720e75ad4db15610f1400777d
+guid: d2953e46c0c9074468dd5b9e6a70d25e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5687406622173582174
-    second: LittleMermaid_legs_0
+      213: -3899176267370535592
+    second: LittleMermaid_legs-1.png_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -121,15 +121,15 @@ TextureImporter:
         width: 510
         height: 740
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e535cdf803abdee40800000000000000
-      internalID: 5687406622173582174
+      spriteID: 3b033b78c0bdb3346952301feca28847
+      internalID: 274793595
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: f9da10776f3820641a300a716fb514fc
+    spriteID: 33b82a3acff4a96429777dbdfe819c48
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      LittleMermaid_legs_0: 5687406622173582174
+      LittleMermaid_legs_0: 274793595
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

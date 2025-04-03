@@ -69,10 +69,7 @@ public class Inventory : MonoBehaviour
 
     public bool HasObject(InventoryObject invObj)
     {
-        if (invObj == InventoryObject.True) { return true; }
-        bool hasObj = invObj == InventoryObject.True || inventoryObjects.Contains(invObj);
-        Debug.Log("Inventory has " + invObj + ": " + hasObj);
-        return hasObj;
+        return invObj == InventoryObject.True || inventoryObjects.Contains(invObj);
     }
 
     public void EnableInventory()

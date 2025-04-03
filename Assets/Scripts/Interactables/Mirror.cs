@@ -25,6 +25,7 @@ public class Mirror : Interactable
     [SerializeField] Sprite bgActiveImage;
     [SerializeField] Sprite bgDefaultImage;
     [SerializeField] Sprite charSprite;
+    [SerializeField] Sprite finalDialogCharSprite;
     [SerializeField] ParticleSystem shimmer;
 
     [Header("Dialog")]
@@ -81,7 +82,6 @@ public class Mirror : Interactable
 
     void UsedAxe()
     {
-        Debug.Log("UsedAxe");
         if (Inventory.Instance.HasObject(Inventory.InventoryObject.Axe))
         {
             Inventory.Instance.RemoveObject(Inventory.InventoryObject.Axe);
@@ -90,7 +90,6 @@ public class Mirror : Interactable
 
     void UsedMusicBox()
     {
-        Debug.Log("UsedMusicBox");
         if (Inventory.Instance.HasObject(Inventory.InventoryObject.MusicBox))
         {
             Inventory.Instance.RemoveObject(Inventory.InventoryObject.MusicBox);
@@ -99,7 +98,6 @@ public class Mirror : Interactable
 
     void UsedRedReward()
     {
-        Debug.Log("UsedRedReward (Wolf fur)");
         if (Inventory.Instance.HasObject(Inventory.InventoryObject.RedRidingHoodReward))
         {
             Inventory.Instance.RemoveObject(Inventory.InventoryObject.RedRidingHoodReward);
@@ -108,7 +106,6 @@ public class Mirror : Interactable
 
     void UsedWhiteReward()
     {
-        Debug.Log("UsedWhiteReward (Huntsman's axe)");
         if (Inventory.Instance.HasObject(Inventory.InventoryObject.SnowWhiteReward))
         {
             Inventory.Instance.RemoveObject(Inventory.InventoryObject.SnowWhiteReward);
@@ -117,7 +114,6 @@ public class Mirror : Interactable
 
     void GetOnion()
     {
-        Debug.Log("GetOnion");
         if (!Inventory.Instance.HasObject(Inventory.InventoryObject.Onion))
         {
             Inventory.Instance.AddObject(Inventory.InventoryObject.Onion, "Onion??");
@@ -126,7 +122,6 @@ public class Mirror : Interactable
 
     void GetSpices()
     {
-        Debug.Log("GetSpices");
         if (!Inventory.Instance.HasObject(Inventory.InventoryObject.Spices))
         {
             Inventory.Instance.AddObject(Inventory.InventoryObject.Spices, "Bay spices");
@@ -280,6 +275,10 @@ public class Mirror : Interactable
         FindAnyObjectByType<Player>().EnterMirrorScene();
         dialogBackgroundImage.sprite = bgActiveImage;
         dialogCharacterImage.sprite = charSprite;
+        if (isRinging && finishedMirrorTask && finalDialogNodeGraph != null && finalDialogCharSprite != null)
+        {
+            dialogCharacterImage.sprite = finalDialogCharSprite;
+        }
         dialogBackground.SetActive(true);
         MusicManager.Instance.PlayMagicAudio();
         isActiveDialogScene = true;
