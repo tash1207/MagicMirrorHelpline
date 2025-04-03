@@ -1,0 +1,682 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7078048958540843586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 1060
+    y: -219
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Snow White
+    Text: "\u201CDo I even want to know where you got this?\u201D"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -6569932601009920294}
+  ChildNode: {fileID: 6411338675490207004}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 0
+  mirrorScene: 0
+--- !u!114 &-7005668739585610347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 865
+    y: 540
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Snow White
+    Text: "\u201CHave an enchanted day!\u201D"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -1018127894770685249}
+  ChildNode: {fileID: 0}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 1
+  mirrorScene: 5
+--- !u!114 &-6569932601009920294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 1059
+    y: -422
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: 
+    Text: "\u201CYeah, if anything will wake up the not-dead, it\u2019s that.\u201D"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -54157354994862517}
+  ChildNode: {fileID: -7078048958540843586}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 0
+  mirrorScene: 0
+--- !u!114 &-4837410094340635322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 13
+    y: 138
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: 
+    Text: "\u201CI mean, you did already give me an apple-onion.\u201D"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -105579405272048095}
+  ChildNode: {fileID: -1366873361288414024}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 0
+  mirrorScene: 0
+--- !u!114 &-3310301682243023984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: -14
+    y: -661
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: 
+    Text: '"I''m back."'
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 0}
+  ChildNode: {fileID: -557971076869558377}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 0
+  mirrorScene: 0
+--- !u!114 &-2084717514315715081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 738
+    y: -628
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Snow White
+    Text: "\u201CThis will wake Sleepy up?\u201D"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -557971076869558377}
+  ChildNode: {fileID: 4440056769596679459}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 0
+  mirrorScene: 0
+--- !u!114 &-1366873361288414024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 340
+    y: 142
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Snow White
+    Text: "\u201CThat was poisoned, it\u2019s hardly a fair gift. And I\u2019m the
+      fairest of them all.\u201D"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -4837410094340635322}
+  ChildNode: {fileID: 3784124900384085622}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 0
+  mirrorScene: 0
+--- !u!114 &-1018127894770685249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1717f3c6dba9fa40844ddacac301510, type: 3}
+  m_Name: Answer Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 648
+    y: 354
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  Answers:
+  - "\u201CI guess I have two axes now??? Thanks?\u201D"
+  - "\u201CI guess that\u2019s a sweet sentiment.\u201D"
+  RequiredObjects: 0400000002000000
+  ParentSentenceNode: {fileID: 3784124900384085622}
+  ChildSentenceNodes:
+  - {fileID: -7005668739585610347}
+  - {fileID: 8258064472982953030}
+--- !u!114 &-995474794491242363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: -43
+    y: -458
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: 
+    Text: "\u201CI\u2019ll be back once I have a solution for you.\u201D"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -557971076869558377}
+  ChildNode: {fileID: 0}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 0
+  mirrorScene: 0
+--- !u!114 &-557971076869558377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1717f3c6dba9fa40844ddacac301510, type: 3}
+  m_Name: Answer Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 327
+    y: -665
+    width: 190
+    height: 195
+  IsDragging: 0
+  IsSelected: 0
+  Answers:
+  - Give music box
+  - Give fireman's axe
+  - Give rubber duck
+  - Give stinky wolf fur
+  - Come back later
+  RequiredObjects: 0600000004000000000000000000000002000000
+  ParentSentenceNode: {fileID: 8587393888166407263}
+  ChildSentenceNodes:
+  - {fileID: -2084717514315715081}
+  - {fileID: 1519976622838441248}
+  - {fileID: 8587393888166407263}
+  - {fileID: -54157354994862517}
+  - {fileID: -995474794491242363}
+--- !u!114 &-105579405272048095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 38
+    y: -97
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Snow White
+    Text: "\u201CIs there any way I can repay you?\u201D "
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 1571431923242138716}
+  ChildNode: {fileID: -4837410094340635322}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 0
+  mirrorScene: 0
+--- !u!114 &-54157354994862517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 1016
+    y: -623
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Snow White
+    Text: "\u201CWow, this does smell awful.\u201D"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -557971076869558377}
+  ChildNode: {fileID: -6569932601009920294}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 0
+  mirrorScene: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33f741ea10ebcf842a91c9b871dd032a, type: 3}
+  m_Name: SnowWhiteComeBackGraph
+  m_EditorClassIdentifier: 
+  NodesList:
+  - {fileID: -3310301682243023984}
+  - {fileID: -557971076869558377}
+  - {fileID: -2084717514315715081}
+  - {fileID: 1519976622838441248}
+  - {fileID: 8587393888166407263}
+  - {fileID: -54157354994862517}
+  - {fileID: -995474794491242363}
+  - {fileID: 4440056769596679459}
+  - {fileID: -6569932601009920294}
+  - {fileID: -7078048958540843586}
+  - {fileID: 6411338675490207004}
+  - {fileID: 8596300041478491040}
+  - {fileID: 1571431923242138716}
+  - {fileID: -105579405272048095}
+  - {fileID: -4837410094340635322}
+  - {fileID: -1366873361288414024}
+  - {fileID: 3784124900384085622}
+  - {fileID: -1018127894770685249}
+  - {fileID: -7005668739585610347}
+  - {fileID: 8258064472982953030}
+  NodeToDrawLineFrom: {fileID: 0}
+  LinePosition: {x: 0, y: 0}
+--- !u!114 &1519976622838441248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 458
+    y: -402
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Snow White
+    Text: "\u201CI already have a wood cutting axe.\u201D "
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -557971076869558377}
+  ChildNode: {fileID: -557971076869558377}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 0
+  mirrorScene: 0
+--- !u!114 &1571431923242138716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 381
+    y: -112
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: 
+    Text: "\u201CNo problem, it\u2019s (apparently) what we do.\u201D"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 8596300041478491040}
+  ChildNode: {fileID: -105579405272048095}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 0
+  mirrorScene: 0
+--- !u!114 &3784124900384085622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 642
+    y: 135
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Snow White
+    Text: "\u201CHere, take the axe the Huntsman gave me for protection! I\u2019m
+      passing the goodwill forward.\u201D"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -1366873361288414024}
+  ChildNode: {fileID: -1018127894770685249}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 0
+  mirrorScene: 0
+--- !u!114 &4440056769596679459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 758
+    y: -431
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: 
+    Text: "\u201CIt\u2019s enchanted. Just make sure you use the \u201Cawake\u201D
+      setting and not the \u201Csleep\u201D one.\u201D"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -2084717514315715081}
+  ChildNode: {fileID: 8596300041478491040}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 0
+  mirrorScene: 0
+--- !u!114 &6411338675490207004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 1051
+    y: -7
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: 
+    Text: "\u201CNope.\u201D"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -7078048958540843586}
+  ChildNode: {fileID: 8596300041478491040}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 0
+  mirrorScene: 0
+--- !u!114 &8258064472982953030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 501
+    y: 537
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Snow White
+    Text: "\u201CHave an enchanted day!\u201D"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -1018127894770685249}
+  ChildNode: {fileID: 0}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 1
+  mirrorScene: 5
+--- !u!114 &8587393888166407263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 190
+    y: -395
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Snow White
+    Text: "\u201CThis is so cute! And completely unhelpful.\u201D"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -557971076869558377}
+  ChildNode: {fileID: -557971076869558377}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 0
+  mirrorScene: 0
+--- !u!114 &8596300041478491040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 703
+    y: -106
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Snow White
+    Text: "\u201CIt worked! Sleepy is awake again! Thank you so much!!!\u201D"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 6411338675490207004}
+  ChildNode: {fileID: 1571431923242138716}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+  endOfMirrorScene: 0
+  mirrorScene: 0
