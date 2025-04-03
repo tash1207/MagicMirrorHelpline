@@ -16,12 +16,12 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 442
-    y: -704
+    x: 428
+    y: 92
     width: 190
     height: 215
   IsDragging: 0
-  IsSelected: 0
+  IsSelected: 1
   Answers:
   - Give fireman's axe
   - Give music box
@@ -34,7 +34,7 @@ MonoBehaviour:
   ChildSentenceNodes:
   - {fileID: -2274460953643027171}
   - {fileID: 8147523712750135611}
-  - {fileID: -6785370720837238798}
+  - {fileID: -7761276275815041788}
   - {fileID: 2323821478414586974}
   - {fileID: -2104030658963269420}
   - {fileID: -5116286281070219887}
@@ -54,8 +54,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 1029
-    y: -232
+    x: 1015
+    y: 564
     width: 190
     height: 135
   IsDragging: 0
@@ -68,6 +68,38 @@ MonoBehaviour:
   ChildNode: {fileID: 7488344140948656498}
   _isExternalFunc: 0
   _externalFunctionName: 
+  endOfMirrorScene: 0
+  mirrorScene: 0
+--- !u!114 &-7761276275815041788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 768
+    y: 244
+    width: 190
+    height: 155
+  IsDragging: 0
+  IsSelected: 1
+  _sentence:
+    CharacterName: Jack
+    Text: "\u201CThis thing is tiny compared to him.\u201D"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 0}
+  ChildNode: {fileID: -6946416002914043382}
+  _isExternalFunc: 1
+  _externalFunctionName: UsedWhiteReward
   endOfMirrorScene: 0
   mirrorScene: 0
 --- !u!114 &-7177794320710095749
@@ -86,8 +118,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 351
-    y: 42
+    x: 337
+    y: 838
     width: 190
     height: 135
   IsDragging: 0
@@ -118,8 +150,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 1070
-    y: -494
+    x: 1056
+    y: 302
     width: 190
     height: 135
   IsDragging: 0
@@ -129,40 +161,8 @@ MonoBehaviour:
     Text: "\u201CIt\u2019s for the beanstalk. You can cut it down so he can\u2019t
       follow you home.\u201D"
     CharacterSprite: {fileID: 0}
-  ParentNode: {fileID: -6785370720837238798}
+  ParentNode: {fileID: -7761276275815041788}
   ChildNode: {fileID: -8153579962971270112}
-  _isExternalFunc: 0
-  _externalFunctionName: 
-  endOfMirrorScene: 0
-  mirrorScene: 0
---- !u!114 &-6785370720837238798
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: Sentence Node
-  m_EditorClassIdentifier: 
-  ConnectedNodesList: []
-  NodeGraph: {fileID: 11400000}
-  Rect:
-    serializedVersion: 2
-    x: 777
-    y: -425
-    width: 190
-    height: 135
-  IsDragging: 0
-  IsSelected: 0
-  _sentence:
-    CharacterName: Jack
-    Text: "\u201CThis thing is tiny compared to him.\u201D"
-    CharacterSprite: {fileID: 0}
-  ParentNode: {fileID: -8226663121943744967}
-  ChildNode: {fileID: -6946416002914043382}
   _isExternalFunc: 0
   _externalFunctionName: 
   endOfMirrorScene: 0
@@ -183,8 +183,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 80
-    y: -663
+    x: 66
+    y: 133
     width: 190
     height: 135
   IsDragging: 0
@@ -215,8 +215,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 975
-    y: 287
+    x: 961
+    y: 1083
     width: 190
     height: 135
   IsDragging: 0
@@ -247,8 +247,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 544
-    y: -889
+    x: 530
+    y: -93
     width: 190
     height: 135
   IsDragging: 0
@@ -279,8 +279,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 773
-    y: -184
+    x: 759
+    y: 612
     width: 190
     height: 135
   IsDragging: 0
@@ -311,8 +311,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 637
-    y: 42
+    x: 623
+    y: 838
     width: 190
     height: 135
   IsDragging: 0
@@ -343,10 +343,10 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 794
-    y: -654
+    x: 843
+    y: 32
     width: 190
-    height: 135
+    height: 155
   IsDragging: 0
   IsSelected: 0
   _sentence:
@@ -355,8 +355,8 @@ MonoBehaviour:
     CharacterSprite: {fileID: 0}
   ParentNode: {fileID: -8226663121943744967}
   ChildNode: {fileID: -6946416002914043382}
-  _isExternalFunc: 0
-  _externalFunctionName: 
+  _isExternalFunc: 1
+  _externalFunctionName: UsedAxe
   endOfMirrorScene: 0
   mirrorScene: 0
 --- !u!114 &-2104030658963269420
@@ -375,8 +375,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 21
-    y: -476
+    x: 7
+    y: 320
     width: 190
     height: 135
   IsDragging: 0
@@ -407,8 +407,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 485
-    y: -188
+    x: 471
+    y: 608
     width: 190
     height: 135
   IsDragging: 0
@@ -440,8 +440,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 983
-    y: 531
+    x: 969
+    y: 1327
     width: 190
     height: 135
   IsDragging: 0
@@ -474,7 +474,6 @@ MonoBehaviour:
   - {fileID: -8226663121943744967}
   - {fileID: -2274460953643027171}
   - {fileID: 8147523712750135611}
-  - {fileID: -6785370720837238798}
   - {fileID: 2323821478414586974}
   - {fileID: -2104030658963269420}
   - {fileID: -5116286281070219887}
@@ -494,6 +493,7 @@ MonoBehaviour:
   - {fileID: 4343679696141505893}
   - {fileID: 3970455069967780061}
   - {fileID: 8129235904490011401}
+  - {fileID: -7761276275815041788}
   NodeToDrawLineFrom: {fileID: 0}
   LinePosition: {x: 0, y: 0}
 --- !u!114 &1779279868310934012
@@ -512,8 +512,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 404
-    y: 277
+    x: 390
+    y: 1073
     width: 190
     height: 135
   IsDragging: 0
@@ -545,8 +545,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 235
-    y: -402
+    x: 221
+    y: 394
     width: 190
     height: 135
   IsDragging: 0
@@ -577,8 +577,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 374
-    y: 575
+    x: 360
+    y: 1371
     width: 190
     height: 135
   IsDragging: 0
@@ -609,8 +609,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 696
-    y: 548
+    x: 682
+    y: 1344
     width: 190
     height: 135
   IsDragging: 0
@@ -642,8 +642,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 693
-    y: 296
+    x: 679
+    y: 1092
     width: 190
     height: 135
   IsDragging: 0
@@ -674,8 +674,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 92
-    y: 33
+    x: 78
+    y: 829
     width: 190
     height: 135
   IsDragging: 0
@@ -706,8 +706,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 931
-    y: 34
+    x: 917
+    y: 830
     width: 190
     height: 135
   IsDragging: 0
@@ -738,8 +738,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 98
-    y: 596
+    x: 84
+    y: 1392
     width: 190
     height: 135
   IsDragging: 0
@@ -770,8 +770,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 478
-    y: -380
+    x: 464
+    y: 416
     width: 190
     height: 135
   IsDragging: 0
@@ -802,8 +802,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 91
-    y: 270
+    x: 77
+    y: 1066
     width: 190
     height: 135
   IsDragging: 0

@@ -16,8 +16,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 1233
-    y: 548
+    x: 966
+    y: 562
     width: 190
     height: 135
   IsDragging: 0
@@ -48,8 +48,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 1038
-    y: 1307
+    x: 771
+    y: 1321
     width: 190
     height: 135
   IsDragging: 0
@@ -80,8 +80,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 1232
-    y: 345
+    x: 965
+    y: 359
     width: 190
     height: 135
   IsDragging: 0
@@ -112,8 +112,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 186
-    y: 905
+    x: -81
+    y: 919
     width: 190
     height: 135
   IsDragging: 0
@@ -144,8 +144,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 159
-    y: 106
+    x: -108
+    y: 120
     width: 190
     height: 135
   IsDragging: 0
@@ -176,10 +176,10 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 911
-    y: 139
+    x: 644
+    y: 153
     width: 190
-    height: 135
+    height: 155
   IsDragging: 0
   IsSelected: 0
   _sentence:
@@ -188,8 +188,8 @@ MonoBehaviour:
     CharacterSprite: {fileID: 0}
   ParentNode: {fileID: -557971076869558377}
   ChildNode: {fileID: 4440056769596679459}
-  _isExternalFunc: 0
-  _externalFunctionName: 
+  _isExternalFunc: 1
+  _externalFunctionName: UsedMusicBox
   endOfMirrorScene: 0
   mirrorScene: 0
 --- !u!114 &-1366873361288414024
@@ -208,8 +208,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 513
-    y: 909
+    x: 246
+    y: 923
     width: 190
     height: 135
   IsDragging: 0
@@ -241,8 +241,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 821
-    y: 1121
+    x: 554
+    y: 1135
     width: 190
     height: 135
   IsDragging: 0
@@ -271,8 +271,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 130
-    y: 309
+    x: -137
+    y: 323
     width: 190
     height: 135
   IsDragging: 0
@@ -303,8 +303,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 500
-    y: 102
+    x: 233
+    y: 116
     width: 190
     height: 195
   IsDragging: 0
@@ -339,8 +339,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 211
-    y: 670
+    x: -56
+    y: 684
     width: 190
     height: 135
   IsDragging: 0
@@ -371,10 +371,10 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 1189
-    y: 144
+    x: 922
+    y: 158
     width: 190
-    height: 135
+    height: 155
   IsDragging: 0
   IsSelected: 0
   _sentence:
@@ -383,8 +383,8 @@ MonoBehaviour:
     CharacterSprite: {fileID: 0}
   ParentNode: {fileID: -557971076869558377}
   ChildNode: {fileID: -6569932601009920294}
-  _isExternalFunc: 0
-  _externalFunctionName: 
+  _isExternalFunc: 1
+  _externalFunctionName: UsedRedReward
   endOfMirrorScene: 0
   mirrorScene: 0
 --- !u!114 &11400000
@@ -438,8 +438,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 631
-    y: 365
+    x: 364
+    y: 379
     width: 190
     height: 135
   IsDragging: 0
@@ -470,8 +470,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 554
-    y: 655
+    x: 287
+    y: 669
     width: 190
     height: 135
   IsDragging: 0
@@ -502,8 +502,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 815
-    y: 902
+    x: 548
+    y: 916
     width: 190
     height: 135
   IsDragging: 0
@@ -535,8 +535,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 931
-    y: 336
+    x: 664
+    y: 350
     width: 190
     height: 135
   IsDragging: 0
@@ -549,7 +549,7 @@ MonoBehaviour:
   ParentNode: {fileID: -2084717514315715081}
   ChildNode: {fileID: 8596300041478491040}
   _isExternalFunc: 0
-  _externalFunctionName: 
+  _externalFunctionName: UsedMusicBox
   endOfMirrorScene: 0
   mirrorScene: 0
 --- !u!114 &6411338675490207004
@@ -568,8 +568,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 1224
-    y: 760
+    x: 957
+    y: 774
     width: 190
     height: 135
   IsDragging: 0
@@ -600,8 +600,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 674
-    y: 1304
+    x: 407
+    y: 1318
     width: 190
     height: 135
   IsDragging: 0
@@ -632,8 +632,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 363
-    y: 372
+    x: 96
+    y: 386
     width: 190
     height: 135
   IsDragging: 0
@@ -664,8 +664,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 876
-    y: 661
+    x: 609
+    y: 675
     width: 190
     height: 135
   IsDragging: 0
