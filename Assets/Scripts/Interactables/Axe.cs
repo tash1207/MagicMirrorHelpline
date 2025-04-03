@@ -4,9 +4,11 @@ public class Axe : Interactable
 {
     [SerializeField] GameObject brokenCase;
     [SerializeField] Sprite axeInBrokenCase;
+    [SerializeField] Sprite huntsmanAxe;
     [SerializeField] AudioClip brokenGlassSound;
 
     bool hasBrokenGlass = false;
+    bool isHuntsmanAxe;
 
     void Awake()
     {
@@ -49,11 +51,19 @@ public class Axe : Interactable
                 SoundFXManager.Instance.PlaySoundFXClip(brokenGlassSound, 1f);
                 brokenCase.SetActive(true);
                 hasBrokenGlass = true;
-                GetComponent<SpriteRenderer>().sprite = axeInBrokenCase;
             }
-            Inventory.Instance.AddObject(Inventory.InventoryObject.Axe, this);
+            Inventory.Instance.AddObject(isHuntsmanAxe ?
+                Inventory.InventoryObject.SnowWhiteReward :
+                Inventory.InventoryObject.Axe, this);
             return true;
         }
         return false;
+    }
+
+    public void SetHuntsman(bool isHuntsmanAxe)
+    {
+        this.isHuntsmanAxe = isHuntsmanAxe;
+        objectName = isHuntsmanAxe ? "Huntsman's axe" : "Axe";
+        GetComponent<SpriteRenderer>().sprite = isHuntsmanAxe ? huntsmanAxe : axeInBrokenCase;
     }
 }

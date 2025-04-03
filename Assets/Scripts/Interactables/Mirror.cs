@@ -59,6 +59,7 @@ public class Mirror : Interactable
         dialogBehaviour.BindExternalFunction("UsedMusicBox", UsedMusicBox);
         dialogBehaviour.BindExternalFunction("UsedRedReward", UsedRedReward);
         dialogBehaviour.BindExternalFunction("UsedWhiteReward", UsedWhiteReward);
+        dialogBehaviour.BindExternalFunction("GetOnion", GetOnion);
         dialogBehaviour.BindExternalFunction("GetSpices", GetSpices);
     }
 
@@ -107,6 +108,14 @@ public class Mirror : Interactable
         if (Inventory.Instance.HasObject(Inventory.InventoryObject.SnowWhiteReward))
         {
             Inventory.Instance.RemoveObject(Inventory.InventoryObject.SnowWhiteReward);
+        }
+    }
+
+    void GetOnion()
+    {
+        if (!Inventory.Instance.HasObject(Inventory.InventoryObject.Onion))
+        {
+            Inventory.Instance.AddObject(Inventory.InventoryObject.Onion, "Onion");
         }
     }
 
@@ -166,9 +175,9 @@ public class Mirror : Interactable
         {
             if (!hasReceivedReward)
             {
-                Inventory.Instance.AddObject(Inventory.InventoryObject.RedRidingHoodReward, "Red's Reward");
+                Inventory.Instance.AddObject(Inventory.InventoryObject.RedRidingHoodReward, "Stinky wolf fur");
                 Inventory.Instance.AddObject(Inventory.InventoryObject.Baguette, "Old baguettes");
-                InternalDialogManager.Instance.ShowDialogAfterSeconds("Received mystery reward from Red... and Old baguettes", rewardDialogDelay);
+                InternalDialogManager.Instance.ShowDialogAfterSeconds("Received Stinky wolf fur and Old baguettes", rewardDialogDelay);
                 hasReceivedReward = true;
             }
         }
@@ -190,9 +199,12 @@ public class Mirror : Interactable
         {
             if (!hasReceivedReward)
             {
-                Inventory.Instance.AddObject(Inventory.InventoryObject.SnowWhiteReward, "Snow White's Reward");
-                Inventory.Instance.AddObject(Inventory.InventoryObject.Onion, "Onion");
-                InternalDialogManager.Instance.ShowDialogAfterSeconds("Received mystery reward from Snow White... and Onion", rewardDialogDelay);
+                Inventory.Instance.AddObject(Inventory.InventoryObject.SnowWhiteReward, "Huntsman's axe");
+                if (!Inventory.Instance.HasObject(Inventory.InventoryObject.Onion))
+                {
+                    Inventory.Instance.AddObject(Inventory.InventoryObject.Onion, "Onion??");
+                }
+                InternalDialogManager.Instance.ShowDialogAfterSeconds("Received Huntsman's axe... and Onion??", rewardDialogDelay);
                 hasReceivedReward = true;
             }
         }
