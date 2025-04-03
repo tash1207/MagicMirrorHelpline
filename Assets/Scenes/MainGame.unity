@@ -3864,17 +3864,17 @@ PrefabInstance:
       objectReference: {fileID: 1764816330}
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: finishedMirrorThought
-      value: "I still don\u2019t know whether what she gave me is better classified
-        as an apple or an onion. The axe was nice too."
+      value: "I still don\u2019t know if what she gave me is better classified as
+        an apple or an onion."
       objectReference: {fileID: 0}
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: giveItemDialogNodeGraph
       value: 
-      objectReference: {fileID: 11400000, guid: dbb3fb2359f050b4bb006995d51ac2a7, type: 2}
+      objectReference: {fileID: 11400000, guid: 479fc375876b8704c9da48536074ba8e, type: 2}
     - target: {fileID: 2277710448466081798, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: startingDialogNodeGraph
       value: 
-      objectReference: {fileID: 11400000, guid: dbb3fb2359f050b4bb006995d51ac2a7, type: 2}
+      objectReference: {fileID: 11400000, guid: 46da616084d257e4f994baa5686a6758, type: 2}
     - target: {fileID: 3457831478476732431, guid: 47ee12a9c90966343abf294a10ddfd10, type: 3}
       propertyPath: m_TargetTexture
       value: 

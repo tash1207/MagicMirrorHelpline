@@ -115,7 +115,7 @@ public class Mirror : Interactable
     {
         if (!Inventory.Instance.HasObject(Inventory.InventoryObject.Onion))
         {
-            Inventory.Instance.AddObject(Inventory.InventoryObject.Onion, "Onion");
+            Inventory.Instance.AddObject(Inventory.InventoryObject.Onion, "Onion??");
         }
     }
 

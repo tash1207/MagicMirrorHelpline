@@ -21,6 +21,7 @@ public class Inventory : MonoBehaviour
         Broth,
         SnowWhiteReward,
         RedRidingHoodReward,
+        RubberDuck,
     }
 
     public static Inventory Instance { get; private set; }
