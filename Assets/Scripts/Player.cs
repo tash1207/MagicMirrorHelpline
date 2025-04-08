@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -18,6 +19,9 @@ public class Player : MonoBehaviour
 
     bool inMirrorScene = false;
     public bool pausePlayerMovement = false;
+
+    float nextDialogDelay = 0.1f;
+    bool canShowNextDialog = true;
 
     void Awake()
     {
@@ -89,11 +93,19 @@ public class Player : MonoBehaviour
 
     void OnNextDialog(InputValue value)
     {
-        if (inMirrorScene) { return; }
+        if (inMirrorScene || !canShowNextDialog) { return; }
         if (value.isPressed)
         {
             InternalDialogManager.Instance.NextDialog();
+            StartCoroutine(IgnoreNextDialogButtonPress());
         }
+    }
+
+    IEnumerator IgnoreNextDialogButtonPress()
+    {
+        canShowNextDialog = false;
+        yield return new WaitForSeconds(nextDialogDelay);
+        canShowNextDialog = true;
     }
 
     void OnMute(InputValue value)

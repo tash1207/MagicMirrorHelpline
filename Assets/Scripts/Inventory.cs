@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Inventory : MonoBehaviour
 {
@@ -81,9 +82,20 @@ public class Inventory : MonoBehaviour
     {
         if (!inventoryTipShown)
         {
+            bool isKeyboardMouse = true;
+            if (gameObject.TryGetComponent<PlayerInput>(out PlayerInput playerInput))
+            {
+                isKeyboardMouse = playerInput.currentControlScheme == "Keyboard&Mouse";
+            }
+
+            string firstTip = "I should see if there's anything useful lying around the office.";
+            string secondTip = isKeyboardMouse ?
+                "Press R to view inventory." :
+                "Press the north button on the controller to view inventory.";
+
             string[] tips = new string[] {
-                "I should see if there's anything useful lying around the office.",
-                "Press R to view inventory."
+                firstTip,
+                secondTip
             };
             InternalDialogManager.Instance.ShowDialog(tips);
             inventoryTipShown = true;
